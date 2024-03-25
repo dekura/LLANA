@@ -32,7 +32,7 @@ echo $OPENAI_API_TYPE
 4. Set up Conda environment:
 ```
 git clone
-conda create -n llana python=3.8.8
+conda create -n llana python=3.11.8
 conda install jupyter
 conda activate llana
 ## Note: {project_dir} is the path to where to your local directory
@@ -62,3 +62,5 @@ To reproduce results, execute any of the shell experimental shell scripts:
 To check the experimal logs
 
 `exp_evaluate_sm/logs`
+
+`exp_custom/openai`
