@@ -55,3 +55,10 @@ pip install -r requirements.txt
 To reproduce results, execute any of the shell experimental shell scripts:
 - To run benchmark: ```run_custom_baselines.sh```
 - To evaluate the surrogate model: ```run_evaluate_dis_sm_openai.sh``` (discriminative SM)
+
+
+## 3. Experimental logs
+
+To check the experimal logs
+
+`exp_evaluate_sm/logs`
