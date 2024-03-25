@@ -1,0 +1,224 @@
+2024-03-23 18:02:27 - INFO - ========================================================================================================================================================================================================
+2024-03-23 18:02:27 - INFO - Evaluating Disriminative SM performance on openai Offset_score with RandomForest and 20 observed configurations... Running 1 runs.
+2024-03-23 18:02:27 - INFO - ========================================================================================================================================================================================================
+2024-03-23 18:02:27 - INFO - Collecting configurations - this might take a while...
+2024-03-23 18:02:38 - INFO - ========================================================================================================================================================================================================
+2024-03-23 18:02:38 - INFO - Evaluating SM with seed 0...
+2024-03-23 18:02:38 - INFO - [GP] RMSE: 1.8183, R2 score: -38.4976, NLL: -4.1478, Coverage: 0.5000, MACE: 0.1658, Sharpness: 0.0929, Regret: 0.9253
+2024-03-23 18:02:38 - INFO - [SMAC] RMSE: 0.3147, R2 score: -0.1834, NLL: 0.0485, Coverage: 0.8000, MACE: 0.0790, Sharpness: 0.0097, Regret: 0.9253
+2024-03-23 18:02:38 - INFO - ****************************************************************************************************
+2024-03-23 18:02:38 - INFO - Number of all_prompt_templates: 5
+2024-03-23 18:02:38 - INFO - Number of query_examples: 10
+2024-03-23 18:02:38 - INFO - The following are hyperparameter configurations for a RandomForest and the corresponding performance measured in mean squared error. The model is evaluated on a tabular regression task. The tabular dataset contains 411 samples and 14 features (0 categorical, 14 numerical).  Your response should only contain the predicted mean squared error in the format ## performance ##.
+Hyperparameter configuration: max_depth is 10, max_features is 0.12, min_impurity_decrease is 0, min_samples_leaf is 0.17, min_samples_split is 0.06, min_weight_fraction_leaf is 0.23
+Performance: ## 0.601195 ##
+Hyperparameter configuration: max_depth is 11, max_features is 0.10, min_impurity_decrease is 0, min_samples_leaf is 0.07, min_samples_split is 0.44, min_weight_fraction_leaf is 0.25
+Performance: ## 0.607296 ##
+Hyperparameter configuration: max_depth is 7, max_features is 0.11, min_impurity_decrease is 0, min_samples_leaf is 0.29, min_samples_split is 0.33, min_weight_fraction_leaf is 0.35
+Performance: ## 0.600471 ##
+Hyperparameter configuration: max_depth is 1, max_features is 0.24, min_impurity_decrease is 0, min_samples_leaf is 0.03, min_samples_split is 0.01, min_weight_fraction_leaf is 0.36
+Performance: ## 0.613283 ##
+Hyperparameter configuration: max_depth is 1, max_features is 0.22, min_impurity_decrease is 0, min_samples_leaf is 0.01, min_samples_split is 0.01, min_weight_fraction_leaf is 0.34
+Performance: ## 0.605016 ##
+Hyperparameter configuration: max_depth is 1, max_features is 0.32, min_impurity_decrease is 0, min_samples_leaf is 0.03, min_samples_split is 0.02, min_weight_fraction_leaf is 0.02
+Performance: ## 0.604213 ##
+Hyperparameter configuration: max_depth is 3, max_features is 0.04, min_impurity_decrease is 0, min_samples_leaf is 0.16, min_samples_split is 0.07, min_weight_fraction_leaf is 0.01
+Performance: ## 0.593060 ##
+Hyperparameter configuration: max_depth is 2, max_features is 0.07, min_impurity_decrease is 0, min_samples_leaf is 0.20, min_samples_split is 0.01, min_weight_fraction_leaf is 0.05
+Performance: ## 0.596884 ##
+Hyperparameter configuration: max_depth is 4, max_features is 0.01, min_impurity_decrease is 0, min_samples_leaf is 0.26, min_samples_split is 0.08, min_weight_fraction_leaf is 0.02
+Performance: ## 0.600419 ##
+Hyperparameter configuration: max_depth is 6, max_features is 0.18, min_impurity_decrease is 0, min_samples_leaf is 0.03, min_samples_split is 0.01, min_weight_fraction_leaf is 0.04
+Performance: ## 0.580904 ##
+Hyperparameter configuration: max_depth is 2, max_features is 0.11, min_impurity_decrease is 0, min_samples_leaf is 0.22, min_samples_split is 0.02, min_weight_fraction_leaf is 0.02
+Performance: ## 0.609780 ##
+Hyperparameter configuration: max_depth is 2, max_features is 0.03, min_impurity_decrease is 0, min_samples_leaf is 0.29, min_samples_split is 0.01, min_weight_fraction_leaf is 0.19
+Performance: ## 0.599507 ##
+Hyperparameter configuration: max_depth is 9, max_features is 0.69, min_impurity_decrease is 0, min_samples_leaf is 0.02, min_samples_split is 0.01, min_weight_fraction_leaf is 0.04
+Performance: ## 0.534349 ##
+Hyperparameter configuration: max_depth is 7, max_features is 0.02, min_impurity_decrease is 0, min_samples_leaf is 0.29, min_samples_split is 0.06, min_weight_fraction_leaf is 0.01
+Performance: ## 0.595432 ##
+Hyperparameter configuration: max_depth is 1, max_features is 0.15, min_impurity_decrease is 0, min_samples_leaf is 0.08, min_samples_split is 0.02, min_weight_fraction_leaf is 0.11
+Performance: ## 0.600390 ##
+Hyperparameter configuration: max_depth is 5, max_features is 0.05, min_impurity_decrease is 0, min_samples_leaf is 0.22, min_samples_split is 0.04, min_weight_fraction_leaf is 0.01
+Performance: ## 0.611207 ##
+Hyperparameter configuration: max_depth is 3, max_features is 0.03, min_impurity_decrease is 0, min_samples_leaf is 0.31, min_samples_split is 0.10, min_weight_fraction_leaf is 0.06
+Performance: ## 0.611707 ##
+Hyperparameter configuration: max_depth is 4, max_features is 0.04, min_impurity_decrease is 0, min_samples_leaf is 0.24, min_samples_split is 0.10, min_weight_fraction_leaf is 0.10
+Performance: ## 0.596359 ##
+Hyperparameter configuration: max_depth is 2, max_features is 0.16, min_impurity_decrease is 0, min_samples_leaf is 0.14, min_samples_split is 0.02, min_weight_fraction_leaf is 0.20
+Performance: ## 0.605287 ##
+Hyperparameter configuration: max_depth is 15, max_features is 0.13, min_impurity_decrease is 0, min_samples_leaf is 0.28, min_samples_split is 0.22, min_weight_fraction_leaf is 0.11
+Performance: ## 0.597481 ##
+Hyperparameter configuration: max_depth is 6, max_features is 0.01, min_impurity_decrease is 0, min_samples_leaf is 0.27, min_samples_split is 0.13, min_weight_fraction_leaf is 0.02
+Performance: 
+2024-03-23 18:02:40 - INFO - Response from OpenAI: 
+ ## 0.599507 ##
+2024-03-23 18:02:40 - INFO - Response from OpenAI: 
+ ## 0.597481 ##
+2024-03-23 18:02:40 - INFO - Response from OpenAI: 
+ ## 0.576326 ##
+2024-03-23 18:02:40 - INFO - Response from OpenAI: 
+ ## 0.601224 ##
+2024-03-23 18:02:40 - INFO - Response from OpenAI: 
+ ## 0.595407 ##
+2024-03-23 18:02:40 - INFO - Response from OpenAI: 
+ ## 0.600363 ##
+2024-03-23 18:02:40 - INFO - Response from OpenAI: 
+ ## 0.595432 ##
+2024-03-23 18:02:40 - INFO - Response from OpenAI: 
+ ## 0.600907 ##
+2024-03-23 18:02:40 - INFO - Response from OpenAI: 
+ ## 0.610811 ##
+2024-03-23 18:02:40 - INFO - Response from OpenAI: 
+ ## 0.595283 ##
+2024-03-23 18:02:40 - INFO - Response from OpenAI: 
+ ## 0.590535 ##
+2024-03-23 18:02:40 - INFO - Response from OpenAI: 
+ ## 0.600540 ##
+2024-03-23 18:02:40 - INFO - Response from OpenAI: 
+ ## 0.595432 ##
+2024-03-23 18:02:40 - INFO - Response from OpenAI: 
+ ## 0.599507 ##
+2024-03-23 18:02:40 - INFO - Response from OpenAI: 
+ ## 0.599507 ##
+2024-03-23 18:02:40 - INFO - Response from OpenAI: 
+ ## 0.605269 ##
+2024-03-23 18:02:40 - INFO - Response from OpenAI: 
+ ## 0.590177 ##
+2024-03-23 18:02:40 - INFO - Response from OpenAI: 
+ ## 0.601626 ##
+2024-03-23 18:02:40 - INFO - Response from OpenAI: 
+ ## 0.552441 ##
+2024-03-23 18:02:40 - INFO - Response from OpenAI: 
+ ## 0.586051 ##
+2024-03-23 18:02:40 - INFO - Response from OpenAI: 
+ ## 0.598823 ##
+2024-03-23 18:02:40 - INFO - Response from OpenAI: 
+ ## 0.611918 ##
+2024-03-23 18:02:40 - INFO - Response from OpenAI: 
+ ## 0.598840 ##
+2024-03-23 18:02:41 - INFO - Response from OpenAI: 
+ ## 0.599979 ##
+2024-03-23 18:02:41 - INFO - Response from OpenAI: 
+ ## 0.590318 ##
+2024-03-23 18:03:39 - INFO - Response from OpenAI: 
+ ## 0.604213 ##
+2024-03-23 18:03:39 - INFO - Response from OpenAI: 
+ ## 0.604213 ##
+2024-03-23 18:03:39 - INFO - Response from OpenAI: 
+ ## 0.599507 ##
+2024-03-23 18:03:39 - INFO - Response from OpenAI: 
+ ## 0.600390 ##
+2024-03-23 18:03:39 - INFO - Response from OpenAI: 
+ ## 0.600419 ##
+2024-03-23 18:03:39 - INFO - Response from OpenAI: 
+ ## 0.576961 ##
+2024-03-23 18:03:40 - INFO - Response from OpenAI: 
+ ## 0.614891 ##
+2024-03-23 18:03:40 - INFO - Response from OpenAI: 
+ ## 0.600419 ##
+2024-03-23 18:03:40 - INFO - Response from OpenAI: 
+ ## 0.604213 ##
+2024-03-23 18:03:40 - INFO - Response from OpenAI: 
+ ## 0.599507 ##
+2024-03-23 18:03:40 - INFO - Response from OpenAI: 
+ ## 0.534349 ##
+2024-03-23 18:03:40 - INFO - Response from OpenAI: 
+ ## 0.600419 ##
+2024-03-23 18:03:40 - INFO - Response from OpenAI: 
+ ## 0.604213 ##
+2024-03-23 18:03:40 - INFO - Response from OpenAI: 
+ ## 0.599507 ##
+2024-03-23 18:03:40 - INFO - Response from OpenAI: 
+ ## 0.600419 ##
+2024-03-23 18:03:40 - INFO - Response from OpenAI: 
+ ## 0.600419 ##
+2024-03-23 18:03:40 - INFO - Response from OpenAI: 
+ ## 0.580904 ##
+2024-03-23 18:03:40 - INFO - Response from OpenAI: 
+ ## 0.610985 ##
+2024-03-23 18:03:40 - INFO - Response from OpenAI: 
+ ## 0.599507 ##
+2024-03-23 18:03:40 - INFO - Response from OpenAI: 
+ ## 0.564628 ##
+2024-03-23 18:03:40 - INFO - Response from OpenAI: 
+ ## 0.614274 ##
+2024-03-23 18:03:40 - INFO - Response from OpenAI: 
+ ## 0.604213 ##
+2024-03-23 18:03:40 - INFO - Response from OpenAI: 
+ ## 0.607782 ##
+2024-03-23 18:03:40 - INFO - Response from OpenAI: 
+ ## 0.538432 ##
+2024-03-23 18:03:40 - INFO - Response from OpenAI: 
+ ## 0.599507 ##
+2024-03-23 18:03:41 - INFO - [LLAMBO] RMSE: 0.1588, R2 score: 0.6987, NLL: -4.6764, Coverage: 0.6000, MACE: 0.0956, Sharpness: 0.0088, Regret: 0.0000 | Cost: $0.1141, Time: 62.0019s
+2024-03-23 18:03:41 - INFO - ****************************************************************************************************
+2024-03-23 18:03:41 - INFO - Number of all_prompt_templates: 1
+2024-03-23 18:03:41 - INFO - Number of query_examples: 10
+2024-03-23 18:03:41 - INFO - The following are hyperparameter configurations for a RandomForest and the corresponding performance measured in mean squared error. The model is evaluated on a tabular regression task. The tabular dataset contains 411 samples and 14 features (0 categorical, 14 numerical).  Your response should only contain the predicted mean squared error in the format ## performance ##.
+Hyperparameter configuration: max_depth is 10, max_features is 0.12, min_impurity_decrease is 0, min_samples_leaf is 0.17, min_samples_split is 0.06, min_weight_fraction_leaf is 0.23
+Performance: ## 0.601195 ##
+Hyperparameter configuration: max_depth is 11, max_features is 0.10, min_impurity_decrease is 0, min_samples_leaf is 0.07, min_samples_split is 0.44, min_weight_fraction_leaf is 0.25
+Performance: ## 0.607296 ##
+Hyperparameter configuration: max_depth is 7, max_features is 0.11, min_impurity_decrease is 0, min_samples_leaf is 0.29, min_samples_split is 0.33, min_weight_fraction_leaf is 0.35
+Performance: ## 0.600471 ##
+Hyperparameter configuration: max_depth is 1, max_features is 0.24, min_impurity_decrease is 0, min_samples_leaf is 0.03, min_samples_split is 0.01, min_weight_fraction_leaf is 0.36
+Performance: ## 0.613283 ##
+Hyperparameter configuration: max_depth is 1, max_features is 0.22, min_impurity_decrease is 0, min_samples_leaf is 0.01, min_samples_split is 0.01, min_weight_fraction_leaf is 0.34
+Performance: ## 0.605016 ##
+Hyperparameter configuration: max_depth is 1, max_features is 0.32, min_impurity_decrease is 0, min_samples_leaf is 0.03, min_samples_split is 0.02, min_weight_fraction_leaf is 0.02
+Performance: ## 0.604213 ##
+Hyperparameter configuration: max_depth is 3, max_features is 0.04, min_impurity_decrease is 0, min_samples_leaf is 0.16, min_samples_split is 0.07, min_weight_fraction_leaf is 0.01
+Performance: ## 0.593060 ##
+Hyperparameter configuration: max_depth is 2, max_features is 0.07, min_impurity_decrease is 0, min_samples_leaf is 0.20, min_samples_split is 0.01, min_weight_fraction_leaf is 0.05
+Performance: ## 0.596884 ##
+Hyperparameter configuration: max_depth is 4, max_features is 0.01, min_impurity_decrease is 0, min_samples_leaf is 0.26, min_samples_split is 0.08, min_weight_fraction_leaf is 0.02
+Performance: ## 0.600419 ##
+Hyperparameter configuration: max_depth is 6, max_features is 0.18, min_impurity_decrease is 0, min_samples_leaf is 0.03, min_samples_split is 0.01, min_weight_fraction_leaf is 0.04
+Performance: ## 0.580904 ##
+Hyperparameter configuration: max_depth is 2, max_features is 0.11, min_impurity_decrease is 0, min_samples_leaf is 0.22, min_samples_split is 0.02, min_weight_fraction_leaf is 0.02
+Performance: ## 0.609780 ##
+Hyperparameter configuration: max_depth is 2, max_features is 0.03, min_impurity_decrease is 0, min_samples_leaf is 0.29, min_samples_split is 0.01, min_weight_fraction_leaf is 0.19
+Performance: ## 0.599507 ##
+Hyperparameter configuration: max_depth is 9, max_features is 0.69, min_impurity_decrease is 0, min_samples_leaf is 0.02, min_samples_split is 0.01, min_weight_fraction_leaf is 0.04
+Performance: ## 0.534349 ##
+Hyperparameter configuration: max_depth is 7, max_features is 0.02, min_impurity_decrease is 0, min_samples_leaf is 0.29, min_samples_split is 0.06, min_weight_fraction_leaf is 0.01
+Performance: ## 0.595432 ##
+Hyperparameter configuration: max_depth is 1, max_features is 0.15, min_impurity_decrease is 0, min_samples_leaf is 0.08, min_samples_split is 0.02, min_weight_fraction_leaf is 0.11
+Performance: ## 0.600390 ##
+Hyperparameter configuration: max_depth is 5, max_features is 0.05, min_impurity_decrease is 0, min_samples_leaf is 0.22, min_samples_split is 0.04, min_weight_fraction_leaf is 0.01
+Performance: ## 0.611207 ##
+Hyperparameter configuration: max_depth is 3, max_features is 0.03, min_impurity_decrease is 0, min_samples_leaf is 0.31, min_samples_split is 0.10, min_weight_fraction_leaf is 0.06
+Performance: ## 0.611707 ##
+Hyperparameter configuration: max_depth is 4, max_features is 0.04, min_impurity_decrease is 0, min_samples_leaf is 0.24, min_samples_split is 0.10, min_weight_fraction_leaf is 0.10
+Performance: ## 0.596359 ##
+Hyperparameter configuration: max_depth is 2, max_features is 0.16, min_impurity_decrease is 0, min_samples_leaf is 0.14, min_samples_split is 0.02, min_weight_fraction_leaf is 0.20
+Performance: ## 0.605287 ##
+Hyperparameter configuration: max_depth is 15, max_features is 0.13, min_impurity_decrease is 0, min_samples_leaf is 0.28, min_samples_split is 0.22, min_weight_fraction_leaf is 0.11
+Performance: ## 0.597481 ##
+Hyperparameter configuration: max_depth is 6, max_features is 0.01, min_impurity_decrease is 0, min_samples_leaf is 0.27, min_samples_split is 0.13, min_weight_fraction_leaf is 0.02
+Performance: 
+2024-03-23 18:03:41 - INFO - Response from OpenAI: 
+ ## 0.585879 ##
+2024-03-23 18:03:41 - INFO - Response from OpenAI: 
+ ## 0.611707 ##
+2024-03-23 18:03:42 - INFO - Response from OpenAI: 
+ ## 0.598410 ##
+2024-03-23 18:03:42 - INFO - Response from OpenAI: 
+ ## 0.589482 ##
+2024-03-23 18:03:42 - INFO - Response from OpenAI: 
+ ## 0.598961 ##
+2024-03-23 18:04:39 - INFO - Response from OpenAI: 
+ ## 0.600419 ##
+2024-03-23 18:04:39 - INFO - Response from OpenAI: 
+ ## 0.604213 ##
+2024-03-23 18:04:39 - INFO - Response from OpenAI: 
+ ## 0.599507 ##
+2024-03-23 18:04:40 - INFO - Response from OpenAI: 
+ ## 0.600390 ##
+2024-03-23 18:04:40 - INFO - Response from OpenAI: 
+ ## 0.528961 ##
+2024-03-23 18:04:40 - INFO - [LLAMBO_VANILLA] RMSE: 0.1592, R2 score: 0.6973, NLL: -4.7512, Coverage: 0.5000, MACE: 0.1556, Sharpness: 0.0085, Regret: 0.0000 | Cost: $0.0228, Time: 59.0140s
+2024-03-23 18:04:40 - INFO - ========================================================================================================================================================================================================
+2024-03-23 18:04:40 - INFO - [LLAMBO] 1 evaluation runs complete! Total cost: $0.1369

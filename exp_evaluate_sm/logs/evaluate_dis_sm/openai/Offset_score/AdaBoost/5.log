@@ -1,0 +1,164 @@
+2024-03-23 18:10:21 - INFO - ========================================================================================================================================================================================================
+2024-03-23 18:10:21 - INFO - Evaluating Disriminative SM performance on openai Offset_score with AdaBoost and 5 observed configurations... Running 1 runs.
+2024-03-23 18:10:21 - INFO - ========================================================================================================================================================================================================
+2024-03-23 18:10:21 - INFO - Collecting configurations - this might take a while...
+2024-03-23 18:10:57 - INFO - ========================================================================================================================================================================================================
+2024-03-23 18:10:57 - INFO - Evaluating SM with seed 0...
+2024-03-23 18:10:58 - INFO - [GP] RMSE: 5.7362, R2 score: -353.7537, NLL: 5.8745, Coverage: 0.3000, MACE: 0.2230, Sharpness: 2.6806, Regret: 0.0015
+2024-03-23 18:10:58 - INFO - [SMAC] RMSE: 5.8052, R2 score: -362.3383, NLL: 4.3665, Coverage: 0.0000, MACE: 0.4712, Sharpness: 2.3555, Regret: 0.0015
+2024-03-23 18:10:58 - INFO - ****************************************************************************************************
+2024-03-23 18:10:58 - INFO - Number of all_prompt_templates: 5
+2024-03-23 18:10:58 - INFO - Number of query_examples: 10
+2024-03-23 18:10:58 - INFO - The following are hyperparameter configurations for a AdaBoost and the corresponding performance measured in mean squared error. The model is evaluated on a tabular regression task. The tabular dataset contains 411 samples and 14 features (0 categorical, 14 numerical).  Your response should only contain the predicted mean squared error in the format ## performance ##.
+Hyperparameter configuration: n_estimators is 52, learning_rate is 5.6104
+Performance: ## 16.900034 ##
+Hyperparameter configuration: n_estimators is 85, learning_rate is 0.0012
+Performance: ## 0.496704 ##
+Hyperparameter configuration: n_estimators is 50, learning_rate is 0.0231
+Performance: ## 0.522575 ##
+Hyperparameter configuration: n_estimators is 28, learning_rate is 4.9816
+Performance: ## 8.483442 ##
+Hyperparameter configuration: n_estimators is 75, learning_rate is 0.0001
+Performance: ## 0.484010 ##
+Hyperparameter configuration: n_estimators is 14, learning_rate is 0.0007
+Performance: 
+2024-03-23 18:10:59 - INFO - Response from OpenAI: 
+ ## 1.347409 ##
+2024-03-23 18:10:59 - INFO - Response from OpenAI: 
+ ## 0.465773 ##
+2024-03-23 18:10:59 - INFO - Response from OpenAI: 
+ ## 6.982032 ##
+2024-03-23 18:10:59 - INFO - Response from OpenAI: 
+ ## 3.541299 ##
+2024-03-23 18:11:00 - INFO - Response from OpenAI: 
+ ## 0.479528 ##
+2024-03-23 18:11:00 - INFO - Response from OpenAI: 
+ ## 17.051937 ##
+2024-03-23 18:11:00 - INFO - Response from OpenAI: 
+ ## 2.639792 ##
+2024-03-23 18:11:00 - INFO - Response from OpenAI: 
+ ## 16.251392 ##
+2024-03-23 18:11:00 - INFO - Response from OpenAI: 
+ ## 9.697836 ##
+2024-03-23 18:11:00 - INFO - Response from OpenAI: 
+ ## 8.410724 ##
+2024-03-23 18:11:00 - INFO - Response from OpenAI: 
+ ## 14.931867 ##
+2024-03-23 18:11:00 - INFO - Response from OpenAI: 
+ ## 0.493157 ##
+2024-03-23 18:11:00 - INFO - Response from OpenAI: 
+ ## 2.678342 ##
+2024-03-23 18:11:00 - INFO - Response from OpenAI: 
+ ## 1.743617 ##
+2024-03-23 18:11:00 - INFO - Response from OpenAI: 
+ ## 0.490257 ##
+2024-03-23 18:11:00 - INFO - Response from OpenAI: 
+ ## 7.296215 ##
+2024-03-23 18:11:00 - INFO - Response from OpenAI: 
+ ## 3.918776 ##
+2024-03-23 18:11:00 - INFO - Response from OpenAI: 
+ ## 2.408453 ##
+2024-03-23 18:11:00 - INFO - Response from OpenAI: 
+ ## 8.365186 ##
+2024-03-23 18:11:00 - INFO - Response from OpenAI: 
+ ## 15.577269 ##
+2024-03-23 18:11:00 - INFO - Response from OpenAI: 
+ ## 5.516797 ##
+2024-03-23 18:11:00 - INFO - Response from OpenAI: 
+ ## 3.798852 ##
+2024-03-23 18:11:00 - INFO - Response from OpenAI: 
+ ## 17.101248 ##
+2024-03-23 18:11:01 - INFO - Response from OpenAI: 
+ ## 0.478921 ##
+2024-03-23 18:11:01 - INFO - Response from OpenAI: 
+ ## 6.972854 ##
+2024-03-23 18:11:02 - INFO - Response from OpenAI: 
+ ## 0.478906 ##
+2024-03-23 18:11:02 - INFO - Response from OpenAI: 
+ ## 0.472827 ##
+2024-03-23 18:11:02 - INFO - Response from OpenAI: 
+ ## 2.889132 ##
+2024-03-23 18:11:02 - INFO - Response from OpenAI: 
+ ## 2.312819 ##
+2024-03-23 18:11:02 - INFO - Response from OpenAI: 
+ ## 7.994232 ##
+2024-03-23 18:11:02 - INFO - Response from OpenAI: 
+ ## 0.482710 ##
+2024-03-23 18:11:02 - INFO - Response from OpenAI: 
+ ## 1.914729 ##
+2024-03-23 18:11:02 - INFO - Response from OpenAI: 
+ ## 0.476931 ##
+2024-03-23 18:11:02 - INFO - Response from OpenAI: 
+ ## 7.659285 ##
+2024-03-23 18:11:02 - INFO - Response from OpenAI: 
+ ## 0.554682 ##
+2024-03-23 18:11:02 - INFO - Response from OpenAI: 
+ ## 0.527816 ##
+2024-03-23 18:11:05 - INFO - Response from OpenAI: 
+ ## 0.516271 ##
+2024-03-23 18:11:05 - INFO - Response from OpenAI: 
+ ## 0.566822 ##
+2024-03-23 18:11:05 - INFO - Response from OpenAI: 
+ ## 6.980512 ##
+2024-03-23 18:11:05 - INFO - Response from OpenAI: 
+ ## 0.494608 ##
+2024-03-23 18:11:05 - INFO - Response from OpenAI: 
+ ## 0.484010 ##
+2024-03-23 18:11:05 - INFO - Response from OpenAI: 
+ ## 0.530027 ##
+2024-03-23 18:11:05 - INFO - Response from OpenAI: 
+ ## 0.485027 ##
+2024-03-23 18:11:05 - INFO - Response from OpenAI: 
+ ## 6.989254 ##
+2024-03-23 18:11:05 - INFO - Response from OpenAI: 
+ ## 0.482845 ##
+2024-03-23 18:11:05 - INFO - Response from OpenAI: 
+ ## 0.489570 ##
+2024-03-23 18:11:05 - INFO - Response from OpenAI: 
+ ## 0.587213 ##
+2024-03-23 18:11:05 - INFO - Response from OpenAI: 
+ ## 0.484010 ##
+2024-03-23 18:11:05 - INFO - Response from OpenAI: 
+ ## 7.677132 ##
+2024-03-23 18:11:05 - INFO - Response from OpenAI: 
+ ## 1.051520 ##
+2024-03-23 18:11:06 - INFO - [LLAMBO] RMSE: 5.8379, R2 score: -366.4455, NLL: 2.5426, Coverage: 0.3000, MACE: 0.2750, Sharpness: 2.7409, Regret: 0.0115 | Cost: $0.0260, Time: 7.1681s
+2024-03-23 18:11:06 - INFO - ****************************************************************************************************
+2024-03-23 18:11:06 - INFO - Number of all_prompt_templates: 1
+2024-03-23 18:11:06 - INFO - Number of query_examples: 10
+2024-03-23 18:11:06 - INFO - The following are hyperparameter configurations for a AdaBoost and the corresponding performance measured in mean squared error. The model is evaluated on a tabular regression task. The tabular dataset contains 411 samples and 14 features (0 categorical, 14 numerical).  Your response should only contain the predicted mean squared error in the format ## performance ##.
+Hyperparameter configuration: n_estimators is 52, learning_rate is 5.6104
+Performance: ## 16.900034 ##
+Hyperparameter configuration: n_estimators is 85, learning_rate is 0.0012
+Performance: ## 0.496704 ##
+Hyperparameter configuration: n_estimators is 50, learning_rate is 0.0231
+Performance: ## 0.522575 ##
+Hyperparameter configuration: n_estimators is 28, learning_rate is 4.9816
+Performance: ## 8.483442 ##
+Hyperparameter configuration: n_estimators is 75, learning_rate is 0.0001
+Performance: ## 0.484010 ##
+Hyperparameter configuration: n_estimators is 14, learning_rate is 0.0007
+Performance: 
+2024-03-23 18:11:06 - INFO - Response from OpenAI: 
+ ## 16.910352 ##
+2024-03-23 18:11:06 - INFO - Response from OpenAI: 
+ ## 0.504621 ##
+2024-03-23 18:11:06 - INFO - Response from OpenAI: 
+ ## 2.801743 ##
+2024-03-23 18:11:06 - INFO - Response from OpenAI: 
+ ## 0.465791 ##
+2024-03-23 18:11:06 - INFO - Response from OpenAI: 
+ ## 8.188862 ##
+2024-03-23 18:11:07 - INFO - Response from OpenAI: 
+ ## 0.480295 ##
+2024-03-23 18:11:07 - INFO - Response from OpenAI: 
+ ## 6.706281 ##
+2024-03-23 18:11:07 - INFO - Response from OpenAI: 
+ ## 0.482015 ##
+2024-03-23 18:11:07 - INFO - Response from OpenAI: 
+ ## 0.450137 ##
+2024-03-23 18:11:07 - INFO - Response from OpenAI: 
+ ## 0.556218 ##
+2024-03-23 18:11:07 - INFO - [LLAMBO_VANILLA] RMSE: 5.3021, R2 score: -302.0860, NLL: 2.8565, Coverage: 0.3000, MACE: 0.2160, Sharpness: 2.1888, Regret: 0.0192 | Cost: $0.0052, Time: 1.4154s
+2024-03-23 18:11:07 - INFO - ========================================================================================================================================================================================================
+2024-03-23 18:11:07 - INFO - [LLAMBO] 1 evaluation runs complete! Total cost: $0.0312

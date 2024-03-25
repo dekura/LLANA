@@ -1,0 +1,446 @@
+2024-03-21 12:30:09 - INFO - ================================================================================
+2024-03-21 12:30:09 - INFO - Executing LLAMBO (discriminative | ollama | mistral | top_pct: None) to tune SVM on Offset_score with seed 1 / 1...
+2024-03-21 12:30:09 - INFO - Task context: {'model': 'SVM', 'task': 'regression', 'tot_feats': 14, 'cat_feats': 0, 'num_feats': 14, 'n_classes': 406, 'metric': 'neg_mean_squared_error', 'lower_is_better': True, 'num_samples': 411, 'hyperparameter_constraints': {'C': ['float', 'log', [1, 1000.0]], 'gamma': ['float', 'log', [0.0001, 0.001]], 'tol': ['float', 'log', [1e-05, 0.1]]}}
+2024-03-21 12:30:09 - INFO - ================================================================================
+2024-03-21 12:30:09 - INFO - [Search settings]: 
+	n_candidates: 10, n_templates: 2, n_gens: 10, 
+	alpha: 0.1, n_initial_samples: 5, n_trials: 10, 
+	using warping: False, ablation: None, shuffle_features: False
+2024-03-21 12:30:09 - INFO - [Task]: 
+	task type: regression, sm: discriminative, lower is better: True
+2024-03-21 12:30:09 - INFO - Hyperparameter search space: 
+2024-03-21 12:30:09 - INFO - ================================================================================
+2024-03-21 12:30:09 - INFO - Adjusted alpha: 0.1 | [original alpha: 0.1], desired fval: 0.968303
+2024-03-21 12:30:09 - INFO - ====================================================================================================
+2024-03-21 12:30:09 - INFO - EXAMPLE ACQUISITION PROMPT
+2024-03-21 12:30:09 - INFO - Length of prompt templates: 2
+2024-03-21 12:30:09 - INFO - Length of query templates: 2
+2024-03-21 12:30:09 - INFO - The following are examples of performance of a SVM measured in mean squared error and the corresponding model hyperparameter configurations. The model is evaluated on a tabular regression task. The tabular dataset contains 411 samples and 14 features (0 categorical, 14 numerical). The allowable ranges for the hyperparameters are:
+- C: [1, 1000] (float, precise to 0 decimals)
+- gamma: [0.0001, 0.0010] (float, precise to 4 decimals)
+- tol: [0.00001, 0.10000] (float, precise to 5 decimals)
+Recommend a configuration that can achieve the target performance of 0.968303. Do not recommend values at the minimum or maximum of allowable range, do not recommend rounded values. Recommend values with highest possible precision, as requested by the allowed ranges. Your response must only contain the predicted configuration, in the format ## configuration ##.
+
+Performance: 0.991605
+Hyperparameter configuration: ## C: 21, gamma: 0.0008, tol: 0.07156 ##
+Performance: 0.991597
+Hyperparameter configuration: ## C: 44, gamma: 0.0005, tol: 0.00258 ##
+Performance: 0.974125
+Hyperparameter configuration: ## C: 43, gamma: 0.0003, tol: 0.00383 ##
+Performance: 0.975698
+Hyperparameter configuration: ## C: 14, gamma: 0.0006, tol: 0.00130 ##
+Performance: 1.032338
+Hyperparameter configuration: ## C: 51, gamma: 0.0008, tol: 0.00002 ##
+Performance: 0.968303
+Hyperparameter configuration:
+2024-03-21 12:30:09 - INFO - ====================================================================================================
+2024-03-21 12:30:10 - INFO - Response:  ## C: 72, gamma: 0.0005, tol: 0.01469 ##
+2024-03-21 12:30:11 - INFO - Response:  ## C: 71, gamma: 0.00055, tol: 0.04263 ##
+2024-03-21 12:30:11 - INFO - Attempt: 0, number of proposed candidate points: 2, 
+ number of accepted candidate points: 2
+2024-03-21 12:30:11 - INFO - Response:  ## C: 72, gamma: 0.0004, tol: 0.01563 ##
+2024-03-21 12:30:12 - INFO - Response:  ## C: 71, gamma: 0.00055, tol: 0.04237 ##
+2024-03-21 12:30:12 - INFO - Attempt: 1, number of proposed candidate points: 2, 
+ number of accepted candidate points: 4
+2024-03-21 12:30:15 - INFO - Adjusted alpha: 0.1 | [original alpha: 0.1], desired fval: 0.968303
+2024-03-21 12:30:15 - INFO - ====================================================================================================
+2024-03-21 12:30:15 - INFO - EXAMPLE ACQUISITION PROMPT
+2024-03-21 12:30:15 - INFO - Length of prompt templates: 2
+2024-03-21 12:30:15 - INFO - Length of query templates: 2
+2024-03-21 12:30:15 - INFO - The following are examples of performance of a SVM measured in mean squared error and the corresponding model hyperparameter configurations. The model is evaluated on a tabular regression task. The tabular dataset contains 411 samples and 14 features (0 categorical, 14 numerical). The allowable ranges for the hyperparameters are:
+- C: [1, 1000] (float, precise to 0 decimals)
+- gamma: [0.0001, 0.0010] (float, precise to 4 decimals)
+- tol: [0.00001, 0.10000] (float, precise to 5 decimals)
+Recommend a configuration that can achieve the target performance of 0.968303. Do not recommend values at the minimum or maximum of allowable range, do not recommend rounded values. Recommend values with highest possible precision, as requested by the allowed ranges. Your response must only contain the predicted configuration, in the format ## configuration ##.
+
+Performance: 1.004655
+Hyperparameter configuration: ## C: 72, gamma: 0.0005, tol: 0.01469 ##
+Performance: 0.991605
+Hyperparameter configuration: ## C: 21, gamma: 0.0008, tol: 0.07156 ##
+Performance: 0.974125
+Hyperparameter configuration: ## C: 43, gamma: 0.0003, tol: 0.00383 ##
+Performance: 0.975698
+Hyperparameter configuration: ## C: 14, gamma: 0.0006, tol: 0.00130 ##
+Performance: 0.991597
+Hyperparameter configuration: ## C: 44, gamma: 0.0005, tol: 0.00258 ##
+Performance: 1.032338
+Hyperparameter configuration: ## C: 51, gamma: 0.0008, tol: 0.00002 ##
+Performance: 0.968303
+Hyperparameter configuration:
+2024-03-21 12:30:15 - INFO - ====================================================================================================
+2024-03-21 12:30:16 - INFO - Response:  Hyperparameter configuration: ## C: 57, gamma: 0.0004, tol: 0.00612 ##
+2024-03-21 12:30:17 - INFO - Response:  ## C: 61, gamma: 0.0004, tol: 0.00725 ##
+2024-03-21 12:30:17 - INFO - Attempt: 0, number of proposed candidate points: 2, 
+ number of accepted candidate points: 2
+2024-03-21 12:30:17 - INFO - Response:  ## C: 48, gamma: 0.0004, tol: 0.00853 ##
+2024-03-21 12:30:18 - INFO - Response:  ## C: 67, gamma: 0.0007, tol: 0.02073 ##
+2024-03-21 12:30:18 - INFO - Attempt: 1, number of proposed candidate points: 2, 
+ number of accepted candidate points: 4
+2024-03-21 12:30:21 - INFO - Adjusted alpha: 0.1 | [original alpha: 0.1], desired fval: 0.968303
+2024-03-21 12:30:21 - INFO - ====================================================================================================
+2024-03-21 12:30:21 - INFO - EXAMPLE ACQUISITION PROMPT
+2024-03-21 12:30:21 - INFO - Length of prompt templates: 2
+2024-03-21 12:30:21 - INFO - Length of query templates: 2
+2024-03-21 12:30:21 - INFO - The following are examples of performance of a SVM measured in mean squared error and the corresponding model hyperparameter configurations. The model is evaluated on a tabular regression task. The tabular dataset contains 411 samples and 14 features (0 categorical, 14 numerical). The allowable ranges for the hyperparameters are:
+- C: [1, 1000] (float, precise to 0 decimals)
+- gamma: [0.0001, 0.0010] (float, precise to 4 decimals)
+- tol: [0.00001, 0.10000] (float, precise to 5 decimals)
+Recommend a configuration that can achieve the target performance of 0.968303. Do not recommend values at the minimum or maximum of allowable range, do not recommend rounded values. Recommend values with highest possible precision, as requested by the allowed ranges. Your response must only contain the predicted configuration, in the format ## configuration ##.
+
+Performance: 0.986664
+Hyperparameter configuration: ## C: 57, gamma: 0.0004, tol: 0.00612 ##
+Performance: 0.991605
+Hyperparameter configuration: ## C: 21, gamma: 0.0008, tol: 0.07156 ##
+Performance: 0.974125
+Hyperparameter configuration: ## C: 43, gamma: 0.0003, tol: 0.00383 ##
+Performance: 0.975698
+Hyperparameter configuration: ## C: 14, gamma: 0.0006, tol: 0.00130 ##
+Performance: 0.991597
+Hyperparameter configuration: ## C: 44, gamma: 0.0005, tol: 0.00258 ##
+Performance: 1.004655
+Hyperparameter configuration: ## C: 72, gamma: 0.0005, tol: 0.01469 ##
+Performance: 1.032338
+Hyperparameter configuration: ## C: 51, gamma: 0.0008, tol: 0.00002 ##
+Performance: 0.968303
+Hyperparameter configuration:
+2024-03-21 12:30:21 - INFO - ====================================================================================================
+2024-03-21 12:30:22 - INFO - Response:  ## C: 45, gamma: 0.0005, tol: 0.00637 ##
+2024-03-21 12:30:23 - INFO - Response:  ## C: 61, gamma: 0.0005, tol: 0.02258 ##
+2024-03-21 12:30:23 - INFO - Attempt: 0, number of proposed candidate points: 2, 
+ number of accepted candidate points: 2
+2024-03-21 12:30:24 - INFO - Response:  Based on the given performance value, I recommend the following hyperparameter configuration: ## C: 45, gamma: 0.0005, tol: 0.01274 ##
+2024-03-21 12:30:25 - INFO - Response:  ## C: 69, gamma: 0.0007, tol: 0.00745 ##
+2024-03-21 12:30:25 - INFO - Attempt: 1, number of proposed candidate points: 2, 
+ number of accepted candidate points: 4
+2024-03-21 12:30:28 - INFO - Adjusted alpha: 0.1 | [original alpha: 0.1], desired fval: 0.968303
+2024-03-21 12:30:28 - INFO - ====================================================================================================
+2024-03-21 12:30:28 - INFO - EXAMPLE ACQUISITION PROMPT
+2024-03-21 12:30:28 - INFO - Length of prompt templates: 2
+2024-03-21 12:30:28 - INFO - Length of query templates: 2
+2024-03-21 12:30:28 - INFO - The following are examples of performance of a SVM measured in mean squared error and the corresponding model hyperparameter configurations. The model is evaluated on a tabular regression task. The tabular dataset contains 411 samples and 14 features (0 categorical, 14 numerical). The allowable ranges for the hyperparameters are:
+- C: [1, 1000] (float, precise to 0 decimals)
+- gamma: [0.0001, 0.0010] (float, precise to 4 decimals)
+- tol: [0.00001, 0.10000] (float, precise to 5 decimals)
+Recommend a configuration that can achieve the target performance of 0.968303. Do not recommend values at the minimum or maximum of allowable range, do not recommend rounded values. Recommend values with highest possible precision, as requested by the allowed ranges. Your response must only contain the predicted configuration, in the format ## configuration ##.
+
+Performance: 0.986664
+Hyperparameter configuration: ## C: 57, gamma: 0.0004, tol: 0.00612 ##
+Performance: 0.991605
+Hyperparameter configuration: ## C: 21, gamma: 0.0008, tol: 0.07156 ##
+Performance: 0.974125
+Hyperparameter configuration: ## C: 43, gamma: 0.0003, tol: 0.00383 ##
+Performance: 0.990229
+Hyperparameter configuration: ## C: 45, gamma: 0.0005, tol: 0.00637 ##
+Performance: 0.975698
+Hyperparameter configuration: ## C: 14, gamma: 0.0006, tol: 0.00130 ##
+Performance: 0.991597
+Hyperparameter configuration: ## C: 44, gamma: 0.0005, tol: 0.00258 ##
+Performance: 1.004655
+Hyperparameter configuration: ## C: 72, gamma: 0.0005, tol: 0.01469 ##
+Performance: 1.032338
+Hyperparameter configuration: ## C: 51, gamma: 0.0008, tol: 0.00002 ##
+Performance: 0.968303
+Hyperparameter configuration:
+2024-03-21 12:30:28 - INFO - ====================================================================================================
+2024-03-21 12:30:29 - INFO - Response:  ## C: 31, gamma: 0.0005, tol: 0.00741 ##
+2024-03-21 12:30:29 - INFO - Response:  ## C: 61, gamma: 0.0004, tol: 0.00621 ##
+2024-03-21 12:30:29 - INFO - Attempt: 0, number of proposed candidate points: 2, 
+ number of accepted candidate points: 2
+2024-03-21 12:30:30 - INFO - Response:  ## C: 61, gamma: 0.0003, tol: 0.00347 ##
+2024-03-21 12:30:31 - INFO - Response:  ## C: 67, gamma: 0.0004, tol: 0.00321 ##
+2024-03-21 12:30:31 - INFO - Attempt: 1, number of proposed candidate points: 2, 
+ number of accepted candidate points: 4
+2024-03-21 12:30:34 - INFO - Adjusted alpha: 0.1 | [original alpha: 0.1], desired fval: 0.968303
+2024-03-21 12:30:34 - INFO - ====================================================================================================
+2024-03-21 12:30:34 - INFO - EXAMPLE ACQUISITION PROMPT
+2024-03-21 12:30:34 - INFO - Length of prompt templates: 2
+2024-03-21 12:30:34 - INFO - Length of query templates: 2
+2024-03-21 12:30:34 - INFO - The following are examples of performance of a SVM measured in mean squared error and the corresponding model hyperparameter configurations. The model is evaluated on a tabular regression task. The tabular dataset contains 411 samples and 14 features (0 categorical, 14 numerical). The allowable ranges for the hyperparameters are:
+- C: [1, 1000] (float, precise to 0 decimals)
+- gamma: [0.0001, 0.0010] (float, precise to 4 decimals)
+- tol: [0.00001, 0.10000] (float, precise to 5 decimals)
+Recommend a configuration that can achieve the target performance of 0.968303. Do not recommend values at the minimum or maximum of allowable range, do not recommend rounded values. Recommend values with highest possible precision, as requested by the allowed ranges. Your response must only contain the predicted configuration, in the format ## configuration ##.
+
+Performance: 0.990229
+Hyperparameter configuration: ## C: 45, gamma: 0.0005, tol: 0.00637 ##
+Performance: 0.991605
+Hyperparameter configuration: ## C: 21, gamma: 0.0008, tol: 0.07156 ##
+Performance: 0.974125
+Hyperparameter configuration: ## C: 43, gamma: 0.0003, tol: 0.00383 ##
+Performance: 1.032338
+Hyperparameter configuration: ## C: 51, gamma: 0.0008, tol: 0.00002 ##
+Performance: 0.982248
+Hyperparameter configuration: ## C: 31, gamma: 0.0005, tol: 0.00741 ##
+Performance: 0.986664
+Hyperparameter configuration: ## C: 57, gamma: 0.0004, tol: 0.00612 ##
+Performance: 0.975698
+Hyperparameter configuration: ## C: 14, gamma: 0.0006, tol: 0.00130 ##
+Performance: 0.991597
+Hyperparameter configuration: ## C: 44, gamma: 0.0005, tol: 0.00258 ##
+Performance: 1.004655
+Hyperparameter configuration: ## C: 72, gamma: 0.0005, tol: 0.01469 ##
+Performance: 0.968303
+Hyperparameter configuration:
+2024-03-21 12:30:34 - INFO - ====================================================================================================
+2024-03-21 12:30:35 - INFO - Response:  ## C: 67, gamma: 0.0004, tol: 0.00415 ##
+2024-03-21 12:30:36 - INFO - Response:  ## C: 63, gamma: 0.0007, tol: 0.02215 ##
+2024-03-21 12:30:36 - INFO - Attempt: 0, number of proposed candidate points: 2, 
+ number of accepted candidate points: 2
+2024-03-21 12:30:37 - INFO - Response:  Based on the provided data, a configuration that can achieve the target performance of 0.968303 is: ## C: 62, gamma: 0.0004, tol: 0.01175 ##
+2024-03-21 12:30:37 - INFO - Response:  ## C: 69, gamma: 0.0007, tol: 0.00485 ##
+2024-03-21 12:30:37 - INFO - Attempt: 1, number of proposed candidate points: 2, 
+ number of accepted candidate points: 4
+2024-03-21 12:30:40 - INFO - Adjusted alpha: 0.1 | [original alpha: 0.1], desired fval: 0.968303
+2024-03-21 12:30:40 - INFO - ====================================================================================================
+2024-03-21 12:30:40 - INFO - EXAMPLE ACQUISITION PROMPT
+2024-03-21 12:30:40 - INFO - Length of prompt templates: 2
+2024-03-21 12:30:40 - INFO - Length of query templates: 2
+2024-03-21 12:30:40 - INFO - The following are examples of performance of a SVM measured in mean squared error and the corresponding model hyperparameter configurations. The model is evaluated on a tabular regression task. The tabular dataset contains 411 samples and 14 features (0 categorical, 14 numerical). The allowable ranges for the hyperparameters are:
+- C: [1, 1000] (float, precise to 0 decimals)
+- gamma: [0.0001, 0.0010] (float, precise to 4 decimals)
+- tol: [0.00001, 0.10000] (float, precise to 5 decimals)
+Recommend a configuration that can achieve the target performance of 0.968303. Do not recommend values at the minimum or maximum of allowable range, do not recommend rounded values. Recommend values with highest possible precision, as requested by the allowed ranges. Your response must only contain the predicted configuration, in the format ## configuration ##.
+
+Performance: 0.991605
+Hyperparameter configuration: ## C: 21, gamma: 0.0008, tol: 0.07156 ##
+Performance: 0.982248
+Hyperparameter configuration: ## C: 31, gamma: 0.0005, tol: 0.00741 ##
+Performance: 1.032338
+Hyperparameter configuration: ## C: 51, gamma: 0.0008, tol: 0.00002 ##
+Performance: 0.989631
+Hyperparameter configuration: ## C: 67, gamma: 0.0004, tol: 0.00415 ##
+Performance: 0.974125
+Hyperparameter configuration: ## C: 43, gamma: 0.0003, tol: 0.00383 ##
+Performance: 0.986664
+Hyperparameter configuration: ## C: 57, gamma: 0.0004, tol: 0.00612 ##
+Performance: 0.990229
+Hyperparameter configuration: ## C: 45, gamma: 0.0005, tol: 0.00637 ##
+Performance: 0.975698
+Hyperparameter configuration: ## C: 14, gamma: 0.0006, tol: 0.00130 ##
+Performance: 0.991597
+Hyperparameter configuration: ## C: 44, gamma: 0.0005, tol: 0.00258 ##
+Performance: 1.004655
+Hyperparameter configuration: ## C: 72, gamma: 0.0005, tol: 0.01469 ##
+Performance: 0.968303
+Hyperparameter configuration:
+2024-03-21 12:30:40 - INFO - ====================================================================================================
+2024-03-21 12:30:41 - INFO - Response:  ## C: 78, gamma: 0.0006, tol: 0.05293 ##
+2024-03-21 12:30:42 - INFO - Response:  ## C: 34, gamma: 0.0007, tol: 0.02875 ##
+2024-03-21 12:30:42 - INFO - Attempt: 0, number of proposed candidate points: 2, 
+ number of accepted candidate points: 2
+2024-03-21 12:30:43 - INFO - Response:  ## C: 49, gamma: 0.0007, tol: 0.05264 ##
+2024-03-21 12:30:44 - INFO - Response:  ## C: 49, gamma: 0.0005, tol: 0.03472 ##
+2024-03-21 12:30:44 - INFO - Attempt: 1, number of proposed candidate points: 2, 
+ number of accepted candidate points: 4
+2024-03-21 12:30:46 - INFO - Adjusted alpha: 0.1 | [original alpha: 0.1], desired fval: 0.968303
+2024-03-21 12:30:46 - INFO - ====================================================================================================
+2024-03-21 12:30:46 - INFO - EXAMPLE ACQUISITION PROMPT
+2024-03-21 12:30:46 - INFO - Length of prompt templates: 2
+2024-03-21 12:30:46 - INFO - Length of query templates: 2
+2024-03-21 12:30:46 - INFO - The following are examples of performance of a SVM measured in mean squared error and the corresponding model hyperparameter configurations. The model is evaluated on a tabular regression task. The tabular dataset contains 411 samples and 14 features (0 categorical, 14 numerical). The allowable ranges for the hyperparameters are:
+- C: [1, 1000] (float, precise to 0 decimals)
+- gamma: [0.0001, 0.0010] (float, precise to 4 decimals)
+- tol: [0.00001, 0.10000] (float, precise to 5 decimals)
+Recommend a configuration that can achieve the target performance of 0.968303. Do not recommend values at the minimum or maximum of allowable range, do not recommend rounded values. Recommend values with highest possible precision, as requested by the allowed ranges. Your response must only contain the predicted configuration, in the format ## configuration ##.
+
+Performance: 1.032338
+Hyperparameter configuration: ## C: 51, gamma: 0.0008, tol: 0.00002 ##
+Performance: 0.989631
+Hyperparameter configuration: ## C: 67, gamma: 0.0004, tol: 0.00415 ##
+Performance: 0.991605
+Hyperparameter configuration: ## C: 21, gamma: 0.0008, tol: 0.07156 ##
+Performance: 1.022093
+Hyperparameter configuration: ## C: 78, gamma: 0.0006, tol: 0.05293 ##
+Performance: 0.986664
+Hyperparameter configuration: ## C: 57, gamma: 0.0004, tol: 0.00612 ##
+Performance: 0.974125
+Hyperparameter configuration: ## C: 43, gamma: 0.0003, tol: 0.00383 ##
+Performance: 0.990229
+Hyperparameter configuration: ## C: 45, gamma: 0.0005, tol: 0.00637 ##
+Performance: 0.982248
+Hyperparameter configuration: ## C: 31, gamma: 0.0005, tol: 0.00741 ##
+Performance: 0.975698
+Hyperparameter configuration: ## C: 14, gamma: 0.0006, tol: 0.00130 ##
+Performance: 0.991597
+Hyperparameter configuration: ## C: 44, gamma: 0.0005, tol: 0.00258 ##
+Performance: 1.004655
+Hyperparameter configuration: ## C: 72, gamma: 0.0005, tol: 0.01469 ##
+Performance: 0.968303
+Hyperparameter configuration:
+2024-03-21 12:30:46 - INFO - ====================================================================================================
+2024-03-21 12:30:47 - INFO - Response:  ## C: 49, gamma: 0.0007, tol: 0.00325 ##
+2024-03-21 12:30:48 - INFO - Response:  ## C: 61, gamma: 0.0007, tol: 0.02045 ##
+2024-03-21 12:30:48 - INFO - Attempt: 0, number of proposed candidate points: 2, 
+ number of accepted candidate points: 2
+2024-03-21 12:30:49 - INFO - Response:  ## C: 61, gamma: 0.0007, tol: 0.00026 ##
+2024-03-21 12:30:50 - INFO - Response:  Based on the provided performance and hyperparameter configurations, a potential SVM configuration that could achieve the target performance of 0.968303 is:
+
+## C: 54, gamma: 0.0007, tol: 0.03215 ##
+2024-03-21 12:30:50 - INFO - Attempt: 1, number of proposed candidate points: 2, 
+ number of accepted candidate points: 4
+2024-03-21 12:30:53 - INFO - Adjusted alpha: 0.1 | [original alpha: 0.1], desired fval: 0.968303
+2024-03-21 12:30:53 - INFO - ====================================================================================================
+2024-03-21 12:30:53 - INFO - EXAMPLE ACQUISITION PROMPT
+2024-03-21 12:30:53 - INFO - Length of prompt templates: 2
+2024-03-21 12:30:53 - INFO - Length of query templates: 2
+2024-03-21 12:30:53 - INFO - The following are examples of performance of a SVM measured in mean squared error and the corresponding model hyperparameter configurations. The model is evaluated on a tabular regression task. The tabular dataset contains 411 samples and 14 features (0 categorical, 14 numerical). The allowable ranges for the hyperparameters are:
+- C: [1, 1000] (float, precise to 0 decimals)
+- gamma: [0.0001, 0.0010] (float, precise to 4 decimals)
+- tol: [0.00001, 0.10000] (float, precise to 5 decimals)
+Recommend a configuration that can achieve the target performance of 0.968303. Do not recommend values at the minimum or maximum of allowable range, do not recommend rounded values. Recommend values with highest possible precision, as requested by the allowed ranges. Your response must only contain the predicted configuration, in the format ## configuration ##.
+
+Performance: 0.986664
+Hyperparameter configuration: ## C: 57, gamma: 0.0004, tol: 0.00612 ##
+Performance: 1.013553
+Hyperparameter configuration: ## C: 49, gamma: 0.0007, tol: 0.00325 ##
+Performance: 1.032338
+Hyperparameter configuration: ## C: 51, gamma: 0.0008, tol: 0.00002 ##
+Performance: 1.022093
+Hyperparameter configuration: ## C: 78, gamma: 0.0006, tol: 0.05293 ##
+Performance: 0.991605
+Hyperparameter configuration: ## C: 21, gamma: 0.0008, tol: 0.07156 ##
+Performance: 0.982248
+Hyperparameter configuration: ## C: 31, gamma: 0.0005, tol: 0.00741 ##
+Performance: 0.974125
+Hyperparameter configuration: ## C: 43, gamma: 0.0003, tol: 0.00383 ##
+Performance: 0.990229
+Hyperparameter configuration: ## C: 45, gamma: 0.0005, tol: 0.00637 ##
+Performance: 0.989631
+Hyperparameter configuration: ## C: 67, gamma: 0.0004, tol: 0.00415 ##
+Performance: 0.975698
+Hyperparameter configuration: ## C: 14, gamma: 0.0006, tol: 0.00130 ##
+Performance: 0.991597
+Hyperparameter configuration: ## C: 44, gamma: 0.0005, tol: 0.00258 ##
+Performance: 1.004655
+Hyperparameter configuration: ## C: 72, gamma: 0.0005, tol: 0.01469 ##
+Performance: 0.968303
+Hyperparameter configuration:
+2024-03-21 12:30:54 - INFO - ====================================================================================================
+2024-03-21 12:30:55 - INFO - Response:  ## C: 37, gamma: 0.0005, tol: 0.00531 ##
+2024-03-21 12:30:56 - INFO - Response:  Based on the provided data, a configuration that could potentially achieve the target performance of 0.968303 is: ## C: 61, gamma: 0.0005, tol: 0.04227 ##
+2024-03-21 12:30:56 - INFO - Attempt: 0, number of proposed candidate points: 2, 
+ number of accepted candidate points: 2
+2024-03-21 12:30:57 - INFO - Response:  ## C: 63, gamma: 0.0005, tol: 0.01278 ##
+2024-03-21 12:30:58 - INFO - Response:  ## C: 63, gamma: 0.0007, tol: 0.02495 ##
+2024-03-21 12:30:58 - INFO - Attempt: 1, number of proposed candidate points: 2, 
+ number of accepted candidate points: 4
+2024-03-21 12:31:02 - INFO - Adjusted alpha: 0.1 | [original alpha: 0.1], desired fval: 0.968303
+2024-03-21 12:31:02 - INFO - ====================================================================================================
+2024-03-21 12:31:02 - INFO - EXAMPLE ACQUISITION PROMPT
+2024-03-21 12:31:02 - INFO - Length of prompt templates: 2
+2024-03-21 12:31:02 - INFO - Length of query templates: 2
+2024-03-21 12:31:02 - INFO - The following are examples of performance of a SVM measured in mean squared error and the corresponding model hyperparameter configurations. The model is evaluated on a tabular regression task. The tabular dataset contains 411 samples and 14 features (0 categorical, 14 numerical). The allowable ranges for the hyperparameters are:
+- C: [1, 1000] (float, precise to 0 decimals)
+- gamma: [0.0001, 0.0010] (float, precise to 4 decimals)
+- tol: [0.00001, 0.10000] (float, precise to 5 decimals)
+Recommend a configuration that can achieve the target performance of 0.968303. Do not recommend values at the minimum or maximum of allowable range, do not recommend rounded values. Recommend values with highest possible precision, as requested by the allowed ranges. Your response must only contain the predicted configuration, in the format ## configuration ##.
+
+Performance: 0.986664
+Hyperparameter configuration: ## C: 57, gamma: 0.0004, tol: 0.00612 ##
+Performance: 1.013553
+Hyperparameter configuration: ## C: 49, gamma: 0.0007, tol: 0.00325 ##
+Performance: 1.032338
+Hyperparameter configuration: ## C: 51, gamma: 0.0008, tol: 0.00002 ##
+Performance: 1.022093
+Hyperparameter configuration: ## C: 78, gamma: 0.0006, tol: 0.05293 ##
+Performance: 0.991605
+Hyperparameter configuration: ## C: 21, gamma: 0.0008, tol: 0.07156 ##
+Performance: 0.982248
+Hyperparameter configuration: ## C: 31, gamma: 0.0005, tol: 0.00741 ##
+Performance: 0.974125
+Hyperparameter configuration: ## C: 43, gamma: 0.0003, tol: 0.00383 ##
+Performance: 0.990229
+Hyperparameter configuration: ## C: 45, gamma: 0.0005, tol: 0.00637 ##
+Performance: 0.989631
+Hyperparameter configuration: ## C: 67, gamma: 0.0004, tol: 0.00415 ##
+Performance: 0.975698
+Hyperparameter configuration: ## C: 14, gamma: 0.0006, tol: 0.00130 ##
+Performance: 0.991597
+Hyperparameter configuration: ## C: 44, gamma: 0.0005, tol: 0.00258 ##
+Performance: 1.004655
+Hyperparameter configuration: ## C: 72, gamma: 0.0005, tol: 0.01469 ##
+Performance: 0.986417
+Hyperparameter configuration: ## C: 37, gamma: 0.0005, tol: 0.00531 ##
+Performance: 0.968303
+Hyperparameter configuration:
+2024-03-21 12:31:02 - INFO - ====================================================================================================
+2024-03-21 12:31:03 - INFO - Response:  ## C: 62, gamma: 0.0006, tol: 0.00442 ##
+2024-03-21 12:31:04 - INFO - Response:  ## C: 62, gamma: 0.0005, tol: 0.02378 ##
+2024-03-21 12:31:04 - INFO - Attempt: 0, number of proposed candidate points: 2, 
+ number of accepted candidate points: 2
+2024-03-21 12:31:05 - INFO - Response:  ## C: 34, gamma: 0.0005, tol: 0.00729 ##
+2024-03-21 12:31:06 - INFO - Response:  Based on the provided performance and allowed hyperparameter ranges, a potential SVM configuration that might achieve a mean squared error of 0.968303 is: ## C: 54, gamma: 0.0007, tol: 0.02182 ##
+2024-03-21 12:31:07 - INFO - Attempt: 1, number of proposed candidate points: 2, 
+ number of accepted candidate points: 4
+2024-03-21 12:31:11 - INFO - Adjusted alpha: 0.1 | [original alpha: 0.1], desired fval: 0.968303
+2024-03-21 12:31:11 - INFO - ====================================================================================================
+2024-03-21 12:31:11 - INFO - EXAMPLE ACQUISITION PROMPT
+2024-03-21 12:31:11 - INFO - Length of prompt templates: 2
+2024-03-21 12:31:11 - INFO - Length of query templates: 2
+2024-03-21 12:31:11 - INFO - The following are examples of performance of a SVM measured in mean squared error and the corresponding model hyperparameter configurations. The model is evaluated on a tabular regression task. The tabular dataset contains 411 samples and 14 features (0 categorical, 14 numerical). The allowable ranges for the hyperparameters are:
+- C: [1, 1000] (float, precise to 0 decimals)
+- gamma: [0.0001, 0.0010] (float, precise to 4 decimals)
+- tol: [0.00001, 0.10000] (float, precise to 5 decimals)
+Recommend a configuration that can achieve the target performance of 0.968303. Do not recommend values at the minimum or maximum of allowable range, do not recommend rounded values. Recommend values with highest possible precision, as requested by the allowed ranges. Your response must only contain the predicted configuration, in the format ## configuration ##.
+
+Performance: 0.982248
+Hyperparameter configuration: ## C: 31, gamma: 0.0005, tol: 0.00741 ##
+Performance: 0.986664
+Hyperparameter configuration: ## C: 57, gamma: 0.0004, tol: 0.00612 ##
+Performance: 1.032338
+Hyperparameter configuration: ## C: 51, gamma: 0.0008, tol: 0.00002 ##
+Performance: 1.013553
+Hyperparameter configuration: ## C: 49, gamma: 0.0007, tol: 0.00325 ##
+Performance: 0.991605
+Hyperparameter configuration: ## C: 21, gamma: 0.0008, tol: 0.07156 ##
+Performance: 1.011732
+Hyperparameter configuration: ## C: 62, gamma: 0.0006, tol: 0.00442 ##
+Performance: 0.989631
+Hyperparameter configuration: ## C: 67, gamma: 0.0004, tol: 0.00415 ##
+Performance: 0.974125
+Hyperparameter configuration: ## C: 43, gamma: 0.0003, tol: 0.00383 ##
+Performance: 0.990229
+Hyperparameter configuration: ## C: 45, gamma: 0.0005, tol: 0.00637 ##
+Performance: 1.022093
+Hyperparameter configuration: ## C: 78, gamma: 0.0006, tol: 0.05293 ##
+Performance: 0.975698
+Hyperparameter configuration: ## C: 14, gamma: 0.0006, tol: 0.00130 ##
+Performance: 0.991597
+Hyperparameter configuration: ## C: 44, gamma: 0.0005, tol: 0.00258 ##
+Performance: 1.004655
+Hyperparameter configuration: ## C: 72, gamma: 0.0005, tol: 0.01469 ##
+Performance: 0.986417
+Hyperparameter configuration: ## C: 37, gamma: 0.0005, tol: 0.00531 ##
+Performance: 0.968303
+Hyperparameter configuration:
+2024-03-21 12:31:11 - INFO - ====================================================================================================
+2024-03-21 12:31:13 - INFO - Response:  Based on the provided performance data, a configuration that can achieve the target performance of 0.968303 is not directly observable from the given examples. However, based on the trend of the performances getting closer to the target as C and gamma decrease while tol increases slightly, a potential configuration could be:
+## C: 10, gamma: 0.0005, tol: 0.0063 ##
+2024-03-21 12:31:14 - INFO - Response:  ## C: 53, gamma: 0.0007, tol: 0.00295 ##
+2024-03-21 12:31:14 - INFO - Attempt: 0, number of proposed candidate points: 2, 
+ number of accepted candidate points: 2
+2024-03-21 12:31:15 - INFO - Response:  ## C: 63, gamma: 0.0004, tol: 0.00274 ##
+2024-03-21 12:31:16 - INFO - Response:  ## C: 30, gamma: 0.0007, tol: 0.00285 ##
+2024-03-21 12:31:16 - INFO - Attempt: 1, number of proposed candidate points: 2, 
+ number of accepted candidate points: 4
+2024-03-21 12:31:20 - INFO - [LLAMBO] Query cost: 0.0048
+2024-03-21 12:31:20 - INFO - [LLAMBO] Query time: 70.3819
+2024-03-21 12:31:20 - INFO -             C     gamma       tol     score  generalization_score
+0   44.303752  0.000519  0.002577  0.991597              0.545350
+1   43.117101  0.000265  0.003833  0.974125              0.533756
+2   20.547625  0.000779  0.071557  0.991605              0.548508
+3   14.135936  0.000619  0.001305  0.975698              0.532247
+4   50.598039  0.000843  0.000019  1.032338              0.576256
+5   72.000000  0.000500  0.014690  1.004655              0.551326
+6   57.000000  0.000400  0.006120  0.986664              0.539553
+7   45.000000  0.000500  0.006370  0.990229              0.544861
+8   31.000000  0.000500  0.007410  0.982248              0.537466
+9   67.000000  0.000400  0.004150  0.989631              0.544500
+10  78.000000  0.000600  0.052930  1.022093              0.566767
+11  49.000000  0.000700  0.003250  1.013553              0.553675
+12  37.000000  0.000500  0.005310  0.986417              0.539029
+13  62.000000  0.000600  0.004420  1.011732              0.552601
+14  10.000000  0.000500  0.006300  0.975449              0.534816
+2024-03-21 12:31:20 - INFO - [LLAMBO] RUN COMPLETE, saved results to /home/local/eda13/gc29434/phd/analog/LLAMBO/exp_custom/ollama/mistral/results_discriminative/Offset_score/SVM...
+2024-03-21 12:31:20 - INFO - ================================================================================
+2024-03-21 12:31:20 - INFO - [LLAMBO] 1 evaluation runs complete! Total cost: $0.0048

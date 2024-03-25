@@ -1,0 +1,164 @@
+2024-03-23 18:38:10 - INFO - ========================================================================================================================================================================================================
+2024-03-23 18:38:10 - INFO - Evaluating Disriminative SM performance on openai Offset_score with DecisionTree and 5 observed configurations... Running 1 runs.
+2024-03-23 18:38:10 - INFO - ========================================================================================================================================================================================================
+2024-03-23 18:38:10 - INFO - Collecting configurations - this might take a while...
+2024-03-23 18:38:17 - INFO - ========================================================================================================================================================================================================
+2024-03-23 18:38:17 - INFO - Evaluating SM with seed 0...
+2024-03-23 18:38:17 - INFO - [GP] RMSE: 0.9071, R2 score: -5.9379, NLL: 8.4431, Coverage: 0.3000, MACE: 0.2890, Sharpness: 0.0957, Regret: 0.1560
+2024-03-23 18:38:18 - INFO - [SMAC] RMSE: 0.3453, R2 score: -0.0054, NLL: -0.4689, Coverage: 0.2000, MACE: 0.3150, Sharpness: 0.0324, Regret: 0.1560
+2024-03-23 18:38:18 - INFO - ****************************************************************************************************
+2024-03-23 18:38:18 - INFO - Number of all_prompt_templates: 5
+2024-03-23 18:38:18 - INFO - Number of query_examples: 10
+2024-03-23 18:38:18 - INFO - The following are hyperparameter configurations for a DecisionTree and the corresponding performance measured in mean squared error. The model is evaluated on a tabular regression task. The tabular dataset contains 411 samples and 14 features (0 categorical, 14 numerical).  Your response should only contain the predicted mean squared error in the format ## performance ##.
+Hyperparameter configuration: max_depth is 12, max_features is 0.34, min_impurity_decrease is 0, min_samples_leaf is 0.01, min_samples_split is 0.05, min_weight_fraction_leaf is 0.07
+Performance: ## 0.685153 ##
+Hyperparameter configuration: max_depth is 7, max_features is 0.24, min_impurity_decrease is 0, min_samples_leaf is 0.05, min_samples_split is 0.28, min_weight_fraction_leaf is 0.14
+Performance: ## 0.606315 ##
+Hyperparameter configuration: max_depth is 4, max_features is 0.23, min_impurity_decrease is 0, min_samples_leaf is 0.18, min_samples_split is 0.17, min_weight_fraction_leaf is 0.05
+Performance: ## 0.575433 ##
+Hyperparameter configuration: max_depth is 4, max_features is 0.83, min_impurity_decrease is 0, min_samples_leaf is 0.05, min_samples_split is 0.07, min_weight_fraction_leaf is 0.33
+Performance: ## 0.607026 ##
+Hyperparameter configuration: max_depth is 12, max_features is 0.08, min_impurity_decrease is 0, min_samples_leaf is 0.01, min_samples_split is 0.08, min_weight_fraction_leaf is 0.01
+Performance: ## 0.731415 ##
+Hyperparameter configuration: max_depth is 7, max_features is 0.02, min_impurity_decrease is 0, min_samples_leaf is 0.42, min_samples_split is 0.76, min_weight_fraction_leaf is 0.31
+Performance: 
+2024-03-23 18:38:19 - INFO - Response from OpenAI: 
+ ## 0.626988 ##
+2024-03-23 18:38:19 - INFO - Response from OpenAI: 
+ ## 0.669882 ##
+2024-03-23 18:38:19 - INFO - Response from OpenAI: 
+ ## 0.604281 ##
+2024-03-23 18:38:19 - INFO - Response from OpenAI: 
+ ## 0.646208 ##
+2024-03-23 18:38:19 - INFO - Response from OpenAI: 
+ ## 0.673928 ##
+2024-03-23 18:38:19 - INFO - Response from OpenAI: 
+ ## 0.703985 ##
+2024-03-23 18:38:19 - INFO - Response from OpenAI: 
+ ## 0.687563 ##
+2024-03-23 18:38:19 - INFO - Response from OpenAI: 
+ ## 0.754926 ##
+2024-03-23 18:38:19 - INFO - Response from OpenAI: 
+ ## 0.656722 ##
+2024-03-23 18:38:19 - INFO - Response from OpenAI: 
+ ## 0.624917 ##
+2024-03-23 18:38:19 - INFO - Response from OpenAI: 
+ ## 0.641892 ##
+2024-03-23 18:38:19 - INFO - Response from OpenAI: 
+ ## 0.746832 ##
+2024-03-23 18:38:19 - INFO - Response from OpenAI: 
+ ## 0.647852 ##
+2024-03-23 18:38:19 - INFO - Response from OpenAI: 
+ ## 0.662984 ##
+2024-03-23 18:38:19 - INFO - Response from OpenAI: 
+ ## 0.722901 ##
+2024-03-23 18:38:19 - INFO - Response from OpenAI: 
+ ## 0.628974 ##
+2024-03-23 18:38:19 - INFO - Response from OpenAI: 
+ ## 0.667488 ##
+2024-03-23 18:38:19 - INFO - Response from OpenAI: 
+ ## 0.616318 ##
+2024-03-23 18:38:19 - INFO - Response from OpenAI: 
+ ## 0.854291 ##
+2024-03-23 18:38:19 - INFO - Response from OpenAI: 
+ ## 0.665312 ##
+2024-03-23 18:38:20 - INFO - Response from OpenAI: 
+ ## 0.611248 ##
+2024-03-23 18:38:20 - INFO - Response from OpenAI: 
+ ## 0.709212 ##
+2024-03-23 18:38:20 - INFO - Response from OpenAI: 
+ ## 0.748905 ##
+2024-03-23 18:38:20 - INFO - Response from OpenAI: 
+ ## 0.722498 ##
+2024-03-23 18:38:20 - INFO - Response from OpenAI: 
+ ## 0.729951 ##
+2024-03-23 18:38:21 - INFO - Response from OpenAI: 
+ ## 0.684920 ##
+2024-03-23 18:38:21 - INFO - Response from OpenAI: 
+ ## 0.614288 ##
+2024-03-23 18:38:21 - INFO - Response from OpenAI: 
+ ## 0.662498 ##
+2024-03-23 18:38:21 - INFO - Response from OpenAI: 
+ ## 0.633192 ##
+2024-03-23 18:38:21 - INFO - Response from OpenAI: 
+ ## 0.749207 ##
+2024-03-23 18:38:21 - INFO - Response from OpenAI: 
+ ## 0.648921 ##
+2024-03-23 18:38:21 - INFO - Response from OpenAI: 
+ ## 0.693118 ##
+2024-03-23 18:38:21 - INFO - Response from OpenAI: 
+ ## 0.600872 ##
+2024-03-23 18:38:21 - INFO - Response from OpenAI: 
+ ## 0.596917 ##
+2024-03-23 18:38:21 - INFO - Response from OpenAI: 
+ ## 0.785119 ##
+2024-03-23 18:38:21 - INFO - Response from OpenAI: 
+ ## 0.696992 ##
+2024-03-23 18:38:21 - INFO - Response from OpenAI: 
+ ## 0.707118 ##
+2024-03-23 18:38:21 - INFO - Response from OpenAI: 
+ ## 0.687294 ##
+2024-03-23 18:38:21 - INFO - Response from OpenAI: 
+ ## 0.646291 ##
+2024-03-23 18:38:21 - INFO - Response from OpenAI: 
+ ## 0.712497 ##
+2024-03-23 18:38:21 - INFO - Response from OpenAI: 
+ ## 0.601782 ##
+2024-03-23 18:38:21 - INFO - Response from OpenAI: 
+ ## 0.612843 ##
+2024-03-23 18:38:21 - INFO - Response from OpenAI: 
+ ## 0.643822 ##
+2024-03-23 18:38:21 - INFO - Response from OpenAI: 
+ ## 0.701254 ##
+2024-03-23 18:38:21 - INFO - Response from OpenAI: 
+ ## 0.634214 ##
+2024-03-23 18:38:21 - INFO - Response from OpenAI: 
+ ## 0.726418 ##
+2024-03-23 18:38:21 - INFO - Response from OpenAI: 
+ ## 0.565892 ##
+2024-03-23 18:38:22 - INFO - Response from OpenAI: 
+ ## 0.673921 ##
+2024-03-23 18:38:22 - INFO - Response from OpenAI: 
+ ## 0.683419 ##
+2024-03-23 18:38:22 - INFO - Response from OpenAI: 
+ ## 0.620822 ##
+2024-03-23 18:38:22 - INFO - [LLAMBO] RMSE: 0.3987, R2 score: -0.3405, NLL: -1.0316, Coverage: 0.3000, MACE: 0.2762, Sharpness: 0.0441, Regret: 0.6481 | Cost: $0.0422, Time: 4.7251s
+2024-03-23 18:38:22 - INFO - ****************************************************************************************************
+2024-03-23 18:38:22 - INFO - Number of all_prompt_templates: 1
+2024-03-23 18:38:22 - INFO - Number of query_examples: 10
+2024-03-23 18:38:22 - INFO - The following are hyperparameter configurations for a DecisionTree and the corresponding performance measured in mean squared error. The model is evaluated on a tabular regression task. The tabular dataset contains 411 samples and 14 features (0 categorical, 14 numerical).  Your response should only contain the predicted mean squared error in the format ## performance ##.
+Hyperparameter configuration: max_depth is 12, max_features is 0.34, min_impurity_decrease is 0, min_samples_leaf is 0.01, min_samples_split is 0.05, min_weight_fraction_leaf is 0.07
+Performance: ## 0.685153 ##
+Hyperparameter configuration: max_depth is 7, max_features is 0.24, min_impurity_decrease is 0, min_samples_leaf is 0.05, min_samples_split is 0.28, min_weight_fraction_leaf is 0.14
+Performance: ## 0.606315 ##
+Hyperparameter configuration: max_depth is 4, max_features is 0.23, min_impurity_decrease is 0, min_samples_leaf is 0.18, min_samples_split is 0.17, min_weight_fraction_leaf is 0.05
+Performance: ## 0.575433 ##
+Hyperparameter configuration: max_depth is 4, max_features is 0.83, min_impurity_decrease is 0, min_samples_leaf is 0.05, min_samples_split is 0.07, min_weight_fraction_leaf is 0.33
+Performance: ## 0.607026 ##
+Hyperparameter configuration: max_depth is 12, max_features is 0.08, min_impurity_decrease is 0, min_samples_leaf is 0.01, min_samples_split is 0.08, min_weight_fraction_leaf is 0.01
+Performance: ## 0.731415 ##
+Hyperparameter configuration: max_depth is 7, max_features is 0.02, min_impurity_decrease is 0, min_samples_leaf is 0.42, min_samples_split is 0.76, min_weight_fraction_leaf is 0.31
+Performance: 
+2024-03-23 18:38:23 - INFO - Response from OpenAI: 
+ ## 0.714901 ##
+2024-03-23 18:38:23 - INFO - Response from OpenAI: 
+ ## 0.694712 ##
+2024-03-23 18:38:23 - INFO - Response from OpenAI: 
+ ## 0.649821 ##
+2024-03-23 18:38:23 - INFO - Response from OpenAI: 
+ ## 0.682319 ##
+2024-03-23 18:38:24 - INFO - Response from OpenAI: 
+ ## 0.663942 ##
+2024-03-23 18:38:24 - INFO - Response from OpenAI: 
+ ## 0.684352 ##
+2024-03-23 18:38:24 - INFO - Response from OpenAI: 
+ ## 0.612849 ##
+2024-03-23 18:38:24 - INFO - Response from OpenAI: 
+ ## 0.686129 ##
+2024-03-23 18:38:25 - INFO - Response from OpenAI: 
+ ## 0.722139 ##
+2024-03-23 18:38:26 - INFO - Response from OpenAI: 
+ ## 0.592179 ##
+2024-03-23 18:38:26 - INFO - [LLAMBO_VANILLA] RMSE: 0.4167, R2 score: -0.4642, NLL: 5.6064, Coverage: 0.0000, MACE: 0.4420, Sharpness: 0.0229, Regret: 0.6481 | Cost: $0.0084, Time: 3.6704s
+2024-03-23 18:38:26 - INFO - ========================================================================================================================================================================================================
+2024-03-23 18:38:26 - INFO - [LLAMBO] 1 evaluation runs complete! Total cost: $0.0506

@@ -1,0 +1,164 @@
+2024-03-23 18:38:28 - INFO - ========================================================================================================================================================================================================
+2024-03-23 18:38:28 - INFO - Evaluating Disriminative SM performance on ollama Offset_score with MLP_SGD and 5 observed configurations... Running 1 runs.
+2024-03-23 18:38:28 - INFO - ========================================================================================================================================================================================================
+2024-03-23 18:38:28 - INFO - Collecting configurations - this might take a while...
+2024-03-23 18:39:32 - INFO - ========================================================================================================================================================================================================
+2024-03-23 18:39:32 - INFO - Evaluating SM with seed 0...
+2024-03-23 18:39:33 - INFO - [GP] RMSE: 0.3162, R2 score: -0.1111, NLL: 6.6754, Coverage: 0.8000, MACE: 0.3306, Sharpness: 316.2278, Regret: 0.0000
+2024-03-23 18:39:33 - INFO - [SMAC] RMSE: 0.3098, R2 score: -0.0663, NLL: 79.4316, Coverage: 0.0000, MACE: 0.3827, Sharpness: 3936193916245745655589343516950528.0000, Regret: 0.0000
+2024-03-23 18:39:33 - INFO - ****************************************************************************************************
+2024-03-23 18:39:33 - INFO - Number of all_prompt_templates: 5
+2024-03-23 18:39:33 - INFO - Number of query_examples: 10
+2024-03-23 18:39:33 - INFO - The following are hyperparameter configurations for a MLP_SGD and the corresponding performance measured in mean squared error. The model is evaluated on a tabular regression task. The tabular dataset contains 411 samples and 14 features (0 categorical, 14 numerical).  Your response should only contain the predicted mean squared error in the format ## performance ##.
+Hyperparameter configuration: hidden_layer_sizes is 98, alpha is 0.00048, batch_size is 17, learning_rate_init is 0.05044, power_t is 0.2, momentum is 0.692
+Performance: ## 24950182768136961117223405372833792.000000 ##
+Hyperparameter configuration: hidden_layer_sizes is 153, alpha is 4.96843, batch_size is 186, learning_rate_init is 0.00113, power_t is 0.8, momentum is 0.008
+Performance: ## 1.227529 ##
+Hyperparameter configuration: hidden_layer_sizes is 63, alpha is 0.00096, batch_size is 10, learning_rate_init is 0.04470, power_t is 0.9, momentum is 0.018
+Performance: ## 9119098418946.316406 ##
+Hyperparameter configuration: hidden_layer_sizes is 63, alpha is 0.12390, batch_size is 225, learning_rate_init is 0.00001, power_t is 0.7, momentum is 0.017
+Performance: ## 1.223383 ##
+Hyperparameter configuration: hidden_layer_sizes is 71, alpha is 0.12077, batch_size is 145, learning_rate_init is 0.00001, power_t is 0.2, momentum is 0.031
+Performance: ## 4.060603 ##
+Hyperparameter configuration: hidden_layer_sizes is 65, alpha is 0.00004, batch_size is 55, learning_rate_init is 0.00014, power_t is 0.3, momentum is 0.056
+Performance: 
+2024-03-23 18:39:34 - INFO - Response from ollama: 
+  ## No valid performance value provided for the
+2024-03-23 18:39:34 - INFO - Response from ollama: 
+  ## 16592.
+2024-03-23 18:39:35 - INFO - Response from ollama: 
+  ## Performance: 1.21
+2024-03-23 18:39:35 - INFO - Response from ollama: 
+  ## The performance metric in the format requested
+2024-03-23 18:39:35 - INFO - Response from ollama: 
+  ## 1.1620
+2024-03-23 18:39:36 - INFO - Response from ollama: 
+  ## The performance metric in the format required
+2024-03-23 18:39:36 - INFO - Response from ollama: 
+  ## Performance: 1.12
+2024-03-23 18:39:36 - INFO - Response from ollama: 
+  ## Performance: 1.16
+2024-03-23 18:39:36 - INFO - Response from ollama: 
+  ## Performance: 1.12
+2024-03-23 18:39:37 - INFO - Response from ollama: 
+  ## Performance: 1.15
+2024-03-23 18:39:37 - INFO - Response from ollama: 
+  ## Nan ## (I cannot provide
+2024-03-23 18:39:37 - INFO - Response from ollama: 
+  ## Unable to provide the predicted mean
+2024-03-23 18:39:37 - INFO - Response from ollama: 
+  ## 612591
+2024-03-23 18:39:38 - INFO - Response from ollama: 
+  ## The performance values should be numbers and
+2024-03-23 18:39:38 - INFO - Response from ollama: 
+  ## The provided performance values are in a
+2024-03-23 18:39:39 - INFO - Response from ollama: 
+  ## Performance: 0.57
+2024-03-23 18:39:39 - INFO - Response from ollama: 
+  ## 0.6287
+2024-03-23 18:39:39 - INFO - Response from ollama: 
+  ## 0.5211
+2024-03-23 18:39:39 - INFO - Response from ollama: 
+  ## 0.6123
+2024-03-23 18:39:40 - INFO - Response from ollama: 
+  ## 0.0287
+2024-03-23 18:39:40 - INFO - Response from ollama: 
+  ## Performance: 0.02
+2024-03-23 18:39:41 - INFO - Response from ollama: 
+  ## Performance: 1.15
+2024-03-23 18:39:41 - INFO - Response from ollama: 
+  ## Performance: 1.21
+2024-03-23 18:39:41 - INFO - Response from ollama: 
+  Performance: ## 0.96
+2024-03-23 18:39:42 - INFO - Response from ollama: 
+  ## Performance: 1.21
+2024-03-23 18:39:43 - INFO - Response from ollama: 
+  ## The format for reporting the performance as
+2024-03-23 18:39:43 - INFO - Response from ollama: 
+  ## 451885
+2024-03-23 18:39:43 - INFO - Response from ollama: 
+  ## Performance: 0.00
+2024-03-23 18:39:44 - INFO - Response from ollama: 
+  ## The hyperparameter configurations and performances are
+2024-03-23 18:39:47 - INFO - Response from ollama: 
+  ## 278512
+2024-03-23 18:39:47 - INFO - Response from ollama: 
+  Hyperparameter configuration: hidden_layer
+2024-03-23 18:39:47 - INFO - Response from ollama: 
+  Performance: ## 0.87
+2024-03-23 18:39:47 - INFO - Response from ollama: 
+  Performance: ## 0.27
+2024-03-23 18:39:47 - INFO - Response from ollama: 
+  Hyperparameter configuration: hidden_layer
+2024-03-23 18:39:47 - INFO - Response from ollama: 
+  Hyperparameter configuration: hidden_layer
+2024-03-23 18:39:47 - INFO - Response from ollama: 
+  Hyperparameter configuration: hidden_layer
+2024-03-23 18:39:47 - INFO - Response from ollama: 
+  ## 836732
+2024-03-23 18:39:47 - INFO - Response from ollama: 
+  ## Performance: 4.03
+2024-03-23 18:39:47 - INFO - Response from ollama: 
+  ## Performance: 1158
+2024-03-23 18:39:47 - INFO - Response from ollama: 
+  ## The provided hyperparameter configurations and corresponding
+2024-03-23 18:39:48 - INFO - Response from ollama: 
+  ## Performance: 0.38
+2024-03-23 18:39:48 - INFO - Response from ollama: 
+  ## Performance: 0.54
+2024-03-23 18:39:48 - INFO - Response from ollama: 
+  Performance: ## 0.45
+2024-03-23 18:39:48 - INFO - Response from ollama: 
+  ## Performance: 0.57
+2024-03-23 18:39:49 - INFO - Response from ollama: 
+  ## 0.8127
+2024-03-23 18:39:49 - INFO - Response from ollama: 
+  ## 1.1957
+2024-03-23 18:39:49 - INFO - Response from ollama: 
+  ## 0.3115
+2024-03-23 18:39:50 - INFO - Response from ollama: 
+  ## The provided hyperparameter configurations seem to
+2024-03-23 18:39:50 - INFO - Response from ollama: 
+  ## 0.6481
+2024-03-23 18:39:51 - INFO - Response from ollama: 
+  ## Performance: 1.22
+2024-03-23 18:39:51 - INFO - [LLAMBO] RMSE: 0.3162, R2 score: -0.1111, NLL: 5.3503, Coverage: 0.1000, MACE: 0.4160, Sharpness: 0.5855, Regret: 0.0000 | Cost: $0.0014, Time: 17.7892s
+2024-03-23 18:39:51 - INFO - ****************************************************************************************************
+2024-03-23 18:39:51 - INFO - Number of all_prompt_templates: 1
+2024-03-23 18:39:51 - INFO - Number of query_examples: 10
+2024-03-23 18:39:51 - INFO - The following are hyperparameter configurations for a MLP_SGD and the corresponding performance measured in mean squared error. The model is evaluated on a tabular regression task. The tabular dataset contains 411 samples and 14 features (0 categorical, 14 numerical).  Your response should only contain the predicted mean squared error in the format ## performance ##.
+Hyperparameter configuration: hidden_layer_sizes is 98, alpha is 0.00048, batch_size is 17, learning_rate_init is 0.05044, power_t is 0.2, momentum is 0.692
+Performance: ## 24950182768136961117223405372833792.000000 ##
+Hyperparameter configuration: hidden_layer_sizes is 153, alpha is 4.96843, batch_size is 186, learning_rate_init is 0.00113, power_t is 0.8, momentum is 0.008
+Performance: ## 1.227529 ##
+Hyperparameter configuration: hidden_layer_sizes is 63, alpha is 0.00096, batch_size is 10, learning_rate_init is 0.04470, power_t is 0.9, momentum is 0.018
+Performance: ## 9119098418946.316406 ##
+Hyperparameter configuration: hidden_layer_sizes is 63, alpha is 0.12390, batch_size is 225, learning_rate_init is 0.00001, power_t is 0.7, momentum is 0.017
+Performance: ## 1.223383 ##
+Hyperparameter configuration: hidden_layer_sizes is 71, alpha is 0.12077, batch_size is 145, learning_rate_init is 0.00001, power_t is 0.2, momentum is 0.031
+Performance: ## 4.060603 ##
+Hyperparameter configuration: hidden_layer_sizes is 65, alpha is 0.00004, batch_size is 55, learning_rate_init is 0.00014, power_t is 0.3, momentum is 0.056
+Performance: 
+2024-03-23 18:39:51 - INFO - Response from ollama: 
+  ## The format for the response should only
+2024-03-23 18:39:52 - INFO - Response from ollama: 
+  ## Performance: 1.22
+2024-03-23 18:39:52 - INFO - Response from ollama: 
+  ## 1.1861
+2024-03-23 18:39:52 - INFO - Response from ollama: 
+  ## Performance: 1.22
+2024-03-23 18:39:52 - INFO - Response from ollama: 
+  ## The provided hyperparameter configurations do not
+2024-03-23 18:39:53 - INFO - Response from ollama: 
+  ## Performance: 1.21
+2024-03-23 18:39:53 - INFO - Response from ollama: 
+  ## 3.1228
+2024-03-23 18:39:53 - INFO - Response from ollama: 
+  ## Performance: 1.21
+2024-03-23 18:39:54 - INFO - Response from ollama: 
+  ## The provided hyperparameter configurations do not
+2024-03-23 18:39:54 - INFO - Response from ollama: 
+  ## 653815
+2024-03-23 18:39:54 - INFO - [LLAMBO_VANILLA] RMSE: 0.3162, R2 score: -0.1111, NLL: nan, Coverage: 0.0000, MACE: 0.4900, Sharpness: 0.0000, Regret: 0.0000 | Cost: $0.0003, Time: 3.2067s
+2024-03-23 18:39:54 - INFO - ========================================================================================================================================================================================================
+2024-03-23 18:39:54 - INFO - [LLAMBO] 1 evaluation runs complete! Total cost: $0.0017

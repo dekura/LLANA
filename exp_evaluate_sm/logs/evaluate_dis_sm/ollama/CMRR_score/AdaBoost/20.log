@@ -1,0 +1,224 @@
+2024-03-23 18:15:06 - INFO - ========================================================================================================================================================================================================
+2024-03-23 18:15:06 - INFO - Evaluating Disriminative SM performance on ollama CMRR_score with AdaBoost and 20 observed configurations... Running 1 runs.
+2024-03-23 18:15:06 - INFO - ========================================================================================================================================================================================================
+2024-03-23 18:15:06 - INFO - Collecting configurations - this might take a while...
+2024-03-23 18:15:37 - INFO - ========================================================================================================================================================================================================
+2024-03-23 18:15:37 - INFO - Evaluating SM with seed 0...
+2024-03-23 18:15:38 - INFO - [GP] RMSE: 1.1924, R2 score: -14.8343, NLL: 11.9512, Coverage: 0.8000, MACE: 0.2406, Sharpness: 9.6152, Regret: 0.0001
+2024-03-23 18:15:39 - INFO - [SMAC] RMSE: 0.7981, R2 score: -6.0926, NLL: 3.8607, Coverage: 0.9000, MACE: 0.1724, Sharpness: 11.8752, Regret: 0.0040
+2024-03-23 18:15:39 - INFO - ****************************************************************************************************
+2024-03-23 18:15:39 - INFO - Number of all_prompt_templates: 5
+2024-03-23 18:15:39 - INFO - Number of query_examples: 10
+2024-03-23 18:15:39 - INFO - The following are hyperparameter configurations for a AdaBoost and the corresponding performance measured in mean squared error. The model is evaluated on a tabular regression task. The tabular dataset contains 411 samples and 14 features (0 categorical, 14 numerical).  Your response should only contain the predicted mean squared error in the format ## performance ##.
+Hyperparameter configuration: n_estimators is 79, learning_rate is 0.0456
+Performance: ## 0.431304 ##
+Hyperparameter configuration: n_estimators is 70, learning_rate is 2.6781
+Performance: ## 0.610333 ##
+Hyperparameter configuration: n_estimators is 68, learning_rate is 7.7826
+Performance: ## 15.486919 ##
+Hyperparameter configuration: n_estimators is 11, learning_rate is 3.4540
+Performance: ## 3.249239 ##
+Hyperparameter configuration: n_estimators is 67, learning_rate is 6.1192
+Performance: ## 12.389032 ##
+Hyperparameter configuration: n_estimators is 69, learning_rate is 3.8520
+Performance: ## 1.674078 ##
+Hyperparameter configuration: n_estimators is 93, learning_rate is 3.3827
+Performance: ## 1.641082 ##
+Hyperparameter configuration: n_estimators is 41, learning_rate is 4.2065
+Performance: ## 10.629063 ##
+Hyperparameter configuration: n_estimators is 73, learning_rate is 1.8258
+Performance: ## 0.668605 ##
+Hyperparameter configuration: n_estimators is 22, learning_rate is 8.0690
+Performance: ## 56.723997 ##
+Hyperparameter configuration: n_estimators is 36, learning_rate is 5.6421
+Performance: ## 45.735544 ##
+Hyperparameter configuration: n_estimators is 71, learning_rate is 2.1181
+Performance: ## 0.579046 ##
+Hyperparameter configuration: n_estimators is 72, learning_rate is 0.4675
+Performance: ## 0.563648 ##
+Hyperparameter configuration: n_estimators is 17, learning_rate is 1.9109
+Performance: ## 0.611610 ##
+Hyperparameter configuration: n_estimators is 72, learning_rate is 3.6337
+Performance: ## 3.734722 ##
+Hyperparameter configuration: n_estimators is 84, learning_rate is 3.9744
+Performance: ## 0.772524 ##
+Hyperparameter configuration: n_estimators is 31, learning_rate is 3.8121
+Performance: ## 4.026524 ##
+Hyperparameter configuration: n_estimators is 25, learning_rate is 3.4805
+Performance: ## 6.098286 ##
+Hyperparameter configuration: n_estimators is 61, learning_rate is 2.0769
+Performance: ## 0.583101 ##
+Hyperparameter configuration: n_estimators is 62, learning_rate is 0.3400
+Performance: ## 0.463357 ##
+Hyperparameter configuration: n_estimators is 38, learning_rate is 0.7979
+Performance: 
+2024-03-23 18:15:40 - INFO - Response from ollama: 
+  ## The provided hyperparameter configurations and their
+2024-03-23 18:15:40 - INFO - Response from ollama: 
+  ## 0.4313
+2024-03-23 18:15:40 - INFO - Response from ollama: 
+  Based on the given hyperparameter configurations and
+2024-03-23 18:15:41 - INFO - Response from ollama: 
+  ## The mean squared error performance for
+2024-03-23 18:15:41 - INFO - Response from ollama: 
+  ## The provided hyperparameter configurations and performances
+2024-03-23 18:15:42 - INFO - Response from ollama: 
+  ## The provided hyperparameter configurations and performances
+2024-03-23 18:15:42 - INFO - Response from ollama: 
+  ## Performance: 0.43
+2024-03-23 18:15:42 - INFO - Response from ollama: 
+  ## The mean squared error values are
+2024-03-23 18:15:42 - INFO - Response from ollama: 
+  ## The mean squared error values are
+2024-03-23 18:15:43 - INFO - Response from ollama: 
+  ## The predicted mean squared error for
+2024-03-23 18:15:43 - INFO - Response from ollama: 
+  ## The mean squared error values are
+2024-03-23 18:15:44 - INFO - Response from ollama: 
+  ## The mean squared error values are
+2024-03-23 18:15:44 - INFO - Response from ollama: 
+  ## 0.4633
+2024-03-23 18:15:44 - INFO - Response from ollama: 
+  ## Performance: 0.46
+2024-03-23 18:15:44 - INFO - Response from ollama: 
+  ## 0.4633
+2024-03-23 18:15:45 - INFO - Response from ollama: 
+  Based on the provided hyperparameter configurations and
+2024-03-23 18:15:45 - INFO - Response from ollama: 
+  ## The mean squared error performance for
+2024-03-23 18:15:46 - INFO - Response from ollama: 
+  ## The mean squared error values are
+2024-03-23 18:15:46 - INFO - Response from ollama: 
+  Performance: ## 0.56
+2024-03-23 18:15:46 - INFO - Response from ollama: 
+  Based on the given hyperparameter configurations and
+2024-03-23 18:15:47 - INFO - Response from ollama: 
+  Performance: ## 1.32
+2024-03-23 18:15:47 - INFO - Response from ollama: 
+  Based on the provided hyperparameter configurations and
+2024-03-23 18:15:48 - INFO - Response from ollama: 
+  ## Performance: 0.51
+2024-03-23 18:15:48 - INFO - Response from ollama: 
+  ## Performance: 0.61
+2024-03-23 18:15:48 - INFO - Response from ollama: 
+  ## The mean squared error values are
+2024-03-23 18:15:49 - INFO - Response from ollama: 
+  Based on the provided hyperparameter configurations and
+2024-03-23 18:15:50 - INFO - Response from ollama: 
+  Based on the given hyperparameter configurations and
+2024-03-23 18:15:50 - INFO - Response from ollama: 
+  Based on the given hyperparameter configurations and
+2024-03-23 18:15:51 - INFO - Response from ollama: 
+  Based on the given hyperparameter configurations and
+2024-03-23 18:15:51 - INFO - Response from ollama: 
+  ## 0.4313
+2024-03-23 18:15:51 - INFO - Response from ollama: 
+  Performance: ## 1.13
+2024-03-23 18:15:52 - INFO - Response from ollama: 
+  ## Performance: 0.43
+2024-03-23 18:15:52 - INFO - Response from ollama: 
+  ## 0.4313
+2024-03-23 18:15:53 - INFO - Response from ollama: 
+  ## 0.4313
+2024-03-23 18:15:53 - INFO - Response from ollama: 
+  ## The mean squared error values are
+2024-03-23 18:15:53 - INFO - Response from ollama: 
+  ## The mean squared errors are as
+2024-03-23 18:15:54 - INFO - Response from ollama: 
+  ## 0.5316
+2024-03-23 18:15:54 - INFO - Response from ollama: 
+  Based on the given hyperparameter configurations and
+2024-03-23 18:15:55 - INFO - Response from ollama: 
+  ## The provided hyperparameter configurations and corresponding
+2024-03-23 18:15:55 - INFO - Response from ollama: 
+  Based on the given hyperparameter configurations and
+2024-03-23 18:15:55 - INFO - Response from ollama: 
+  ## Performance: 0.46
+2024-03-23 18:15:56 - INFO - Response from ollama: 
+  ## 0.4165
+2024-03-23 18:15:56 - INFO - Response from ollama: 
+  ## No performance value provided for this hyper
+2024-03-23 18:15:57 - INFO - Response from ollama: 
+  ## 0.4313
+2024-03-23 18:15:57 - INFO - Response from ollama: 
+  ## The mean squared error values provided
+2024-03-23 18:15:58 - INFO - Response from ollama: 
+  ## The provided hyperparameter configurations and corresponding
+2024-03-23 18:15:58 - INFO - Response from ollama: 
+  Performance: ## 0.01
+2024-03-23 18:15:59 - INFO - Response from ollama: 
+  Performance: ## 0.00
+2024-03-23 18:15:59 - INFO - Response from ollama: 
+  Based on the provided hyperparameter configurations and
+2024-03-23 18:15:59 - INFO - Response from ollama: 
+  Based on the provided hyperparameter configurations and
+2024-03-23 18:15:59 - INFO - [LLAMBO] RMSE: 0.3279, R2 score: -0.1976, NLL: 9.7328, Coverage: 0.4000, MACE: 0.2350, Sharpness: 0.2109, Regret: 0.0000 | Cost: $0.0014, Time: 20.6628s
+2024-03-23 18:15:59 - INFO - ****************************************************************************************************
+2024-03-23 18:15:59 - INFO - Number of all_prompt_templates: 1
+2024-03-23 18:15:59 - INFO - Number of query_examples: 10
+2024-03-23 18:15:59 - INFO - The following are hyperparameter configurations for a AdaBoost and the corresponding performance measured in mean squared error. The model is evaluated on a tabular regression task. The tabular dataset contains 411 samples and 14 features (0 categorical, 14 numerical).  Your response should only contain the predicted mean squared error in the format ## performance ##.
+Hyperparameter configuration: n_estimators is 79, learning_rate is 0.0456
+Performance: ## 0.431304 ##
+Hyperparameter configuration: n_estimators is 70, learning_rate is 2.6781
+Performance: ## 0.610333 ##
+Hyperparameter configuration: n_estimators is 68, learning_rate is 7.7826
+Performance: ## 15.486919 ##
+Hyperparameter configuration: n_estimators is 11, learning_rate is 3.4540
+Performance: ## 3.249239 ##
+Hyperparameter configuration: n_estimators is 67, learning_rate is 6.1192
+Performance: ## 12.389032 ##
+Hyperparameter configuration: n_estimators is 69, learning_rate is 3.8520
+Performance: ## 1.674078 ##
+Hyperparameter configuration: n_estimators is 93, learning_rate is 3.3827
+Performance: ## 1.641082 ##
+Hyperparameter configuration: n_estimators is 41, learning_rate is 4.2065
+Performance: ## 10.629063 ##
+Hyperparameter configuration: n_estimators is 73, learning_rate is 1.8258
+Performance: ## 0.668605 ##
+Hyperparameter configuration: n_estimators is 22, learning_rate is 8.0690
+Performance: ## 56.723997 ##
+Hyperparameter configuration: n_estimators is 36, learning_rate is 5.6421
+Performance: ## 45.735544 ##
+Hyperparameter configuration: n_estimators is 71, learning_rate is 2.1181
+Performance: ## 0.579046 ##
+Hyperparameter configuration: n_estimators is 72, learning_rate is 0.4675
+Performance: ## 0.563648 ##
+Hyperparameter configuration: n_estimators is 17, learning_rate is 1.9109
+Performance: ## 0.611610 ##
+Hyperparameter configuration: n_estimators is 72, learning_rate is 3.6337
+Performance: ## 3.734722 ##
+Hyperparameter configuration: n_estimators is 84, learning_rate is 3.9744
+Performance: ## 0.772524 ##
+Hyperparameter configuration: n_estimators is 31, learning_rate is 3.8121
+Performance: ## 4.026524 ##
+Hyperparameter configuration: n_estimators is 25, learning_rate is 3.4805
+Performance: ## 6.098286 ##
+Hyperparameter configuration: n_estimators is 61, learning_rate is 2.0769
+Performance: ## 0.583101 ##
+Hyperparameter configuration: n_estimators is 62, learning_rate is 0.3400
+Performance: ## 0.463357 ##
+Hyperparameter configuration: n_estimators is 38, learning_rate is 0.7979
+Performance: 
+2024-03-23 18:16:00 - INFO - Response from ollama: 
+  Based on the given hyperparameter configurations and
+2024-03-23 18:16:01 - INFO - Response from ollama: 
+  ## The mean squared error for the
+2024-03-23 18:16:01 - INFO - Response from ollama: 
+  ## The mean squared error values are
+2024-03-23 18:16:01 - INFO - Response from ollama: 
+  ## 0.4313
+2024-03-23 18:16:01 - INFO - Response from ollama: 
+  ## Performance: 0.43
+2024-03-23 18:16:02 - INFO - Response from ollama: 
+  ## Performance: 0.43
+2024-03-23 18:16:02 - INFO - Response from ollama: 
+  ## 0.4313
+2024-03-23 18:16:02 - INFO - Response from ollama: 
+  ## The provided hyperparameter configurations and corresponding
+2024-03-23 18:16:03 - INFO - Response from ollama: 
+  ## Performance: 0.43
+2024-03-23 18:16:03 - INFO - Response from ollama: 
+  Based on the given hyperparameter configurations and
+2024-03-23 18:16:03 - INFO - [LLAMBO_VANILLA] RMSE: 0.3328, R2 score: -0.2333, NLL: nan, Coverage: 0.0000, MACE: 0.4900, Sharpness: 0.0000, Regret: 0.0000 | Cost: $0.0003, Time: 3.5343s
+2024-03-23 18:16:03 - INFO - ========================================================================================================================================================================================================
+2024-03-23 18:16:03 - INFO - [LLAMBO] 1 evaluation runs complete! Total cost: $0.0017

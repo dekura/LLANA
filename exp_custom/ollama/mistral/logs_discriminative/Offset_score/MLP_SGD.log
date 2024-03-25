@@ -1,0 +1,503 @@
+2024-03-21 12:33:30 - INFO - ================================================================================
+2024-03-21 12:33:30 - INFO - Executing LLAMBO (discriminative | ollama | mistral | top_pct: None) to tune MLP_SGD on Offset_score with seed 1 / 1...
+2024-03-21 12:33:30 - INFO - Task context: {'model': 'MLP_SGD', 'task': 'regression', 'tot_feats': 14, 'cat_feats': 0, 'num_feats': 14, 'n_classes': 406, 'metric': 'neg_mean_squared_error', 'lower_is_better': True, 'num_samples': 411, 'hyperparameter_constraints': {'hidden_layer_sizes': ['int', 'linear', [50, 200]], 'alpha': ['float', 'log', [1e-05, 10.0]], 'batch_size': ['int', 'linear', [10, 250]], 'learning_rate_init': ['float', 'log', [1e-05, 0.1]], 'power_t': ['float', 'logit', [0.1, 0.9]], 'momentum': ['float', 'logit', [0.001, 0.999]]}}
+2024-03-21 12:33:30 - INFO - ================================================================================
+2024-03-21 12:33:30 - INFO - [Search settings]: 
+	n_candidates: 10, n_templates: 2, n_gens: 10, 
+	alpha: 0.1, n_initial_samples: 5, n_trials: 10, 
+	using warping: False, ablation: None, shuffle_features: False
+2024-03-21 12:33:30 - INFO - [Task]: 
+	task type: regression, sm: discriminative, lower is better: True
+2024-03-21 12:33:30 - INFO - Hyperparameter search space: 
+2024-03-21 12:33:30 - INFO - ================================================================================
+2024-03-21 12:33:32 - INFO - Adjusted alpha: 0.1 | [original alpha: 0.1], desired fval: 0.896830
+2024-03-21 12:33:32 - INFO - ====================================================================================================
+2024-03-21 12:33:32 - INFO - EXAMPLE ACQUISITION PROMPT
+2024-03-21 12:33:32 - INFO - Length of prompt templates: 2
+2024-03-21 12:33:32 - INFO - Length of query templates: 2
+2024-03-21 12:33:32 - INFO - The following are examples of performance of a MLP_SGD measured in mean squared error and the corresponding model hyperparameter configurations. The model is evaluated on a tabular regression task. The tabular dataset contains 411 samples and 14 features (0 categorical, 14 numerical). The allowable ranges for the hyperparameters are:
+- hidden_layer_sizes: [50, 200] (int)
+- alpha: [0.00001, 10.00000] (float, precise to 5 decimals)
+- batch_size: [10, 250] (int)
+- learning_rate_init: [0.00001, 0.10000] (float, precise to 5 decimals)
+- power_t: [0.1, 0.9] (float, precise to 1 decimals)
+- momentum: [0.001, 0.999] (float, precise to 3 decimals)
+Recommend a configuration that can achieve the target performance of 0.896830. Do not recommend values at the minimum or maximum of allowable range, do not recommend rounded values. Recommend values with highest possible precision, as requested by the allowed ranges. Your response must only contain the predicted configuration, in the format ## configuration ##.
+
+Performance: 0.965625
+Hyperparameter configuration: ## hidden_layer_sizes: 109, alpha: 1.03866, batch_size: 91, learning_rate_init: 0.00391, power_t: 0.2, momentum: 0.743 ##
+Performance: 1.086496
+Hyperparameter configuration: ## hidden_layer_sizes: 139, alpha: 1.16304, batch_size: 216, learning_rate_init: 0.02449, power_t: 0.4, momentum: 0.014 ##
+Performance: 1.653578
+Hyperparameter configuration: ## hidden_layer_sizes: 95, alpha: 0.00002, batch_size: 75, learning_rate_init: 0.00081, power_t: 0.6, momentum: 0.028 ##
+Performance: 1.104924
+Hyperparameter configuration: ## hidden_layer_sizes: 71, alpha: 1.66159, batch_size: 124, learning_rate_init: 0.01598, power_t: 0.3, momentum: 0.109 ##
+Performance: 0.999934
+Hyperparameter configuration: ## hidden_layer_sizes: 158, alpha: 0.03105, batch_size: 139, learning_rate_init: 0.01083, power_t: 0.1, momentum: 0.026 ##
+Performance: 0.896830
+Hyperparameter configuration:
+2024-03-21 12:33:32 - INFO - ====================================================================================================
+2024-03-21 12:33:34 - INFO - Response:  hidden_layer_sizes: 113, alpha: 0.85341, batch_size: 173, learning_rate_init: 0.00526, power_t: 0.5, momentum: 0.157
+2024-03-21 12:33:35 - INFO - Response:  ## hidden_layer_sizes: 124, alpha: 0.72581, batch_size: 188, learning_rate_init: 0.00653, power_t: 0.5, momentum: 0.432 ##
+2024-03-21 12:33:35 - INFO - Attempt: 0, number of proposed candidate points: 2, 
+ number of accepted candidate points: 2
+2024-03-21 12:33:36 - INFO - Response:  ## hidden\_layer\_sizes: 125, alpha: 0.71276, batch\_size: 174, learning\_rate\_init: 0.00613, power\_t: 0.5, momentum: 0.857 ##
+2024-03-21 12:33:37 - INFO - Response:  hidden_layer_sizes: 127, alpha: 0.04751, batch_size: 186, learning_rate_init: 0.00789, power_t: 0.7, momentum: 0.321
+2024-03-21 12:33:37 - INFO - Fixed response, remove \:  ## hidden_layer_sizes: 125, alpha: 0.71276, batch_size: 174, learning_rate_init: 0.00613, power_t: 0.5, momentum: 0.857 ##
+2024-03-21 12:33:37 - INFO - Attempt: 1, number of proposed candidate points: 2, 
+ number of accepted candidate points: 4
+2024-03-21 12:33:41 - INFO - Adjusted alpha: 0.1 | [original alpha: 0.1], desired fval: 0.896830
+2024-03-21 12:33:41 - INFO - ====================================================================================================
+2024-03-21 12:33:41 - INFO - EXAMPLE ACQUISITION PROMPT
+2024-03-21 12:33:41 - INFO - Length of prompt templates: 2
+2024-03-21 12:33:41 - INFO - Length of query templates: 2
+2024-03-21 12:33:41 - INFO - The following are examples of performance of a MLP_SGD measured in mean squared error and the corresponding model hyperparameter configurations. The model is evaluated on a tabular regression task. The tabular dataset contains 411 samples and 14 features (0 categorical, 14 numerical). The allowable ranges for the hyperparameters are:
+- hidden_layer_sizes: [50, 200] (int)
+- alpha: [0.00001, 10.00000] (float, precise to 5 decimals)
+- batch_size: [10, 250] (int)
+- learning_rate_init: [0.00001, 0.10000] (float, precise to 5 decimals)
+- power_t: [0.1, 0.9] (float, precise to 1 decimals)
+- momentum: [0.001, 0.999] (float, precise to 3 decimals)
+Recommend a configuration that can achieve the target performance of 0.896830. Do not recommend values at the minimum or maximum of allowable range, do not recommend rounded values. Recommend values with highest possible precision, as requested by the allowed ranges. Your response must only contain the predicted configuration, in the format ## configuration ##.
+
+Performance: 1.120770
+Hyperparameter configuration: ## hidden_layer_sizes: 113, alpha: 0.85341, batch_size: 173, learning_rate_init: 0.00526, power_t: 0.5, momentum: 0.157 ##
+Performance: 0.965625
+Hyperparameter configuration: ## hidden_layer_sizes: 109, alpha: 1.03866, batch_size: 91, learning_rate_init: 0.00391, power_t: 0.2, momentum: 0.743 ##
+Performance: 1.653578
+Hyperparameter configuration: ## hidden_layer_sizes: 95, alpha: 0.00002, batch_size: 75, learning_rate_init: 0.00081, power_t: 0.6, momentum: 0.028 ##
+Performance: 1.104924
+Hyperparameter configuration: ## hidden_layer_sizes: 71, alpha: 1.66159, batch_size: 124, learning_rate_init: 0.01598, power_t: 0.3, momentum: 0.109 ##
+Performance: 1.086496
+Hyperparameter configuration: ## hidden_layer_sizes: 139, alpha: 1.16304, batch_size: 216, learning_rate_init: 0.02449, power_t: 0.4, momentum: 0.014 ##
+Performance: 0.999934
+Hyperparameter configuration: ## hidden_layer_sizes: 158, alpha: 0.03105, batch_size: 139, learning_rate_init: 0.01083, power_t: 0.1, momentum: 0.026 ##
+Performance: 0.896830
+Hyperparameter configuration:
+2024-03-21 12:33:41 - INFO - ====================================================================================================
+2024-03-21 12:33:43 - INFO - Response:  ## hidden\_layer\_sizes: 147, alpha: 0.52115, batch\_size: 131, learning\_rate\_init: 0.00789, power\_t: 0.6, momentum: 0.271 ##
+2024-03-21 12:33:44 - INFO - Response:  ## hidden_layer_sizes: 131, alpha: 0.04321, batch_size: 192, learning_rate_init: 0.00512, power_t: 0.7, momentum: 0.326 ##
+2024-03-21 12:33:44 - INFO - Fixed response, remove \:  ## hidden_layer_sizes: 147, alpha: 0.52115, batch_size: 131, learning_rate_init: 0.00789, power_t: 0.6, momentum: 0.271 ##
+2024-03-21 12:33:44 - INFO - Attempt: 0, number of proposed candidate points: 2, 
+ number of accepted candidate points: 2
+2024-03-21 12:33:46 - INFO - Response:  ## hidden\_layer\_sizes: 131, alpha: 0.67582, batch\_size: 224, learning\_rate\_init: 0.00776, power\_t: 0.5, momentum: 0.389 ##
+2024-03-21 12:33:47 - INFO - Response:  ## hidden\_layer\_sizes: 123, alpha: 0.43132, batch\_size: 194, learning\_rate\_init: 0.00786, power\_t: 0.5, momentum: 0.225 ##
+2024-03-21 12:33:47 - INFO - Fixed response, remove \:  ## hidden_layer_sizes: 131, alpha: 0.67582, batch_size: 224, learning_rate_init: 0.00776, power_t: 0.5, momentum: 0.389 ##
+2024-03-21 12:33:47 - INFO - Fixed response, remove \:  ## hidden_layer_sizes: 123, alpha: 0.43132, batch_size: 194, learning_rate_init: 0.00786, power_t: 0.5, momentum: 0.225 ##
+2024-03-21 12:33:47 - INFO - Attempt: 1, number of proposed candidate points: 2, 
+ number of accepted candidate points: 4
+2024-03-21 12:33:51 - INFO - Adjusted alpha: 0.1 | [original alpha: 0.1], desired fval: 0.896830
+2024-03-21 12:33:51 - INFO - ====================================================================================================
+2024-03-21 12:33:51 - INFO - EXAMPLE ACQUISITION PROMPT
+2024-03-21 12:33:51 - INFO - Length of prompt templates: 2
+2024-03-21 12:33:51 - INFO - Length of query templates: 2
+2024-03-21 12:33:51 - INFO - The following are examples of performance of a MLP_SGD measured in mean squared error and the corresponding model hyperparameter configurations. The model is evaluated on a tabular regression task. The tabular dataset contains 411 samples and 14 features (0 categorical, 14 numerical). The allowable ranges for the hyperparameters are:
+- hidden_layer_sizes: [50, 200] (int)
+- alpha: [0.00001, 10.00000] (float, precise to 5 decimals)
+- batch_size: [10, 250] (int)
+- learning_rate_init: [0.00001, 0.10000] (float, precise to 5 decimals)
+- power_t: [0.1, 0.9] (float, precise to 1 decimals)
+- momentum: [0.001, 0.999] (float, precise to 3 decimals)
+Recommend a configuration that can achieve the target performance of 0.896830. Do not recommend values at the minimum or maximum of allowable range, do not recommend rounded values. Recommend values with highest possible precision, as requested by the allowed ranges. Your response must only contain the predicted configuration, in the format ## configuration ##.
+
+Performance: 1.062222
+Hyperparameter configuration: ## hidden_layer_sizes: 147, alpha: 0.52115, batch_size: 131, learning_rate_init: 0.00789, power_t: 0.6, momentum: 0.271 ##
+Performance: 0.965625
+Hyperparameter configuration: ## hidden_layer_sizes: 109, alpha: 1.03866, batch_size: 91, learning_rate_init: 0.00391, power_t: 0.2, momentum: 0.743 ##
+Performance: 1.653578
+Hyperparameter configuration: ## hidden_layer_sizes: 95, alpha: 0.00002, batch_size: 75, learning_rate_init: 0.00081, power_t: 0.6, momentum: 0.028 ##
+Performance: 1.104924
+Hyperparameter configuration: ## hidden_layer_sizes: 71, alpha: 1.66159, batch_size: 124, learning_rate_init: 0.01598, power_t: 0.3, momentum: 0.109 ##
+Performance: 1.086496
+Hyperparameter configuration: ## hidden_layer_sizes: 139, alpha: 1.16304, batch_size: 216, learning_rate_init: 0.02449, power_t: 0.4, momentum: 0.014 ##
+Performance: 1.120770
+Hyperparameter configuration: ## hidden_layer_sizes: 113, alpha: 0.85341, batch_size: 173, learning_rate_init: 0.00526, power_t: 0.5, momentum: 0.157 ##
+Performance: 0.999934
+Hyperparameter configuration: ## hidden_layer_sizes: 158, alpha: 0.03105, batch_size: 139, learning_rate_init: 0.01083, power_t: 0.1, momentum: 0.026 ##
+Performance: 0.896830
+Hyperparameter configuration:
+2024-03-21 12:33:51 - INFO - ====================================================================================================
+2024-03-21 12:33:52 - INFO - Response:  hidden\_layer\_sizes: 112, alpha: 0.74598, batch\_size: 186, learning\_rate\_init: 0.00532, power\_t: 0.5, momentum: 0.422
+2024-03-21 12:33:54 - INFO - Response:  ## hidden_layer_sizes: 124, alpha: 0.75198, batch_size: 187, learning_rate_init: 0.00657, power_t: 0.5, momentum: 0.385 ##
+2024-03-21 12:33:54 - INFO - Fixed response, remove \:  hidden_layer_sizes: 112, alpha: 0.74598, batch_size: 186, learning_rate_init: 0.00532, power_t: 0.5, momentum: 0.422
+2024-03-21 12:33:54 - INFO - Attempt: 0, number of proposed candidate points: 2, 
+ number of accepted candidate points: 2
+2024-03-21 12:33:55 - INFO - Response:  ## hidden\_layer\_sizes: 124, alpha: 0.75867, batch\_size: 192, learning\_rate\_init: 0.00612, power\_t: 0.7, momentum: 0.321 ##
+2024-03-21 12:33:56 - INFO - Response:  ## hidden\_layer\_sizes: 114, alpha: 0.93247, batch\_size: 148, learning\_rate\_init: 0.00562, power\_t: 0.7, momentum: 0.135 ##
+2024-03-21 12:33:56 - INFO - Fixed response, remove \:  ## hidden_layer_sizes: 124, alpha: 0.75867, batch_size: 192, learning_rate_init: 0.00612, power_t: 0.7, momentum: 0.321 ##
+2024-03-21 12:33:56 - INFO - Fixed response, remove \:  ## hidden_layer_sizes: 114, alpha: 0.93247, batch_size: 148, learning_rate_init: 0.00562, power_t: 0.7, momentum: 0.135 ##
+2024-03-21 12:33:56 - INFO - Attempt: 1, number of proposed candidate points: 2, 
+ number of accepted candidate points: 4
+2024-03-21 12:33:59 - INFO - Adjusted alpha: 0.1 | [original alpha: 0.1], desired fval: 0.896830
+2024-03-21 12:33:59 - INFO - ====================================================================================================
+2024-03-21 12:33:59 - INFO - EXAMPLE ACQUISITION PROMPT
+2024-03-21 12:33:59 - INFO - Length of prompt templates: 2
+2024-03-21 12:33:59 - INFO - Length of query templates: 2
+2024-03-21 12:33:59 - INFO - The following are examples of performance of a MLP_SGD measured in mean squared error and the corresponding model hyperparameter configurations. The model is evaluated on a tabular regression task. The tabular dataset contains 411 samples and 14 features (0 categorical, 14 numerical). The allowable ranges for the hyperparameters are:
+- hidden_layer_sizes: [50, 200] (int)
+- alpha: [0.00001, 10.00000] (float, precise to 5 decimals)
+- batch_size: [10, 250] (int)
+- learning_rate_init: [0.00001, 0.10000] (float, precise to 5 decimals)
+- power_t: [0.1, 0.9] (float, precise to 1 decimals)
+- momentum: [0.001, 0.999] (float, precise to 3 decimals)
+Recommend a configuration that can achieve the target performance of 0.896830. Do not recommend values at the minimum or maximum of allowable range, do not recommend rounded values. Recommend values with highest possible precision, as requested by the allowed ranges. Your response must only contain the predicted configuration, in the format ## configuration ##.
+
+Performance: 1.062222
+Hyperparameter configuration: ## hidden_layer_sizes: 147, alpha: 0.52115, batch_size: 131, learning_rate_init: 0.00789, power_t: 0.6, momentum: 0.271 ##
+Performance: 0.965625
+Hyperparameter configuration: ## hidden_layer_sizes: 109, alpha: 1.03866, batch_size: 91, learning_rate_init: 0.00391, power_t: 0.2, momentum: 0.743 ##
+Performance: 1.653578
+Hyperparameter configuration: ## hidden_layer_sizes: 95, alpha: 0.00002, batch_size: 75, learning_rate_init: 0.00081, power_t: 0.6, momentum: 0.028 ##
+Performance: 1.207872
+Hyperparameter configuration: ## hidden_layer_sizes: 112, alpha: 0.74598, batch_size: 186, learning_rate_init: 0.00532, power_t: 0.5, momentum: 0.422 ##
+Performance: 1.104924
+Hyperparameter configuration: ## hidden_layer_sizes: 71, alpha: 1.66159, batch_size: 124, learning_rate_init: 0.01598, power_t: 0.3, momentum: 0.109 ##
+Performance: 1.086496
+Hyperparameter configuration: ## hidden_layer_sizes: 139, alpha: 1.16304, batch_size: 216, learning_rate_init: 0.02449, power_t: 0.4, momentum: 0.014 ##
+Performance: 1.120770
+Hyperparameter configuration: ## hidden_layer_sizes: 113, alpha: 0.85341, batch_size: 173, learning_rate_init: 0.00526, power_t: 0.5, momentum: 0.157 ##
+Performance: 0.999934
+Hyperparameter configuration: ## hidden_layer_sizes: 158, alpha: 0.03105, batch_size: 139, learning_rate_init: 0.01083, power_t: 0.1, momentum: 0.026 ##
+Performance: 0.896830
+Hyperparameter configuration:
+2024-03-21 12:33:59 - INFO - ====================================================================================================
+2024-03-21 12:34:01 - INFO - Response:  ## hidden\_layer\_sizes: 123, alpha: 0.47157, batch\_size: 209, learning\_rate\_init: 0.00638, power\_t: 0.7, momentum: 0.536 ##
+2024-03-21 12:34:02 - INFO - Response:  ## hidden\_layer\_sizes: 128, alpha: 0.68414, batch\_size: 194, learning\_rate\_init: 0.00571, power\_t: 0.5, momentum: 0.337 ##
+2024-03-21 12:34:02 - INFO - Fixed response, remove \:  ## hidden_layer_sizes: 123, alpha: 0.47157, batch_size: 209, learning_rate_init: 0.00638, power_t: 0.7, momentum: 0.536 ##
+2024-03-21 12:34:02 - INFO - Fixed response, remove \:  ## hidden_layer_sizes: 128, alpha: 0.68414, batch_size: 194, learning_rate_init: 0.00571, power_t: 0.5, momentum: 0.337 ##
+2024-03-21 12:34:02 - INFO - Attempt: 0, number of proposed candidate points: 2, 
+ number of accepted candidate points: 2
+2024-03-21 12:34:04 - INFO - Response:  hidden_layer_sizes: 124, alpha: 0.95378, batch_size: 198, learning_rate_init: 0.00548, power_t: 0.7, momentum: 0.654
+2024-03-21 12:34:05 - INFO - Response:  ## hidden_layer_sizes: 145, alpha: 0.26251, batch_size: 193, learning_rate_init: 0.00617, power_t: 0.8, momentum: 0.618 ##
+2024-03-21 12:34:05 - INFO - Attempt: 1, number of proposed candidate points: 2, 
+ number of accepted candidate points: 4
+2024-03-21 12:34:09 - INFO - Adjusted alpha: 0.1 | [original alpha: 0.1], desired fval: 0.896830
+2024-03-21 12:34:09 - INFO - ====================================================================================================
+2024-03-21 12:34:09 - INFO - EXAMPLE ACQUISITION PROMPT
+2024-03-21 12:34:09 - INFO - Length of prompt templates: 2
+2024-03-21 12:34:09 - INFO - Length of query templates: 2
+2024-03-21 12:34:09 - INFO - The following are examples of performance of a MLP_SGD measured in mean squared error and the corresponding model hyperparameter configurations. The model is evaluated on a tabular regression task. The tabular dataset contains 411 samples and 14 features (0 categorical, 14 numerical). The allowable ranges for the hyperparameters are:
+- hidden_layer_sizes: [50, 200] (int)
+- alpha: [0.00001, 10.00000] (float, precise to 5 decimals)
+- batch_size: [10, 250] (int)
+- learning_rate_init: [0.00001, 0.10000] (float, precise to 5 decimals)
+- power_t: [0.1, 0.9] (float, precise to 1 decimals)
+- momentum: [0.001, 0.999] (float, precise to 3 decimals)
+Recommend a configuration that can achieve the target performance of 0.896830. Do not recommend values at the minimum or maximum of allowable range, do not recommend rounded values. Recommend values with highest possible precision, as requested by the allowed ranges. Your response must only contain the predicted configuration, in the format ## configuration ##.
+
+Performance: 1.207872
+Hyperparameter configuration: ## hidden_layer_sizes: 112, alpha: 0.74598, batch_size: 186, learning_rate_init: 0.00532, power_t: 0.5, momentum: 0.422 ##
+Performance: 0.965625
+Hyperparameter configuration: ## hidden_layer_sizes: 109, alpha: 1.03866, batch_size: 91, learning_rate_init: 0.00391, power_t: 0.2, momentum: 0.743 ##
+Performance: 1.653578
+Hyperparameter configuration: ## hidden_layer_sizes: 95, alpha: 0.00002, batch_size: 75, learning_rate_init: 0.00081, power_t: 0.6, momentum: 0.028 ##
+Performance: 0.999934
+Hyperparameter configuration: ## hidden_layer_sizes: 158, alpha: 0.03105, batch_size: 139, learning_rate_init: 0.01083, power_t: 0.1, momentum: 0.026 ##
+Performance: 1.064511
+Hyperparameter configuration: ## hidden_layer_sizes: 123, alpha: 0.47157, batch_size: 209, learning_rate_init: 0.00638, power_t: 0.7, momentum: 0.536 ##
+Performance: 1.062222
+Hyperparameter configuration: ## hidden_layer_sizes: 147, alpha: 0.52115, batch_size: 131, learning_rate_init: 0.00789, power_t: 0.6, momentum: 0.271 ##
+Performance: 1.104924
+Hyperparameter configuration: ## hidden_layer_sizes: 71, alpha: 1.66159, batch_size: 124, learning_rate_init: 0.01598, power_t: 0.3, momentum: 0.109 ##
+Performance: 1.086496
+Hyperparameter configuration: ## hidden_layer_sizes: 139, alpha: 1.16304, batch_size: 216, learning_rate_init: 0.02449, power_t: 0.4, momentum: 0.014 ##
+Performance: 1.120770
+Hyperparameter configuration: ## hidden_layer_sizes: 113, alpha: 0.85341, batch_size: 173, learning_rate_init: 0.00526, power_t: 0.5, momentum: 0.157 ##
+Performance: 0.896830
+Hyperparameter configuration:
+2024-03-21 12:34:09 - INFO - ====================================================================================================
+2024-03-21 12:34:11 - INFO - Response:  ## hidden\_layer\_sizes: 131, alpha: 0.04726, batch\_size: 221, learning\_rate\_init: 0.00754, power\_t: 0.8, momentum: 0.598 ##
+2024-03-21 12:34:13 - INFO - Response:  ## hidden\_layer\_sizes: 124, alpha: 0.72729, batch\_size: 198, learning\_rate\_init: 0.00513, power\_t: 0.6, momentum: 0.438 ##
+2024-03-21 12:34:13 - INFO - Fixed response, remove \:  ## hidden_layer_sizes: 131, alpha: 0.04726, batch_size: 221, learning_rate_init: 0.00754, power_t: 0.8, momentum: 0.598 ##
+2024-03-21 12:34:13 - INFO - Fixed response, remove \:  ## hidden_layer_sizes: 124, alpha: 0.72729, batch_size: 198, learning_rate_init: 0.00513, power_t: 0.6, momentum: 0.438 ##
+2024-03-21 12:34:13 - INFO - Attempt: 0, number of proposed candidate points: 2, 
+ number of accepted candidate points: 2
+2024-03-21 12:34:14 - INFO - Response:  ## hidden_layer_sizes: 140, alpha: 0.67621, batch_size: 198, learning_rate_init: 0.00523, power_t: 0.7, momentum: 0.561 ##
+2024-03-21 12:34:15 - INFO - Response:  ## hidden\_layer\_sizes: 121, alpha: 0.62341, batch\_size: 210, learning\_rate\_init: 0.00457, power\_t: 0.8, momentum: 0.489 ##
+2024-03-21 12:34:15 - INFO - Fixed response, remove \:  ## hidden_layer_sizes: 121, alpha: 0.62341, batch_size: 210, learning_rate_init: 0.00457, power_t: 0.8, momentum: 0.489 ##
+2024-03-21 12:34:15 - INFO - Attempt: 1, number of proposed candidate points: 2, 
+ number of accepted candidate points: 4
+2024-03-21 12:34:19 - INFO - Adjusted alpha: 0.1 | [original alpha: 0.1], desired fval: 0.888381
+2024-03-21 12:34:19 - INFO - ====================================================================================================
+2024-03-21 12:34:19 - INFO - EXAMPLE ACQUISITION PROMPT
+2024-03-21 12:34:19 - INFO - Length of prompt templates: 2
+2024-03-21 12:34:19 - INFO - Length of query templates: 2
+2024-03-21 12:34:19 - INFO - The following are examples of performance of a MLP_SGD measured in mean squared error and the corresponding model hyperparameter configurations. The model is evaluated on a tabular regression task. The tabular dataset contains 411 samples and 14 features (0 categorical, 14 numerical). The allowable ranges for the hyperparameters are:
+- hidden_layer_sizes: [50, 200] (int)
+- alpha: [0.00001, 10.00000] (float, precise to 5 decimals)
+- batch_size: [10, 250] (int)
+- learning_rate_init: [0.00001, 0.10000] (float, precise to 5 decimals)
+- power_t: [0.1, 0.9] (float, precise to 1 decimals)
+- momentum: [0.001, 0.999] (float, precise to 3 decimals)
+Recommend a configuration that can achieve the target performance of 0.888381. Do not recommend values at the minimum or maximum of allowable range, do not recommend rounded values. Recommend values with highest possible precision, as requested by the allowed ranges. Your response must only contain the predicted configuration, in the format ## configuration ##.
+
+Performance: 0.965625
+Hyperparameter configuration: ## hidden_layer_sizes: 109, alpha: 1.03866, batch_size: 91, learning_rate_init: 0.00391, power_t: 0.2, momentum: 0.743 ##
+Performance: 1.064511
+Hyperparameter configuration: ## hidden_layer_sizes: 123, alpha: 0.47157, batch_size: 209, learning_rate_init: 0.00638, power_t: 0.7, momentum: 0.536 ##
+Performance: 0.999934
+Hyperparameter configuration: ## hidden_layer_sizes: 158, alpha: 0.03105, batch_size: 139, learning_rate_init: 0.01083, power_t: 0.1, momentum: 0.026 ##
+Performance: 1.738074
+Hyperparameter configuration: ## hidden_layer_sizes: 131, alpha: 0.04726, batch_size: 221, learning_rate_init: 0.00754, power_t: 0.8, momentum: 0.598 ##
+Performance: 1.653578
+Hyperparameter configuration: ## hidden_layer_sizes: 95, alpha: 0.00002, batch_size: 75, learning_rate_init: 0.00081, power_t: 0.6, momentum: 0.028 ##
+Performance: 1.062222
+Hyperparameter configuration: ## hidden_layer_sizes: 147, alpha: 0.52115, batch_size: 131, learning_rate_init: 0.00789, power_t: 0.6, momentum: 0.271 ##
+Performance: 1.207872
+Hyperparameter configuration: ## hidden_layer_sizes: 112, alpha: 0.74598, batch_size: 186, learning_rate_init: 0.00532, power_t: 0.5, momentum: 0.422 ##
+Performance: 1.104924
+Hyperparameter configuration: ## hidden_layer_sizes: 71, alpha: 1.66159, batch_size: 124, learning_rate_init: 0.01598, power_t: 0.3, momentum: 0.109 ##
+Performance: 1.086496
+Hyperparameter configuration: ## hidden_layer_sizes: 139, alpha: 1.16304, batch_size: 216, learning_rate_init: 0.02449, power_t: 0.4, momentum: 0.014 ##
+Performance: 1.120770
+Hyperparameter configuration: ## hidden_layer_sizes: 113, alpha: 0.85341, batch_size: 173, learning_rate_init: 0.00526, power_t: 0.5, momentum: 0.157 ##
+Performance: 0.888381
+Hyperparameter configuration:
+2024-03-21 12:34:19 - INFO - ====================================================================================================
+2024-03-21 12:34:21 - INFO - Response:  ## hidden\_layer\_sizes: 141, alpha: 0.06123, batch\_size: 196, learning\_rate\_init: 0.00578, power\_t: 0.6, momentum: 0.487 ##
+2024-03-21 12:34:22 - INFO - Response:  ## hidden\_layer\_sizes: 132, alpha: 0.41317, batch\_size: 116, learning\_rate\_init: 0.00597, power\_t: 0.6, momentum: 0.487 ##
+2024-03-21 12:34:22 - INFO - Fixed response, remove \:  ## hidden_layer_sizes: 141, alpha: 0.06123, batch_size: 196, learning_rate_init: 0.00578, power_t: 0.6, momentum: 0.487 ##
+2024-03-21 12:34:22 - INFO - Fixed response, remove \:  ## hidden_layer_sizes: 132, alpha: 0.41317, batch_size: 116, learning_rate_init: 0.00597, power_t: 0.6, momentum: 0.487 ##
+2024-03-21 12:34:22 - INFO - Attempt: 0, number of proposed candidate points: 2, 
+ number of accepted candidate points: 2
+2024-03-21 12:34:24 - INFO - Response:  ## hidden\_layer\_sizes: 119, alpha: 0.80468, batch\_size: 161, learning\_rate\_init: 0.00525, power\_t: 0.7, momentum: 0.378 ##
+2024-03-21 12:34:25 - INFO - Response:  ## hidden\_layer\_sizes: 129, alpha: 0.44176, batch\_size: 201, learning\_rate\_init: 0.00596, power\_t: 0.7, momentum: 0.234 ##
+2024-03-21 12:34:25 - INFO - Fixed response, remove \:  ## hidden_layer_sizes: 119, alpha: 0.80468, batch_size: 161, learning_rate_init: 0.00525, power_t: 0.7, momentum: 0.378 ##
+2024-03-21 12:34:25 - INFO - Fixed response, remove \:  ## hidden_layer_sizes: 129, alpha: 0.44176, batch_size: 201, learning_rate_init: 0.00596, power_t: 0.7, momentum: 0.234 ##
+2024-03-21 12:34:25 - INFO - Attempt: 1, number of proposed candidate points: 2, 
+ number of accepted candidate points: 4
+2024-03-21 12:34:30 - INFO - Adjusted alpha: 0.1 | [original alpha: 0.1], desired fval: 0.888381
+2024-03-21 12:34:30 - INFO - ====================================================================================================
+2024-03-21 12:34:30 - INFO - EXAMPLE ACQUISITION PROMPT
+2024-03-21 12:34:30 - INFO - Length of prompt templates: 2
+2024-03-21 12:34:30 - INFO - Length of query templates: 2
+2024-03-21 12:34:30 - INFO - The following are examples of performance of a MLP_SGD measured in mean squared error and the corresponding model hyperparameter configurations. The model is evaluated on a tabular regression task. The tabular dataset contains 411 samples and 14 features (0 categorical, 14 numerical). The allowable ranges for the hyperparameters are:
+- hidden_layer_sizes: [50, 200] (int)
+- alpha: [0.00001, 10.00000] (float, precise to 5 decimals)
+- batch_size: [10, 250] (int)
+- learning_rate_init: [0.00001, 0.10000] (float, precise to 5 decimals)
+- power_t: [0.1, 0.9] (float, precise to 1 decimals)
+- momentum: [0.001, 0.999] (float, precise to 3 decimals)
+Recommend a configuration that can achieve the target performance of 0.888381. Do not recommend values at the minimum or maximum of allowable range, do not recommend rounded values. Recommend values with highest possible precision, as requested by the allowed ranges. Your response must only contain the predicted configuration, in the format ## configuration ##.
+
+Performance: 0.999934
+Hyperparameter configuration: ## hidden_layer_sizes: 158, alpha: 0.03105, batch_size: 139, learning_rate_init: 0.01083, power_t: 0.1, momentum: 0.026 ##
+Performance: 1.738074
+Hyperparameter configuration: ## hidden_layer_sizes: 131, alpha: 0.04726, batch_size: 221, learning_rate_init: 0.00754, power_t: 0.8, momentum: 0.598 ##
+Performance: 0.965625
+Hyperparameter configuration: ## hidden_layer_sizes: 109, alpha: 1.03866, batch_size: 91, learning_rate_init: 0.00391, power_t: 0.2, momentum: 0.743 ##
+Performance: 1.243443
+Hyperparameter configuration: ## hidden_layer_sizes: 141, alpha: 0.06123, batch_size: 196, learning_rate_init: 0.00578, power_t: 0.6, momentum: 0.487 ##
+Performance: 1.062222
+Hyperparameter configuration: ## hidden_layer_sizes: 147, alpha: 0.52115, batch_size: 131, learning_rate_init: 0.00789, power_t: 0.6, momentum: 0.271 ##
+Performance: 1.653578
+Hyperparameter configuration: ## hidden_layer_sizes: 95, alpha: 0.00002, batch_size: 75, learning_rate_init: 0.00081, power_t: 0.6, momentum: 0.028 ##
+Performance: 1.207872
+Hyperparameter configuration: ## hidden_layer_sizes: 112, alpha: 0.74598, batch_size: 186, learning_rate_init: 0.00532, power_t: 0.5, momentum: 0.422 ##
+Performance: 1.064511
+Hyperparameter configuration: ## hidden_layer_sizes: 123, alpha: 0.47157, batch_size: 209, learning_rate_init: 0.00638, power_t: 0.7, momentum: 0.536 ##
+Performance: 1.104924
+Hyperparameter configuration: ## hidden_layer_sizes: 71, alpha: 1.66159, batch_size: 124, learning_rate_init: 0.01598, power_t: 0.3, momentum: 0.109 ##
+Performance: 1.086496
+Hyperparameter configuration: ## hidden_layer_sizes: 139, alpha: 1.16304, batch_size: 216, learning_rate_init: 0.02449, power_t: 0.4, momentum: 0.014 ##
+Performance: 1.120770
+Hyperparameter configuration: ## hidden_layer_sizes: 113, alpha: 0.85341, batch_size: 173, learning_rate_init: 0.00526, power_t: 0.5, momentum: 0.157 ##
+Performance: 0.888381
+Hyperparameter configuration:
+2024-03-21 12:34:30 - INFO - ====================================================================================================
+2024-03-21 12:34:32 - INFO - Response:  ## hidden\_layer\_sizes: 140, alpha: 0.29562, batch\_size: 169, learning\_rate\_init: 0.00712, power\_t: 0.7, momentum: 0.356 ##
+2024-03-21 12:34:33 - INFO - Response:  ## hidden\_layer\_sizes: 140, alpha: 0.59671, batch\_size: 172, learning\_rate\_init: 0.00515, power\_t: 0.8, momentum: 0.355 ##
+2024-03-21 12:34:33 - INFO - Fixed response, remove \:  ## hidden_layer_sizes: 140, alpha: 0.29562, batch_size: 169, learning_rate_init: 0.00712, power_t: 0.7, momentum: 0.356 ##
+2024-03-21 12:34:33 - INFO - Fixed response, remove \:  ## hidden_layer_sizes: 140, alpha: 0.59671, batch_size: 172, learning_rate_init: 0.00515, power_t: 0.8, momentum: 0.355 ##
+2024-03-21 12:34:33 - INFO - Attempt: 0, number of proposed candidate points: 2, 
+ number of accepted candidate points: 2
+2024-03-21 12:34:34 - INFO - Response:  ## hidden\_layer\_sizes: 140, alpha: 0.10392, batch\_size: 163, learning\_rate\_init: 0.00565, power\_t: 0.7, momentum: 0.824 ##
+2024-03-21 12:34:36 - INFO - Response:  ## hidden\_layer\_sizes: 140, alpha: 0.61291, batch\_size: 112, learning\_rate\_init: 0.00513, power\_t: 0.7, momentum: 0.378 ##
+2024-03-21 12:34:36 - INFO - Fixed response, remove \:  ## hidden_layer_sizes: 140, alpha: 0.10392, batch_size: 163, learning_rate_init: 0.00565, power_t: 0.7, momentum: 0.824 ##
+2024-03-21 12:34:36 - INFO - Fixed response, remove \:  ## hidden_layer_sizes: 140, alpha: 0.61291, batch_size: 112, learning_rate_init: 0.00513, power_t: 0.7, momentum: 0.378 ##
+2024-03-21 12:34:36 - INFO - Attempt: 1, number of proposed candidate points: 2, 
+ number of accepted candidate points: 4
+2024-03-21 12:34:41 - INFO - Adjusted alpha: 0.1 | [original alpha: 0.1], desired fval: 0.888381
+2024-03-21 12:34:41 - INFO - ====================================================================================================
+2024-03-21 12:34:41 - INFO - EXAMPLE ACQUISITION PROMPT
+2024-03-21 12:34:41 - INFO - Length of prompt templates: 2
+2024-03-21 12:34:41 - INFO - Length of query templates: 2
+2024-03-21 12:34:41 - INFO - The following are examples of performance of a MLP_SGD measured in mean squared error and the corresponding model hyperparameter configurations. The model is evaluated on a tabular regression task. The tabular dataset contains 411 samples and 14 features (0 categorical, 14 numerical). The allowable ranges for the hyperparameters are:
+- hidden_layer_sizes: [50, 200] (int)
+- alpha: [0.00001, 10.00000] (float, precise to 5 decimals)
+- batch_size: [10, 250] (int)
+- learning_rate_init: [0.00001, 0.10000] (float, precise to 5 decimals)
+- power_t: [0.1, 0.9] (float, precise to 1 decimals)
+- momentum: [0.001, 0.999] (float, precise to 3 decimals)
+Recommend a configuration that can achieve the target performance of 0.888381. Do not recommend values at the minimum or maximum of allowable range, do not recommend rounded values. Recommend values with highest possible precision, as requested by the allowed ranges. Your response must only contain the predicted configuration, in the format ## configuration ##.
+
+Performance: 1.062222
+Hyperparameter configuration: ## hidden_layer_sizes: 147, alpha: 0.52115, batch_size: 131, learning_rate_init: 0.00789, power_t: 0.6, momentum: 0.271 ##
+Performance: 1.310123
+Hyperparameter configuration: ## hidden_layer_sizes: 140, alpha: 0.29562, batch_size: 169, learning_rate_init: 0.00712, power_t: 0.7, momentum: 0.356 ##
+Performance: 0.999934
+Hyperparameter configuration: ## hidden_layer_sizes: 158, alpha: 0.03105, batch_size: 139, learning_rate_init: 0.01083, power_t: 0.1, momentum: 0.026 ##
+Performance: 1.243443
+Hyperparameter configuration: ## hidden_layer_sizes: 141, alpha: 0.06123, batch_size: 196, learning_rate_init: 0.00578, power_t: 0.6, momentum: 0.487 ##
+Performance: 0.965625
+Hyperparameter configuration: ## hidden_layer_sizes: 109, alpha: 1.03866, batch_size: 91, learning_rate_init: 0.00391, power_t: 0.2, momentum: 0.743 ##
+Performance: 1.064511
+Hyperparameter configuration: ## hidden_layer_sizes: 123, alpha: 0.47157, batch_size: 209, learning_rate_init: 0.00638, power_t: 0.7, momentum: 0.536 ##
+Performance: 1.653578
+Hyperparameter configuration: ## hidden_layer_sizes: 95, alpha: 0.00002, batch_size: 75, learning_rate_init: 0.00081, power_t: 0.6, momentum: 0.028 ##
+Performance: 1.207872
+Hyperparameter configuration: ## hidden_layer_sizes: 112, alpha: 0.74598, batch_size: 186, learning_rate_init: 0.00532, power_t: 0.5, momentum: 0.422 ##
+Performance: 1.738074
+Hyperparameter configuration: ## hidden_layer_sizes: 131, alpha: 0.04726, batch_size: 221, learning_rate_init: 0.00754, power_t: 0.8, momentum: 0.598 ##
+Performance: 1.104924
+Hyperparameter configuration: ## hidden_layer_sizes: 71, alpha: 1.66159, batch_size: 124, learning_rate_init: 0.01598, power_t: 0.3, momentum: 0.109 ##
+Performance: 1.086496
+Hyperparameter configuration: ## hidden_layer_sizes: 139, alpha: 1.16304, batch_size: 216, learning_rate_init: 0.02449, power_t: 0.4, momentum: 0.014 ##
+Performance: 1.120770
+Hyperparameter configuration: ## hidden_layer_sizes: 113, alpha: 0.85341, batch_size: 173, learning_rate_init: 0.00526, power_t: 0.5, momentum: 0.157 ##
+Performance: 0.888381
+Hyperparameter configuration:
+2024-03-21 12:34:41 - INFO - ====================================================================================================
+2024-03-21 12:34:43 - INFO - Response:  ## hidden_layer_sizes: 149, alpha: 0.06352, batch_size: 218, learning_rate_init: 0.00427, power_t: 0.7, momentum: 0.453 ##
+2024-03-21 12:34:45 - INFO - Response:  ## hidden\_layer\_sizes: 147, alpha: 0.49123, batch\_size: 167, learning\_rate\_init: 0.00645, power\_t: 0.8, momentum: 0.313 ##
+2024-03-21 12:34:45 - INFO - Fixed response, remove \:  ## hidden_layer_sizes: 147, alpha: 0.49123, batch_size: 167, learning_rate_init: 0.00645, power_t: 0.8, momentum: 0.313 ##
+2024-03-21 12:34:45 - INFO - Attempt: 0, number of proposed candidate points: 2, 
+ number of accepted candidate points: 2
+2024-03-21 12:34:47 - INFO - Response:  ## hidden\_layer\_sizes: 149, alpha: 0.15628, batch\_size: 119, learning\_rate\_init: 0.00437, power\_t: 0.6, momentum: 0.313 ##
+2024-03-21 12:34:48 - INFO - Response:  ## hidden\_layer\_sizes: 140, alpha: 0.55613, batch\_size: 112, learning\_rate\_init: 0.00947, power\_t: 0.8, momentum: 0.264 ##
+2024-03-21 12:34:48 - INFO - Fixed response, remove \:  ## hidden_layer_sizes: 149, alpha: 0.15628, batch_size: 119, learning_rate_init: 0.00437, power_t: 0.6, momentum: 0.313 ##
+2024-03-21 12:34:48 - INFO - Fixed response, remove \:  ## hidden_layer_sizes: 140, alpha: 0.55613, batch_size: 112, learning_rate_init: 0.00947, power_t: 0.8, momentum: 0.264 ##
+2024-03-21 12:34:48 - INFO - Attempt: 1, number of proposed candidate points: 2, 
+ number of accepted candidate points: 4
+2024-03-21 12:34:54 - INFO - Adjusted alpha: 0.1 | [original alpha: 0.1], desired fval: 0.888381
+2024-03-21 12:34:54 - INFO - ====================================================================================================
+2024-03-21 12:34:54 - INFO - EXAMPLE ACQUISITION PROMPT
+2024-03-21 12:34:54 - INFO - Length of prompt templates: 2
+2024-03-21 12:34:54 - INFO - Length of query templates: 2
+2024-03-21 12:34:54 - INFO - The following are examples of performance of a MLP_SGD measured in mean squared error and the corresponding model hyperparameter configurations. The model is evaluated on a tabular regression task. The tabular dataset contains 411 samples and 14 features (0 categorical, 14 numerical). The allowable ranges for the hyperparameters are:
+- hidden_layer_sizes: [50, 200] (int)
+- alpha: [0.00001, 10.00000] (float, precise to 5 decimals)
+- batch_size: [10, 250] (int)
+- learning_rate_init: [0.00001, 0.10000] (float, precise to 5 decimals)
+- power_t: [0.1, 0.9] (float, precise to 1 decimals)
+- momentum: [0.001, 0.999] (float, precise to 3 decimals)
+Recommend a configuration that can achieve the target performance of 0.888381. Do not recommend values at the minimum or maximum of allowable range, do not recommend rounded values. Recommend values with highest possible precision, as requested by the allowed ranges. Your response must only contain the predicted configuration, in the format ## configuration ##.
+
+Performance: 1.062222
+Hyperparameter configuration: ## hidden_layer_sizes: 147, alpha: 0.52115, batch_size: 131, learning_rate_init: 0.00789, power_t: 0.6, momentum: 0.271 ##
+Performance: 1.310123
+Hyperparameter configuration: ## hidden_layer_sizes: 140, alpha: 0.29562, batch_size: 169, learning_rate_init: 0.00712, power_t: 0.7, momentum: 0.356 ##
+Performance: 0.999934
+Hyperparameter configuration: ## hidden_layer_sizes: 158, alpha: 0.03105, batch_size: 139, learning_rate_init: 0.01083, power_t: 0.1, momentum: 0.026 ##
+Performance: 1.243443
+Hyperparameter configuration: ## hidden_layer_sizes: 141, alpha: 0.06123, batch_size: 196, learning_rate_init: 0.00578, power_t: 0.6, momentum: 0.487 ##
+Performance: 0.965625
+Hyperparameter configuration: ## hidden_layer_sizes: 109, alpha: 1.03866, batch_size: 91, learning_rate_init: 0.00391, power_t: 0.2, momentum: 0.743 ##
+Performance: 1.064511
+Hyperparameter configuration: ## hidden_layer_sizes: 123, alpha: 0.47157, batch_size: 209, learning_rate_init: 0.00638, power_t: 0.7, momentum: 0.536 ##
+Performance: 1.653578
+Hyperparameter configuration: ## hidden_layer_sizes: 95, alpha: 0.00002, batch_size: 75, learning_rate_init: 0.00081, power_t: 0.6, momentum: 0.028 ##
+Performance: 1.207872
+Hyperparameter configuration: ## hidden_layer_sizes: 112, alpha: 0.74598, batch_size: 186, learning_rate_init: 0.00532, power_t: 0.5, momentum: 0.422 ##
+Performance: 1.738074
+Hyperparameter configuration: ## hidden_layer_sizes: 131, alpha: 0.04726, batch_size: 221, learning_rate_init: 0.00754, power_t: 0.8, momentum: 0.598 ##
+Performance: 1.104924
+Hyperparameter configuration: ## hidden_layer_sizes: 71, alpha: 1.66159, batch_size: 124, learning_rate_init: 0.01598, power_t: 0.3, momentum: 0.109 ##
+Performance: 1.086496
+Hyperparameter configuration: ## hidden_layer_sizes: 139, alpha: 1.16304, batch_size: 216, learning_rate_init: 0.02449, power_t: 0.4, momentum: 0.014 ##
+Performance: 1.120770
+Hyperparameter configuration: ## hidden_layer_sizes: 113, alpha: 0.85341, batch_size: 173, learning_rate_init: 0.00526, power_t: 0.5, momentum: 0.157 ##
+Performance: 1.283848
+Hyperparameter configuration: ## hidden_layer_sizes: 149, alpha: 0.06352, batch_size: 218, learning_rate_init: 0.00427, power_t: 0.7, momentum: 0.453 ##
+Performance: 0.888381
+Hyperparameter configuration:
+2024-03-21 12:34:54 - INFO - ====================================================================================================
+2024-03-21 12:34:56 - INFO - Response:  ## hidden\_layer\_sizes: 119, alpha: 0.16825, batch\_size: 157, learning\_rate\_init: 0.00498, power\_t: 0.5, momentum: 0.313 ##
+2024-03-21 12:34:58 - INFO - Response:  ## hidden\_layer\_sizes: 129, alpha: 0.41764, batch\_size: 155, learning\_rate\_init: 0.00453, power\_t: 0.5, momentum: 0.298 ##
+2024-03-21 12:34:58 - INFO - Fixed response, remove \:  ## hidden_layer_sizes: 119, alpha: 0.16825, batch_size: 157, learning_rate_init: 0.00498, power_t: 0.5, momentum: 0.313 ##
+2024-03-21 12:34:58 - INFO - Fixed response, remove \:  ## hidden_layer_sizes: 129, alpha: 0.41764, batch_size: 155, learning_rate_init: 0.00453, power_t: 0.5, momentum: 0.298 ##
+2024-03-21 12:34:58 - INFO - Attempt: 0, number of proposed candidate points: 2, 
+ number of accepted candidate points: 2
+2024-03-21 12:34:59 - INFO - Response:  ## hidden\_layer\_sizes: 133, alpha: 0.36921, batch\_size: 178, learning\_rate\_init: 0.00562, power\_t: 0.6, momentum: 0.413 ##
+2024-03-21 12:35:01 - INFO - Response:  ## hidden\_layer\_sizes: 134, alpha: 0.05429, batch\_size: 163, learning\_rate\_init: 0.00971, power\_t: 0.5, momentum: 0.418 ##
+2024-03-21 12:35:01 - INFO - Fixed response, remove \:  ## hidden_layer_sizes: 133, alpha: 0.36921, batch_size: 178, learning_rate_init: 0.00562, power_t: 0.6, momentum: 0.413 ##
+2024-03-21 12:35:01 - INFO - Fixed response, remove \:  ## hidden_layer_sizes: 134, alpha: 0.05429, batch_size: 163, learning_rate_init: 0.00971, power_t: 0.5, momentum: 0.418 ##
+2024-03-21 12:35:01 - INFO - Attempt: 1, number of proposed candidate points: 2, 
+ number of accepted candidate points: 4
+2024-03-21 12:35:07 - INFO - Adjusted alpha: 0.1 | [original alpha: 0.1], desired fval: 0.888381
+2024-03-21 12:35:07 - INFO - ====================================================================================================
+2024-03-21 12:35:07 - INFO - EXAMPLE ACQUISITION PROMPT
+2024-03-21 12:35:07 - INFO - Length of prompt templates: 2
+2024-03-21 12:35:07 - INFO - Length of query templates: 2
+2024-03-21 12:35:07 - INFO - The following are examples of performance of a MLP_SGD measured in mean squared error and the corresponding model hyperparameter configurations. The model is evaluated on a tabular regression task. The tabular dataset contains 411 samples and 14 features (0 categorical, 14 numerical). The allowable ranges for the hyperparameters are:
+- hidden_layer_sizes: [50, 200] (int)
+- alpha: [0.00001, 10.00000] (float, precise to 5 decimals)
+- batch_size: [10, 250] (int)
+- learning_rate_init: [0.00001, 0.10000] (float, precise to 5 decimals)
+- power_t: [0.1, 0.9] (float, precise to 1 decimals)
+- momentum: [0.001, 0.999] (float, precise to 3 decimals)
+Recommend a configuration that can achieve the target performance of 0.888381. Do not recommend values at the minimum or maximum of allowable range, do not recommend rounded values. Recommend values with highest possible precision, as requested by the allowed ranges. Your response must only contain the predicted configuration, in the format ## configuration ##.
+
+Performance: 1.064511
+Hyperparameter configuration: ## hidden_layer_sizes: 123, alpha: 0.47157, batch_size: 209, learning_rate_init: 0.00638, power_t: 0.7, momentum: 0.536 ##
+Performance: 1.062222
+Hyperparameter configuration: ## hidden_layer_sizes: 147, alpha: 0.52115, batch_size: 131, learning_rate_init: 0.00789, power_t: 0.6, momentum: 0.271 ##
+Performance: 0.999934
+Hyperparameter configuration: ## hidden_layer_sizes: 158, alpha: 0.03105, batch_size: 139, learning_rate_init: 0.01083, power_t: 0.1, momentum: 0.026 ##
+Performance: 1.310123
+Hyperparameter configuration: ## hidden_layer_sizes: 140, alpha: 0.29562, batch_size: 169, learning_rate_init: 0.00712, power_t: 0.7, momentum: 0.356 ##
+Performance: 0.965625
+Hyperparameter configuration: ## hidden_layer_sizes: 109, alpha: 1.03866, batch_size: 91, learning_rate_init: 0.00391, power_t: 0.2, momentum: 0.743 ##
+Performance: 1.349312
+Hyperparameter configuration: ## hidden_layer_sizes: 119, alpha: 0.16825, batch_size: 157, learning_rate_init: 0.00498, power_t: 0.5, momentum: 0.313 ##
+Performance: 1.738074
+Hyperparameter configuration: ## hidden_layer_sizes: 131, alpha: 0.04726, batch_size: 221, learning_rate_init: 0.00754, power_t: 0.8, momentum: 0.598 ##
+Performance: 1.653578
+Hyperparameter configuration: ## hidden_layer_sizes: 95, alpha: 0.00002, batch_size: 75, learning_rate_init: 0.00081, power_t: 0.6, momentum: 0.028 ##
+Performance: 1.207872
+Hyperparameter configuration: ## hidden_layer_sizes: 112, alpha: 0.74598, batch_size: 186, learning_rate_init: 0.00532, power_t: 0.5, momentum: 0.422 ##
+Performance: 1.243443
+Hyperparameter configuration: ## hidden_layer_sizes: 141, alpha: 0.06123, batch_size: 196, learning_rate_init: 0.00578, power_t: 0.6, momentum: 0.487 ##
+Performance: 1.104924
+Hyperparameter configuration: ## hidden_layer_sizes: 71, alpha: 1.66159, batch_size: 124, learning_rate_init: 0.01598, power_t: 0.3, momentum: 0.109 ##
+Performance: 1.086496
+Hyperparameter configuration: ## hidden_layer_sizes: 139, alpha: 1.16304, batch_size: 216, learning_rate_init: 0.02449, power_t: 0.4, momentum: 0.014 ##
+Performance: 1.120770
+Hyperparameter configuration: ## hidden_layer_sizes: 113, alpha: 0.85341, batch_size: 173, learning_rate_init: 0.00526, power_t: 0.5, momentum: 0.157 ##
+Performance: 1.283848
+Hyperparameter configuration: ## hidden_layer_sizes: 149, alpha: 0.06352, batch_size: 218, learning_rate_init: 0.00427, power_t: 0.7, momentum: 0.453 ##
+Performance: 0.888381
+Hyperparameter configuration:
+2024-03-21 12:35:07 - INFO - ====================================================================================================
+2024-03-21 12:35:09 - INFO - Response:  ## hidden\_layer\_sizes: 133, alpha: 0.61921, batch\_size: 113, learning\_rate\_init: 0.00547, power\_t: 0.8, momentum: 0.495 ##
+2024-03-21 12:35:10 - INFO - Response:  ## hidden\_layer\_sizes: 121, alpha: 0.96411, batch\_size: 173, learning\_rate\_init: 0.00595, power\_t: 0.7, momentum: 0.412 ##
+2024-03-21 12:35:10 - INFO - Fixed response, remove \:  ## hidden_layer_sizes: 133, alpha: 0.61921, batch_size: 113, learning_rate_init: 0.00547, power_t: 0.8, momentum: 0.495 ##
+2024-03-21 12:35:10 - INFO - Fixed response, remove \:  ## hidden_layer_sizes: 121, alpha: 0.96411, batch_size: 173, learning_rate_init: 0.00595, power_t: 0.7, momentum: 0.412 ##
+2024-03-21 12:35:10 - INFO - Attempt: 0, number of proposed candidate points: 2, 
+ number of accepted candidate points: 2
+2024-03-21 12:35:12 - INFO - Response:  ## hidden\_layer\_sizes: 133, alpha: 0.61289, batch\_size: 127, learning\_rate\_init: 0.00545, power\_t: 0.7, momentum: 0.551 ##
+2024-03-21 12:35:14 - INFO - Response:  hidden_layer_sizes: 111, alpha: 0.94389, batch_size: 236, learning_rate_init: 0.00705, power_t: 0.7, momentum: 0.247
+2024-03-21 12:35:14 - INFO - Fixed response, remove \:  ## hidden_layer_sizes: 133, alpha: 0.61289, batch_size: 127, learning_rate_init: 0.00545, power_t: 0.7, momentum: 0.551 ##
+2024-03-21 12:35:14 - INFO - Attempt: 1, number of proposed candidate points: 2, 
+ number of accepted candidate points: 4
+2024-03-21 12:35:19 - INFO - [LLAMBO] Query cost: 0.0069
+2024-03-21 12:35:19 - INFO - [LLAMBO] Query time: 104.0301
+2024-03-21 12:35:19 - INFO -     hidden_layer_sizes     alpha  batch_size  learning_rate_init   power_t  momentum     score  generalization_score
+0                  139  1.163040         216            0.024491  0.393578  0.014223  1.086496              0.717573
+1                   95  0.000022          75            0.000814  0.595670  0.027525  1.653578              1.435016
+2                  109  1.038658          91            0.003915  0.224591  0.743104  0.965625              0.680884
+3                   71  1.661589         124            0.015982  0.313806  0.108729  1.104924              0.824463
+4                  158  0.031054         139            0.010826  0.126201  0.026339  0.999934              0.628616
+5                  113  0.853410         173            0.005260  0.500000  0.157000  1.120770              0.885171
+6                  147  0.521150         131            0.007890  0.600000  0.271000  1.062222              0.729262
+7                  112  0.745980         186            0.005320  0.500000  0.422000  1.207872              1.043046
+8                  123  0.471570         209            0.006380  0.700000  0.536000  1.064511              0.850957
+9                  131  0.047260         221            0.007540  0.800000  0.598000  1.738074              0.738691
+10                 141  0.061230         196            0.005780  0.600000  0.487000  1.243443              1.096516
+11                 140  0.295620         169            0.007120  0.700000  0.356000  1.310123              0.771503
+12                 149  0.063520         218            0.004270  0.700000  0.453000  1.283848              0.923060
+13                 119  0.168250         157            0.004980  0.500000  0.313000  1.349312              0.927773
+14                 133  0.619210         113            0.005470  0.800000  0.495000  1.276240              1.103010
+2024-03-21 12:35:19 - INFO - [LLAMBO] RUN COMPLETE, saved results to /home/local/eda13/gc29434/phd/analog/LLAMBO/exp_custom/ollama/mistral/results_discriminative/Offset_score/MLP_SGD...
+2024-03-21 12:35:19 - INFO - ================================================================================
+2024-03-21 12:35:19 - INFO - [LLAMBO] 1 evaluation runs complete! Total cost: $0.0069

@@ -1,0 +1,345 @@
+2024-03-21 00:50:53 - INFO - ================================================================================
+2024-03-21 00:50:53 - INFO - Executing LLAMBO (discriminative | ollama | mixtral | top_pct: None) to tune RandomForest on CMRR_score with seed 1 / 1...
+2024-03-21 00:50:53 - INFO - Task context: {'model': 'RandomForest', 'task': 'regression', 'tot_feats': 14, 'cat_feats': 0, 'num_feats': 14, 'n_classes': 109, 'metric': 'neg_mean_squared_error', 'lower_is_better': True, 'num_samples': 411, 'hyperparameter_constraints': {'max_depth': ['int', 'linear', [1, 15]], 'max_features': ['float', 'logit', [0.01, 0.99]], 'min_impurity_decrease': ['float', 'linear', [0.0, 0.5]], 'min_samples_leaf': ['float', 'logit', [0.01, 0.49]], 'min_samples_split': ['float', 'logit', [0.01, 0.99]], 'min_weight_fraction_leaf': ['float', 'logit', [0.01, 0.49]]}}
+2024-03-21 00:50:53 - INFO - ================================================================================
+2024-03-21 00:50:53 - INFO - [Search settings]: 
+	n_candidates: 10, n_templates: 2, n_gens: 10, 
+	alpha: 0.1, n_initial_samples: 5, n_trials: 10, 
+	using warping: False, ablation: None, shuffle_features: False
+2024-03-21 00:50:53 - INFO - [Task]: 
+	task type: regression, sm: discriminative, lower is better: True
+2024-03-21 00:50:53 - INFO - Hyperparameter search space: 
+2024-03-21 00:50:53 - INFO - ================================================================================
+2024-03-21 00:50:53 - INFO - Adjusted alpha: 0.1 | [original alpha: 0.1], desired fval: 1.001584
+2024-03-21 00:50:53 - INFO - ====================================================================================================
+2024-03-21 00:50:53 - INFO - EXAMPLE ACQUISITION PROMPT
+2024-03-21 00:50:53 - INFO - Length of prompt templates: 2
+2024-03-21 00:50:53 - INFO - Length of query templates: 2
+2024-03-21 00:50:53 - INFO - The following are examples of performance of a RandomForest measured in mean squared error and the corresponding model hyperparameter configurations. The model is evaluated on a tabular regression task. The tabular dataset contains 411 samples and 14 features (0 categorical, 14 numerical). The allowable ranges for the hyperparameters are:
+- max_depth: [1, 15] (int)
+- max_features: [0.01, 0.99] (float, precise to 2 decimals)
+- min_impurity_decrease: [0, 0] (float, precise to 0 decimals)
+- min_samples_leaf: [0.01, 0.49] (float, precise to 2 decimals)
+- min_samples_split: [0.01, 0.99] (float, precise to 2 decimals)
+- min_weight_fraction_leaf: [0.01, 0.49] (float, precise to 2 decimals)
+Recommend a configuration that can achieve the target performance of 1.001584. Do not recommend values at the minimum or maximum of allowable range, do not recommend rounded values. Recommend values with highest possible precision, as requested by the allowed ranges. Your response must only contain the predicted configuration, in the format ## configuration ##.
+
+Performance: 1.007377
+Hyperparameter configuration: ## max_depth: 9, max_features: 0.70, min_impurity_decrease: 0, min_samples_leaf: 0.01, min_samples_split: 0.01, min_weight_fraction_leaf: 0.26 ##
+Performance: 1.002110
+Hyperparameter configuration: ## max_depth: 9, max_features: 0.27, min_impurity_decrease: 0, min_samples_leaf: 0.08, min_samples_split: 0.07, min_weight_fraction_leaf: 0.12 ##
+Performance: 1.002110
+Hyperparameter configuration: ## max_depth: 7, max_features: 0.60, min_impurity_decrease: 0, min_samples_leaf: 0.04, min_samples_split: 0.38, min_weight_fraction_leaf: 0.08 ##
+Performance: 1.002110
+Hyperparameter configuration: ## max_depth: 12, max_features: 0.54, min_impurity_decrease: 0, min_samples_leaf: 0.22, min_samples_split: 0.08, min_weight_fraction_leaf: 0.21 ##
+Performance: 1.002110
+Hyperparameter configuration: ## max_depth: 3, max_features: 0.19, min_impurity_decrease: 0, min_samples_leaf: 0.40, min_samples_split: 0.11, min_weight_fraction_leaf: 0.05 ##
+Performance: 1.001584
+Hyperparameter configuration:
+2024-03-21 00:50:53 - INFO - ====================================================================================================
+2024-03-21 00:50:58 - INFO - Response:  ## max\_depth: 11, max\_features: 0.33, min\_impurity\_decrease: 0, min\_samples\_leaf: 0.16, min\_samples\_split: 0.29, min\_weight\_fraction\_leaf: 0.18 ##
+2024-03-21 00:51:02 - INFO - Response:  ## max\_depth: 6, max\_features: 0.39, min\_impurity\_decrease: 0, min\_samples\_leaf: 0.06, min\_samples\_split: 0.28, min\_weight\_fraction\_leaf: 0.17 ##
+2024-03-21 00:51:02 - INFO - Fixed response, remove \:  ## max_depth: 11, max_features: 0.33, min_impurity_decrease: 0, min_samples_leaf: 0.16, min_samples_split: 0.29, min_weight_fraction_leaf: 0.18 ##
+2024-03-21 00:51:02 - INFO - Fixed response, remove \:  ## max_depth: 6, max_features: 0.39, min_impurity_decrease: 0, min_samples_leaf: 0.06, min_samples_split: 0.28, min_weight_fraction_leaf: 0.17 ##
+2024-03-21 00:51:02 - INFO - Attempt: 0, number of proposed candidate points: 2, 
+ number of accepted candidate points: 2
+2024-03-21 00:51:04 - INFO - Response:  ## max\_depth: 7, max\_features: 0.61, min\_impurity\_decrease: 0, min\_samples\_leaf: 0.03, min\_samples\_split: 0.39, min\_weight\_fraction\_leaf: 0.07 ##
+2024-03-21 00:51:07 - INFO - Response:  ## max_depth: 11, max_features: 0.36, min_impurity_decrease: 0, min_samples_leaf: 0.28, min_samples_split: 0.13, min_weight_fraction_leaf: 0.15 ##
+2024-03-21 00:51:07 - INFO - Fixed response, remove \:  ## max_depth: 7, max_features: 0.61, min_impurity_decrease: 0, min_samples_leaf: 0.03, min_samples_split: 0.39, min_weight_fraction_leaf: 0.07 ##
+2024-03-21 00:51:07 - INFO - Attempt: 1, number of proposed candidate points: 2, 
+ number of accepted candidate points: 4
+2024-03-21 00:51:18 - INFO - Adjusted alpha: 0.1 | [original alpha: 0.1], desired fval: 1.001584
+2024-03-21 00:51:18 - INFO - ====================================================================================================
+2024-03-21 00:51:18 - INFO - EXAMPLE ACQUISITION PROMPT
+2024-03-21 00:51:18 - INFO - Length of prompt templates: 2
+2024-03-21 00:51:18 - INFO - Length of query templates: 2
+2024-03-21 00:51:18 - INFO - The following are examples of performance of a RandomForest measured in mean squared error and the corresponding model hyperparameter configurations. The model is evaluated on a tabular regression task. The tabular dataset contains 411 samples and 14 features (0 categorical, 14 numerical). The allowable ranges for the hyperparameters are:
+- max_depth: [1, 15] (int)
+- max_features: [0.01, 0.99] (float, precise to 2 decimals)
+- min_impurity_decrease: [0, 0] (float, precise to 0 decimals)
+- min_samples_leaf: [0.01, 0.49] (float, precise to 2 decimals)
+- min_samples_split: [0.01, 0.99] (float, precise to 2 decimals)
+- min_weight_fraction_leaf: [0.01, 0.49] (float, precise to 2 decimals)
+Recommend a configuration that can achieve the target performance of 1.001584. Do not recommend values at the minimum or maximum of allowable range, do not recommend rounded values. Recommend values with highest possible precision, as requested by the allowed ranges. Your response must only contain the predicted configuration, in the format ## configuration ##.
+
+Performance: 1.005115
+Hyperparameter configuration: ## max_depth: 11, max_features: 0.33, min_impurity_decrease: 0, min_samples_leaf: 0.16, min_samples_split: 0.29, min_weight_fraction_leaf: 0.18 ##
+Performance: 1.007377
+Hyperparameter configuration: ## max_depth: 9, max_features: 0.70, min_impurity_decrease: 0, min_samples_leaf: 0.01, min_samples_split: 0.01, min_weight_fraction_leaf: 0.26 ##
+Performance: 1.002110
+Hyperparameter configuration: ## max_depth: 7, max_features: 0.60, min_impurity_decrease: 0, min_samples_leaf: 0.04, min_samples_split: 0.38, min_weight_fraction_leaf: 0.08 ##
+Performance: 1.002110
+Hyperparameter configuration: ## max_depth: 12, max_features: 0.54, min_impurity_decrease: 0, min_samples_leaf: 0.22, min_samples_split: 0.08, min_weight_fraction_leaf: 0.21 ##
+Performance: 1.002110
+Hyperparameter configuration: ## max_depth: 9, max_features: 0.27, min_impurity_decrease: 0, min_samples_leaf: 0.08, min_samples_split: 0.07, min_weight_fraction_leaf: 0.12 ##
+Performance: 1.002110
+Hyperparameter configuration: ## max_depth: 3, max_features: 0.19, min_impurity_decrease: 0, min_samples_leaf: 0.40, min_samples_split: 0.11, min_weight_fraction_leaf: 0.05 ##
+Performance: 1.001584
+Hyperparameter configuration:
+2024-03-21 00:51:18 - INFO - ====================================================================================================
+2024-03-21 00:51:23 - INFO - Response:  ## max_depth: 10, max_features: 0.47, min_impurity_decrease: 0, min_samples_leaf: 0.23, min_samples_split: 0.32, min_weight_fraction_leaf: 0.15 ##
+2024-03-21 00:51:27 - INFO - Response:  ## max_depth: 5, max_features: 0.39, min_impurity_decrease: 0, min_samples_leaf: 0.24, min_samples_split: 0.31, min_weight_fraction_leaf: 0.37 ##
+2024-03-21 00:51:27 - INFO - Attempt: 0, number of proposed candidate points: 2, 
+ number of accepted candidate points: 2
+2024-03-21 00:51:31 - INFO - Response:  ## max\_depth: 10, max\_features: 0.46, min\_impurity\_decrease: 0, min\_samples\_leaf: 0.23, min\_samples\_split: 0.47, min\_weight\_fraction\_leaf: 0.15 ##
+2024-03-21 00:51:35 - INFO - Response:  ## max_depth: 5, max_features: 0.46, min_impurity_decrease: 0, min_samples_leaf: 0.03, min_samples_split: 0.71, min_weight_fraction_leaf: 0.38 ##
+2024-03-21 00:51:35 - INFO - Fixed response, remove \:  ## max_depth: 10, max_features: 0.46, min_impurity_decrease: 0, min_samples_leaf: 0.23, min_samples_split: 0.47, min_weight_fraction_leaf: 0.15 ##
+2024-03-21 00:51:35 - INFO - Attempt: 1, number of proposed candidate points: 2, 
+ number of accepted candidate points: 4
+2024-03-21 00:51:48 - INFO - Adjusted alpha: 0.1 | [original alpha: 0.1], desired fval: 0.987970
+2024-03-21 00:51:48 - INFO - ====================================================================================================
+2024-03-21 00:51:48 - INFO - EXAMPLE ACQUISITION PROMPT
+2024-03-21 00:51:48 - INFO - Length of prompt templates: 2
+2024-03-21 00:51:48 - INFO - Length of query templates: 2
+2024-03-21 00:51:48 - INFO - The following are examples of performance of a RandomForest measured in mean squared error and the corresponding model hyperparameter configurations. The model is evaluated on a tabular regression task. The tabular dataset contains 411 samples and 14 features (0 categorical, 14 numerical). The allowable ranges for the hyperparameters are:
+- max_depth: [1, 15] (int)
+- max_features: [0.01, 0.99] (float, precise to 2 decimals)
+- min_impurity_decrease: [0, 0] (float, precise to 0 decimals)
+- min_samples_leaf: [0.01, 0.49] (float, precise to 2 decimals)
+- min_samples_split: [0.01, 0.99] (float, precise to 2 decimals)
+- min_weight_fraction_leaf: [0.01, 0.49] (float, precise to 2 decimals)
+Recommend a configuration that can achieve the target performance of 0.987970. Do not recommend values at the minimum or maximum of allowable range, do not recommend rounded values. Recommend values with highest possible precision, as requested by the allowed ranges. Your response must only contain the predicted configuration, in the format ## configuration ##.
+
+Performance: 0.989735
+Hyperparameter configuration: ## max_depth: 10, max_features: 0.47, min_impurity_decrease: 0, min_samples_leaf: 0.23, min_samples_split: 0.32, min_weight_fraction_leaf: 0.15 ##
+Performance: 1.007377
+Hyperparameter configuration: ## max_depth: 9, max_features: 0.70, min_impurity_decrease: 0, min_samples_leaf: 0.01, min_samples_split: 0.01, min_weight_fraction_leaf: 0.26 ##
+Performance: 1.002110
+Hyperparameter configuration: ## max_depth: 7, max_features: 0.60, min_impurity_decrease: 0, min_samples_leaf: 0.04, min_samples_split: 0.38, min_weight_fraction_leaf: 0.08 ##
+Performance: 1.002110
+Hyperparameter configuration: ## max_depth: 12, max_features: 0.54, min_impurity_decrease: 0, min_samples_leaf: 0.22, min_samples_split: 0.08, min_weight_fraction_leaf: 0.21 ##
+Performance: 1.002110
+Hyperparameter configuration: ## max_depth: 9, max_features: 0.27, min_impurity_decrease: 0, min_samples_leaf: 0.08, min_samples_split: 0.07, min_weight_fraction_leaf: 0.12 ##
+Performance: 1.005115
+Hyperparameter configuration: ## max_depth: 11, max_features: 0.33, min_impurity_decrease: 0, min_samples_leaf: 0.16, min_samples_split: 0.29, min_weight_fraction_leaf: 0.18 ##
+Performance: 1.002110
+Hyperparameter configuration: ## max_depth: 3, max_features: 0.19, min_impurity_decrease: 0, min_samples_leaf: 0.40, min_samples_split: 0.11, min_weight_fraction_leaf: 0.05 ##
+Performance: 0.987970
+Hyperparameter configuration:
+2024-03-21 00:51:48 - INFO - ====================================================================================================
+2024-03-21 00:51:53 - INFO - Response:  ## max_depth: 11, max_features: 0.38, min_impurity_decrease: 0, min_samples_leaf: 0.20, min_samples_split: 0.17, min_weight_fraction_leaf: 0.14 ##
+2024-03-21 00:51:56 - INFO - Response:  ## max\_depth: 11, max\_features: 0.51, min\_impurity\_decrease: 0, min\_samples\_leaf: 0.24, min\_samples\_split: 0.37, min\_weight\_fraction\_leaf: 0.16 ##
+2024-03-21 00:51:56 - INFO - Fixed response, remove \:  ## max_depth: 11, max_features: 0.51, min_impurity_decrease: 0, min_samples_leaf: 0.24, min_samples_split: 0.37, min_weight_fraction_leaf: 0.16 ##
+2024-03-21 00:51:56 - INFO - Attempt: 0, number of proposed candidate points: 2, 
+ number of accepted candidate points: 2
+2024-03-21 00:51:59 - INFO - Response:  ## max\_depth: 11, max\_features: 0.31, min\_impurity\_decrease: 0, min\_samples\_leaf: 0.14, min\_samples\_split: 0.25, min\_weight\_fraction\_leaf: 0.17 ##
+2024-03-21 00:52:03 - INFO - Response:  ## max\_depth: 11, max\_features: 0.51, min\_impurity\_decrease: 0, min\_samples\_leaf: 0.24, min\_samples\_split: 0.37, min\_weight\_fraction\_leaf: 0.13 ##
+2024-03-21 00:52:03 - INFO - Fixed response, remove \:  ## max_depth: 11, max_features: 0.31, min_impurity_decrease: 0, min_samples_leaf: 0.14, min_samples_split: 0.25, min_weight_fraction_leaf: 0.17 ##
+2024-03-21 00:52:03 - INFO - Fixed response, remove \:  ## max_depth: 11, max_features: 0.51, min_impurity_decrease: 0, min_samples_leaf: 0.24, min_samples_split: 0.37, min_weight_fraction_leaf: 0.13 ##
+2024-03-21 00:52:03 - INFO - Attempt: 1, number of proposed candidate points: 2, 
+ number of accepted candidate points: 4
+2024-03-21 00:52:16 - INFO - Adjusted alpha: 0.1 | [original alpha: 0.1], desired fval: 0.987970
+2024-03-21 00:52:16 - INFO - ====================================================================================================
+2024-03-21 00:52:16 - INFO - EXAMPLE ACQUISITION PROMPT
+2024-03-21 00:52:16 - INFO - Length of prompt templates: 2
+2024-03-21 00:52:16 - INFO - Length of query templates: 2
+2024-03-21 00:52:16 - INFO - The following are examples of performance of a RandomForest measured in mean squared error and the corresponding model hyperparameter configurations. The model is evaluated on a tabular regression task. The tabular dataset contains 411 samples and 14 features (0 categorical, 14 numerical). The allowable ranges for the hyperparameters are:
+- max_depth: [1, 15] (int)
+- max_features: [0.01, 0.99] (float, precise to 2 decimals)
+- min_impurity_decrease: [0, 0] (float, precise to 0 decimals)
+- min_samples_leaf: [0.01, 0.49] (float, precise to 2 decimals)
+- min_samples_split: [0.01, 0.99] (float, precise to 2 decimals)
+- min_weight_fraction_leaf: [0.01, 0.49] (float, precise to 2 decimals)
+Recommend a configuration that can achieve the target performance of 0.987970. Do not recommend values at the minimum or maximum of allowable range, do not recommend rounded values. Recommend values with highest possible precision, as requested by the allowed ranges. Your response must only contain the predicted configuration, in the format ## configuration ##.
+
+Performance: 0.989735
+Hyperparameter configuration: ## max_depth: 10, max_features: 0.47, min_impurity_decrease: 0, min_samples_leaf: 0.23, min_samples_split: 0.32, min_weight_fraction_leaf: 0.15 ##
+Performance: 1.007377
+Hyperparameter configuration: ## max_depth: 9, max_features: 0.70, min_impurity_decrease: 0, min_samples_leaf: 0.01, min_samples_split: 0.01, min_weight_fraction_leaf: 0.26 ##
+Performance: 1.002110
+Hyperparameter configuration: ## max_depth: 7, max_features: 0.60, min_impurity_decrease: 0, min_samples_leaf: 0.04, min_samples_split: 0.38, min_weight_fraction_leaf: 0.08 ##
+Performance: 0.998014
+Hyperparameter configuration: ## max_depth: 11, max_features: 0.38, min_impurity_decrease: 0, min_samples_leaf: 0.20, min_samples_split: 0.17, min_weight_fraction_leaf: 0.14 ##
+Performance: 1.002110
+Hyperparameter configuration: ## max_depth: 12, max_features: 0.54, min_impurity_decrease: 0, min_samples_leaf: 0.22, min_samples_split: 0.08, min_weight_fraction_leaf: 0.21 ##
+Performance: 1.002110
+Hyperparameter configuration: ## max_depth: 9, max_features: 0.27, min_impurity_decrease: 0, min_samples_leaf: 0.08, min_samples_split: 0.07, min_weight_fraction_leaf: 0.12 ##
+Performance: 1.005115
+Hyperparameter configuration: ## max_depth: 11, max_features: 0.33, min_impurity_decrease: 0, min_samples_leaf: 0.16, min_samples_split: 0.29, min_weight_fraction_leaf: 0.18 ##
+Performance: 1.002110
+Hyperparameter configuration: ## max_depth: 3, max_features: 0.19, min_impurity_decrease: 0, min_samples_leaf: 0.40, min_samples_split: 0.11, min_weight_fraction_leaf: 0.05 ##
+Performance: 0.987970
+Hyperparameter configuration:
+2024-03-21 00:52:16 - INFO - ====================================================================================================
+2024-03-21 00:52:22 - INFO - Response:  ## max\_depth: 13, max\_features: 0.42, min\_impurity\_decrease: 0, min\_samples\_leaf: 0.25, min\_samples\_split: 0.33, min\_weight\_fraction\_leaf: 0.16 ##
+2024-03-21 00:52:27 - INFO - Response:  ## max_depth: 13, max_features: 0.56, min_impurity_decrease: 0, min_samples_leaf: 0.21, min_samples_split: 0.34, min_weight_fraction_leaf: 0.23 ##
+2024-03-21 00:52:27 - INFO - Fixed response, remove \:  ## max_depth: 13, max_features: 0.42, min_impurity_decrease: 0, min_samples_leaf: 0.25, min_samples_split: 0.33, min_weight_fraction_leaf: 0.16 ##
+2024-03-21 00:52:27 - INFO - Attempt: 0, number of proposed candidate points: 2, 
+ number of accepted candidate points: 2
+2024-03-21 00:52:31 - INFO - Response:  ## max\_depth: 13, max\_features: 0.41, min\_impurity\_decrease: 0, min\_samples\_leaf: 0.25, min\_samples\_split: 0.12, min\_weight\_fraction\_leaf: 0.17 ##
+2024-03-21 00:52:36 - INFO - Response:  ## max_depth: 13, max_features: 0.45, min_impurity_decrease: 0, min_samples_leaf: 0.26, min_samples_split: 0.34, min_weight_fraction_leaf: 0.17 ##
+2024-03-21 00:52:36 - INFO - Fixed response, remove \:  ## max_depth: 13, max_features: 0.41, min_impurity_decrease: 0, min_samples_leaf: 0.25, min_samples_split: 0.12, min_weight_fraction_leaf: 0.17 ##
+2024-03-21 00:52:36 - INFO - Attempt: 1, number of proposed candidate points: 2, 
+ number of accepted candidate points: 4
+2024-03-21 00:52:58 - INFO - Adjusted alpha: 0.1 | [original alpha: 0.1], desired fval: 0.987970
+2024-03-21 00:52:58 - INFO - ====================================================================================================
+2024-03-21 00:52:58 - INFO - EXAMPLE ACQUISITION PROMPT
+2024-03-21 00:52:58 - INFO - Length of prompt templates: 2
+2024-03-21 00:52:58 - INFO - Length of query templates: 2
+2024-03-21 00:52:58 - INFO - The following are examples of performance of a RandomForest measured in mean squared error and the corresponding model hyperparameter configurations. The model is evaluated on a tabular regression task. The tabular dataset contains 411 samples and 14 features (0 categorical, 14 numerical). The allowable ranges for the hyperparameters are:
+- max_depth: [1, 15] (int)
+- max_features: [0.01, 0.99] (float, precise to 2 decimals)
+- min_impurity_decrease: [0, 0] (float, precise to 0 decimals)
+- min_samples_leaf: [0.01, 0.49] (float, precise to 2 decimals)
+- min_samples_split: [0.01, 0.99] (float, precise to 2 decimals)
+- min_weight_fraction_leaf: [0.01, 0.49] (float, precise to 2 decimals)
+Recommend a configuration that can achieve the target performance of 0.987970. Do not recommend values at the minimum or maximum of allowable range, do not recommend rounded values. Recommend values with highest possible precision, as requested by the allowed ranges. Your response must only contain the predicted configuration, in the format ## configuration ##.
+
+Performance: 0.998014
+Hyperparameter configuration: ## max_depth: 11, max_features: 0.38, min_impurity_decrease: 0, min_samples_leaf: 0.20, min_samples_split: 0.17, min_weight_fraction_leaf: 0.14 ##
+Performance: 1.007377
+Hyperparameter configuration: ## max_depth: 9, max_features: 0.70, min_impurity_decrease: 0, min_samples_leaf: 0.01, min_samples_split: 0.01, min_weight_fraction_leaf: 0.26 ##
+Performance: 1.002110
+Hyperparameter configuration: ## max_depth: 7, max_features: 0.60, min_impurity_decrease: 0, min_samples_leaf: 0.04, min_samples_split: 0.38, min_weight_fraction_leaf: 0.08 ##
+Performance: 1.002110
+Hyperparameter configuration: ## max_depth: 3, max_features: 0.19, min_impurity_decrease: 0, min_samples_leaf: 0.40, min_samples_split: 0.11, min_weight_fraction_leaf: 0.05 ##
+Performance: 0.990012
+Hyperparameter configuration: ## max_depth: 13, max_features: 0.42, min_impurity_decrease: 0, min_samples_leaf: 0.25, min_samples_split: 0.33, min_weight_fraction_leaf: 0.16 ##
+Performance: 0.989735
+Hyperparameter configuration: ## max_depth: 10, max_features: 0.47, min_impurity_decrease: 0, min_samples_leaf: 0.23, min_samples_split: 0.32, min_weight_fraction_leaf: 0.15 ##
+Performance: 1.002110
+Hyperparameter configuration: ## max_depth: 12, max_features: 0.54, min_impurity_decrease: 0, min_samples_leaf: 0.22, min_samples_split: 0.08, min_weight_fraction_leaf: 0.21 ##
+Performance: 1.002110
+Hyperparameter configuration: ## max_depth: 9, max_features: 0.27, min_impurity_decrease: 0, min_samples_leaf: 0.08, min_samples_split: 0.07, min_weight_fraction_leaf: 0.12 ##
+Performance: 1.005115
+Hyperparameter configuration: ## max_depth: 11, max_features: 0.33, min_impurity_decrease: 0, min_samples_leaf: 0.16, min_samples_split: 0.29, min_weight_fraction_leaf: 0.18 ##
+Performance: 0.987970
+Hyperparameter configuration:
+2024-03-21 00:52:58 - INFO - ====================================================================================================
+2024-03-21 00:53:05 - INFO - Response:  ## max\_depth: 13, max\_features: 0.42, min\_impurity\_decrease: 0, min\_samples\_leaf: 0.25, min\_samples\_split: 0.33, min\_weight\_fraction\_leaf: 0.16 ##
+2024-03-21 00:53:10 - INFO - Response:  ## max_depth: 12, max_features: 0.43, min_impurity_decrease: 0, min_samples_leaf: 0.25, min_samples_split: 0.33, min_weight_fraction_leaf: 0.16 ##
+2024-03-21 00:53:10 - INFO - Fixed response, remove \:  ## max_depth: 13, max_features: 0.42, min_impurity_decrease: 0, min_samples_leaf: 0.25, min_samples_split: 0.33, min_weight_fraction_leaf: 0.16 ##
+2024-03-21 00:53:10 - INFO - Attempt: 0, number of proposed candidate points: 2, 
+ number of accepted candidate points: 1
+2024-03-21 00:53:15 - INFO - Response:  ## max_depth: 10, max_features: 0.47, min_impurity_decrease: 0, min_samples_leaf: 0.23, min_samples_split: 0.32, min_weight_fraction_leaf: 0.15 ##
+2024-03-21 00:53:20 - INFO - Response:  ## max\_depth: 11, max\_features: 0.51, min\_impurity\_decrease: 0, min\_samples\_leaf: 0.24, min\_samples\_split: 0.31, min\_weight\_fraction\_leaf: 0.17 ##
+2024-03-21 00:53:20 - INFO - Fixed response, remove \:  ## max_depth: 11, max_features: 0.51, min_impurity_decrease: 0, min_samples_leaf: 0.24, min_samples_split: 0.31, min_weight_fraction_leaf: 0.17 ##
+2024-03-21 00:53:20 - INFO - Attempt: 1, number of proposed candidate points: 2, 
+ number of accepted candidate points: 2
+2024-03-21 00:53:25 - INFO - Response:  ## max_depth: 10, max_features: 0.48, min_impurity_decrease: 0, min_samples_leaf: 0.23, min_samples_split: 0.31, min_weight_fraction_leaf: 0.15 ##
+2024-03-21 00:53:30 - INFO - Response:  ## max_depth: 12, max_features: 0.43, min_impurity_decrease: 0, min_samples_leaf: 0.25, min_samples_split: 0.33, min_weight_fraction_leaf: 0.16 ##
+2024-03-21 00:53:30 - INFO - Attempt: 2, number of proposed candidate points: 2, 
+ number of accepted candidate points: 4
+2024-03-21 00:53:47 - INFO - Adjusted alpha: 0.1 | [original alpha: 0.1], desired fval: 0.985907
+2024-03-21 00:53:47 - INFO - ====================================================================================================
+2024-03-21 00:53:47 - INFO - EXAMPLE ACQUISITION PROMPT
+2024-03-21 00:53:47 - INFO - Length of prompt templates: 2
+2024-03-21 00:53:47 - INFO - Length of query templates: 2
+2024-03-21 00:53:47 - INFO - The following are examples of performance of a RandomForest measured in mean squared error and the corresponding model hyperparameter configurations. The model is evaluated on a tabular regression task. The tabular dataset contains 411 samples and 14 features (0 categorical, 14 numerical). The allowable ranges for the hyperparameters are:
+- max_depth: [1, 15] (int)
+- max_features: [0.01, 0.99] (float, precise to 2 decimals)
+- min_impurity_decrease: [0, 0] (float, precise to 0 decimals)
+- min_samples_leaf: [0.01, 0.49] (float, precise to 2 decimals)
+- min_samples_split: [0.01, 0.99] (float, precise to 2 decimals)
+- min_weight_fraction_leaf: [0.01, 0.49] (float, precise to 2 decimals)
+Recommend a configuration that can achieve the target performance of 0.985907. Do not recommend values at the minimum or maximum of allowable range, do not recommend rounded values. Recommend values with highest possible precision, as requested by the allowed ranges. Your response must only contain the predicted configuration, in the format ## configuration ##.
+
+Performance: 1.007377
+Hyperparameter configuration: ## max_depth: 9, max_features: 0.70, min_impurity_decrease: 0, min_samples_leaf: 0.01, min_samples_split: 0.01, min_weight_fraction_leaf: 0.26 ##
+Performance: 0.990012
+Hyperparameter configuration: ## max_depth: 13, max_features: 0.42, min_impurity_decrease: 0, min_samples_leaf: 0.25, min_samples_split: 0.33, min_weight_fraction_leaf: 0.16 ##
+Performance: 1.002110
+Hyperparameter configuration: ## max_depth: 3, max_features: 0.19, min_impurity_decrease: 0, min_samples_leaf: 0.40, min_samples_split: 0.11, min_weight_fraction_leaf: 0.05 ##
+Performance: 0.987859
+Hyperparameter configuration: ## max_depth: 12, max_features: 0.43, min_impurity_decrease: 0, min_samples_leaf: 0.25, min_samples_split: 0.33, min_weight_fraction_leaf: 0.16 ##
+Performance: 1.002110
+Hyperparameter configuration: ## max_depth: 7, max_features: 0.60, min_impurity_decrease: 0, min_samples_leaf: 0.04, min_samples_split: 0.38, min_weight_fraction_leaf: 0.08 ##
+Performance: 0.989735
+Hyperparameter configuration: ## max_depth: 10, max_features: 0.47, min_impurity_decrease: 0, min_samples_leaf: 0.23, min_samples_split: 0.32, min_weight_fraction_leaf: 0.15 ##
+Performance: 0.998014
+Hyperparameter configuration: ## max_depth: 11, max_features: 0.38, min_impurity_decrease: 0, min_samples_leaf: 0.20, min_samples_split: 0.17, min_weight_fraction_leaf: 0.14 ##
+Performance: 1.002110
+Hyperparameter configuration: ## max_depth: 12, max_features: 0.54, min_impurity_decrease: 0, min_samples_leaf: 0.22, min_samples_split: 0.08, min_weight_fraction_leaf: 0.21 ##
+Performance: 1.002110
+Hyperparameter configuration: ## max_depth: 9, max_features: 0.27, min_impurity_decrease: 0, min_samples_leaf: 0.08, min_samples_split: 0.07, min_weight_fraction_leaf: 0.12 ##
+Performance: 1.005115
+Hyperparameter configuration: ## max_depth: 11, max_features: 0.33, min_impurity_decrease: 0, min_samples_leaf: 0.16, min_samples_split: 0.29, min_weight_fraction_leaf: 0.18 ##
+Performance: 0.985907
+Hyperparameter configuration:
+2024-03-21 00:53:47 - INFO - ====================================================================================================
+2024-03-21 00:53:53 - INFO - Response:  ## max_depth: 10, max_features: 0.46, min_impurity_decrease: 0, min_samples_leaf: 0.24, min_samples_split: 0.33, min_weight_fraction_leaf: 0.15 ##
+2024-03-21 00:53:58 - INFO - Response:  ## max_depth: 13, max_features: 0.41, min_impurity_decrease: 0, min_samples_leaf: 0.25, min_samples_split: 0.33, min_weight_fraction_leaf: 0.16 ##
+2024-03-21 00:53:58 - INFO - Attempt: 0, number of proposed candidate points: 2, 
+ number of accepted candidate points: 2
+2024-03-21 00:54:03 - INFO - Response:  ## max\_depth: 10, max\_features: 0.46, min\_impurity\_decrease: 0, min\_samples\_leaf: 0.24, min\_samples\_split: 0.33, min\_weight\_fraction\_leaf: 0.15 ##
+2024-03-21 00:54:08 - INFO - Response:  ## max_depth: 13, max_features: 0.42, min_impurity_decrease: 0, min_samples_leaf: 0.25, min_samples_split: 0.33, min_weight_fraction_leaf: 0.16 ##
+2024-03-21 00:54:08 - INFO - Fixed response, remove \:  ## max_depth: 10, max_features: 0.46, min_impurity_decrease: 0, min_samples_leaf: 0.24, min_samples_split: 0.33, min_weight_fraction_leaf: 0.15 ##
+2024-03-21 00:54:08 - INFO - Attempt: 1, number of proposed candidate points: 2, 
+ number of accepted candidate points: 3
+2024-03-21 00:54:13 - INFO - Response:  ## max\_depth: 12, max\_features: 0.47, min\_impurity\_decrease: 0, min\_samples\_leaf: 0.23, min\_samples\_split: 0.32, min\_weight\_fraction\_leaf: 0.15 ##
+2024-03-21 00:54:18 - INFO - Response:  ## max_depth: 13, max_features: 0.41, min_impurity_decrease: 0, min_samples_leaf: 0.25, min_samples_split: 0.33, min_weight_fraction_leaf: 0.16 ##
+2024-03-21 00:54:18 - INFO - Fixed response, remove \:  ## max_depth: 12, max_features: 0.47, min_impurity_decrease: 0, min_samples_leaf: 0.23, min_samples_split: 0.32, min_weight_fraction_leaf: 0.15 ##
+2024-03-21 00:54:18 - INFO - Attempt: 2, number of proposed candidate points: 2, 
+ number of accepted candidate points: 5
+2024-03-21 00:54:37 - INFO - Adjusted alpha: 0.1 | [original alpha: 0.1], desired fval: 0.985523
+2024-03-21 00:54:37 - INFO - ====================================================================================================
+2024-03-21 00:54:37 - INFO - EXAMPLE ACQUISITION PROMPT
+2024-03-21 00:54:37 - INFO - Length of prompt templates: 2
+2024-03-21 00:54:37 - INFO - Length of query templates: 2
+2024-03-21 00:54:37 - INFO - The following are examples of performance of a RandomForest measured in mean squared error and the corresponding model hyperparameter configurations. The model is evaluated on a tabular regression task. The tabular dataset contains 411 samples and 14 features (0 categorical, 14 numerical). The allowable ranges for the hyperparameters are:
+- max_depth: [1, 15] (int)
+- max_features: [0.01, 0.99] (float, precise to 2 decimals)
+- min_impurity_decrease: [0, 0] (float, precise to 0 decimals)
+- min_samples_leaf: [0.01, 0.49] (float, precise to 2 decimals)
+- min_samples_split: [0.01, 0.99] (float, precise to 2 decimals)
+- min_weight_fraction_leaf: [0.01, 0.49] (float, precise to 2 decimals)
+Recommend a configuration that can achieve the target performance of 0.985523. Do not recommend values at the minimum or maximum of allowable range, do not recommend rounded values. Recommend values with highest possible precision, as requested by the allowed ranges. Your response must only contain the predicted configuration, in the format ## configuration ##.
+
+Performance: 1.002110
+Hyperparameter configuration: ## max_depth: 3, max_features: 0.19, min_impurity_decrease: 0, min_samples_leaf: 0.40, min_samples_split: 0.11, min_weight_fraction_leaf: 0.05 ##
+Performance: 0.987859
+Hyperparameter configuration: ## max_depth: 12, max_features: 0.43, min_impurity_decrease: 0, min_samples_leaf: 0.25, min_samples_split: 0.33, min_weight_fraction_leaf: 0.16 ##
+Performance: 1.007377
+Hyperparameter configuration: ## max_depth: 9, max_features: 0.70, min_impurity_decrease: 0, min_samples_leaf: 0.01, min_samples_split: 0.01, min_weight_fraction_leaf: 0.26 ##
+Performance: 0.987510
+Hyperparameter configuration: ## max_depth: 10, max_features: 0.46, min_impurity_decrease: 0, min_samples_leaf: 0.24, min_samples_split: 0.33, min_weight_fraction_leaf: 0.15 ##
+Performance: 0.989735
+Hyperparameter configuration: ## max_depth: 10, max_features: 0.47, min_impurity_decrease: 0, min_samples_leaf: 0.23, min_samples_split: 0.32, min_weight_fraction_leaf: 0.15 ##
+Performance: 1.002110
+Hyperparameter configuration: ## max_depth: 7, max_features: 0.60, min_impurity_decrease: 0, min_samples_leaf: 0.04, min_samples_split: 0.38, min_weight_fraction_leaf: 0.08 ##
+Performance: 0.998014
+Hyperparameter configuration: ## max_depth: 11, max_features: 0.38, min_impurity_decrease: 0, min_samples_leaf: 0.20, min_samples_split: 0.17, min_weight_fraction_leaf: 0.14 ##
+Performance: 0.990012
+Hyperparameter configuration: ## max_depth: 13, max_features: 0.42, min_impurity_decrease: 0, min_samples_leaf: 0.25, min_samples_split: 0.33, min_weight_fraction_leaf: 0.16 ##
+Performance: 1.002110
+Hyperparameter configuration: ## max_depth: 12, max_features: 0.54, min_impurity_decrease: 0, min_samples_leaf: 0.22, min_samples_split: 0.08, min_weight_fraction_leaf: 0.21 ##
+Performance: 1.002110
+Hyperparameter configuration: ## max_depth: 9, max_features: 0.27, min_impurity_decrease: 0, min_samples_leaf: 0.08, min_samples_split: 0.07, min_weight_fraction_leaf: 0.12 ##
+Performance: 1.005115
+Hyperparameter configuration: ## max_depth: 11, max_features: 0.33, min_impurity_decrease: 0, min_samples_leaf: 0.16, min_samples_split: 0.29, min_weight_fraction_leaf: 0.18 ##
+Performance: 0.985523
+Hyperparameter configuration:
+2024-03-21 00:54:37 - INFO - ====================================================================================================
+2024-03-21 00:54:43 - INFO - Response:  ## max\_depth: 10, max\_features: 0.47, min\_impurity\_decrease: 0, min\_samples\_leaf: 0.23, min\_samples\_split: 0.32, min\_weight\_fraction\_leaf: 0.15 ##
+2024-03-21 00:54:49 - INFO - Response:  ## max_depth: 10, max_features: 0.46, min_impurity_decrease: 0, min_samples_leaf: 0.24, min_samples_split: 0.33, min_weight_fraction_leaf: 0.15 ##
+2024-03-21 00:54:49 - INFO - Fixed response, remove \:  ## max_depth: 10, max_features: 0.47, min_impurity_decrease: 0, min_samples_leaf: 0.23, min_samples_split: 0.32, min_weight_fraction_leaf: 0.15 ##
+2024-03-21 00:54:49 - INFO - Attempt: 0, number of proposed candidate points: 2, 
+ number of accepted candidate points: 0
+2024-03-21 00:54:54 - INFO - Response:  ## max\_depth: 10, max\_features: 0.47, min\_impurity\_decrease: 0, min\_samples\_leaf: 0.23, min\_samples\_split: 0.32, min\_weight\_fraction\_leaf: 0.15 ##
+2024-03-21 00:54:59 - INFO - Response:  ## max_depth: 10, max_features: 0.46, min_impurity_decrease: 0, min_samples_leaf: 0.24, min_samples_split: 0.33, min_weight_fraction_leaf: 0.15 ##
+2024-03-21 00:54:59 - INFO - Fixed response, remove \:  ## max_depth: 10, max_features: 0.47, min_impurity_decrease: 0, min_samples_leaf: 0.23, min_samples_split: 0.32, min_weight_fraction_leaf: 0.15 ##
+2024-03-21 00:54:59 - INFO - Attempt: 1, number of proposed candidate points: 2, 
+ number of accepted candidate points: 0
+2024-03-21 00:55:04 - INFO - Response:  ## max\_depth: 10, max\_features: 0.47, min\_impurity\_decrease: 0, min\_samples\_leaf: 0.23, min\_samples\_split: 0.32, min\_weight\_fraction\_leaf: 0.15 ##
+2024-03-21 00:55:10 - INFO - Response:  ## max_depth: 10, max_features: 0.46, min_impurity_decrease: 0, min_samples_leaf: 0.24, min_samples_split: 0.33, min_weight_fraction_leaf: 0.15 ##
+2024-03-21 00:55:10 - INFO - Fixed response, remove \:  ## max_depth: 10, max_features: 0.47, min_impurity_decrease: 0, min_samples_leaf: 0.23, min_samples_split: 0.32, min_weight_fraction_leaf: 0.15 ##
+2024-03-21 00:55:10 - INFO - Attempt: 2, number of proposed candidate points: 2, 
+ number of accepted candidate points: 0
+2024-03-21 00:55:15 - INFO - Response:  ## max\_depth: 10, max\_features: 0.47, min\_impurity\_decrease: 0, min\_samples\_leaf: 0.23, min\_samples\_split: 0.32, min\_weight\_fraction\_leaf: 0.15 ##
+2024-03-21 00:55:20 - INFO - Response:  ## max_depth: 10, max_features: 0.46, min_impurity_decrease: 0, min_samples_leaf: 0.24, min_samples_split: 0.33, min_weight_fraction_leaf: 0.15 ##
+2024-03-21 00:55:20 - INFO - Fixed response, remove \:  ## max_depth: 10, max_features: 0.47, min_impurity_decrease: 0, min_samples_leaf: 0.23, min_samples_split: 0.32, min_weight_fraction_leaf: 0.15 ##
+2024-03-21 00:55:20 - INFO - Attempt: 3, number of proposed candidate points: 2, 
+ number of accepted candidate points: 0
+2024-03-21 00:55:26 - INFO - Response:  ## max\_depth: 10, max\_features: 0.47, min\_impurity\_decrease: 0, min\_samples\_leaf: 0.23, min\_samples\_split: 0.32, min\_weight\_fraction\_leaf: 0.15 ##
+2024-03-21 00:55:31 - INFO - Response:  ## max_depth: 10, max_features: 0.46, min_impurity_decrease: 0, min_samples_leaf: 0.24, min_samples_split: 0.33, min_weight_fraction_leaf: 0.15 ##
+2024-03-21 00:55:31 - INFO - Fixed response, remove \:  ## max_depth: 10, max_features: 0.47, min_impurity_decrease: 0, min_samples_leaf: 0.23, min_samples_split: 0.32, min_weight_fraction_leaf: 0.15 ##
+2024-03-21 00:55:31 - INFO - Attempt: 4, number of proposed candidate points: 2, 
+ number of accepted candidate points: 0
+2024-03-21 00:55:36 - INFO - Response:  ## max\_depth: 10, max\_features: 0.47, min\_impurity\_decrease: 0, min\_samples\_leaf: 0.23, min\_samples\_split: 0.32, min\_weight\_fraction\_leaf: 0.15 ##
+2024-03-21 00:55:42 - INFO - Response:  ## max_depth: 10, max_features: 0.46, min_impurity_decrease: 0, min_samples_leaf: 0.24, min_samples_split: 0.33, min_weight_fraction_leaf: 0.15 ##
+2024-03-21 00:55:42 - INFO - Fixed response, remove \:  ## max_depth: 10, max_features: 0.47, min_impurity_decrease: 0, min_samples_leaf: 0.23, min_samples_split: 0.32, min_weight_fraction_leaf: 0.15 ##
+2024-03-21 00:55:42 - INFO - Attempt: 5, number of proposed candidate points: 2, 
+ number of accepted candidate points: 0
+2024-03-21 00:55:42 - INFO - Desired fval: 0.985523
+2024-03-21 00:55:42 - INFO - Number of proposed candidate points: 2
+2024-03-21 00:55:42 - INFO - Number of accepted candidate points: 0

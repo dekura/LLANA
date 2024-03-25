@@ -1,0 +1,472 @@
+2024-03-21 12:35:30 - INFO - ================================================================================
+2024-03-21 12:35:30 - INFO - Executing LLAMBO (discriminative | ollama | mistral | top_pct: None) to tune AdaBoost on Offset_score with seed 1 / 1...
+2024-03-21 12:35:30 - INFO - Task context: {'model': 'AdaBoost', 'task': 'regression', 'tot_feats': 14, 'cat_feats': 0, 'num_feats': 14, 'n_classes': 406, 'metric': 'neg_mean_squared_error', 'lower_is_better': True, 'num_samples': 411, 'hyperparameter_constraints': {'n_estimators': ['int', 'linear', [10, 100]], 'learning_rate': ['float', 'log', [0.0001, 10.0]]}}
+2024-03-21 12:35:30 - INFO - ================================================================================
+2024-03-21 12:35:30 - INFO - [Search settings]: 
+	n_candidates: 10, n_templates: 2, n_gens: 10, 
+	alpha: 0.1, n_initial_samples: 5, n_trials: 10, 
+	using warping: False, ablation: None, shuffle_features: False
+2024-03-21 12:35:30 - INFO - [Task]: 
+	task type: regression, sm: discriminative, lower is better: True
+2024-03-21 12:35:30 - INFO - Hyperparameter search space: 
+2024-03-21 12:35:30 - INFO - ================================================================================
+2024-03-21 12:35:32 - INFO - Adjusted alpha: 0.1 | [original alpha: 0.1], desired fval: 0.887748
+2024-03-21 12:35:32 - INFO - ====================================================================================================
+2024-03-21 12:35:32 - INFO - EXAMPLE ACQUISITION PROMPT
+2024-03-21 12:35:32 - INFO - Length of prompt templates: 2
+2024-03-21 12:35:32 - INFO - Length of query templates: 2
+2024-03-21 12:35:32 - INFO - The following are examples of performance of a AdaBoost measured in mean squared error and the corresponding model hyperparameter configurations. The model is evaluated on a tabular regression task. The tabular dataset contains 411 samples and 14 features (0 categorical, 14 numerical). The allowable ranges for the hyperparameters are:
+- n_estimators: [10, 100] (int)
+- learning_rate: [0.0001, 10.0000] (float, precise to 4 decimals)
+Recommend a configuration that can achieve the target performance of 0.887748. Do not recommend values at the minimum or maximum of allowable range, do not recommend rounded values. Recommend values with highest possible precision, as requested by the allowed ranges. Your response must only contain the predicted configuration, in the format ## configuration ##.
+
+Performance: 0.910168
+Hyperparameter configuration: ## n_estimators: 66, learning_rate: 0.0084 ##
+Performance: 1.006094
+Hyperparameter configuration: ## n_estimators: 63, learning_rate: 1.6647 ##
+Performance: 0.982858
+Hyperparameter configuration: ## n_estimators: 87, learning_rate: 1.7229 ##
+Performance: 0.898506
+Hyperparameter configuration: ## n_estimators: 37, learning_rate: 0.0002 ##
+Performance: 0.907701
+Hyperparameter configuration: ## n_estimators: 35, learning_rate: 0.0245 ##
+Performance: 0.887748
+Hyperparameter configuration:
+2024-03-21 12:35:32 - INFO - ====================================================================================================
+2024-03-21 12:35:33 - INFO - Response:  ## n\_estimators: 49, learning\_rate: 2.1658 ##
+2024-03-21 12:35:34 - INFO - Response:  Based on the provided data, a suggested hyperparameter configuration that could achieve the target performance of 0.887748 is: ## n_estimators: 43, learning_rate: 1.2536 ##
+2024-03-21 12:35:34 - INFO - Fixed response, remove \:  ## n_estimators: 49, learning_rate: 2.1658 ##
+2024-03-21 12:35:34 - INFO - Attempt: 0, number of proposed candidate points: 2, 
+ number of accepted candidate points: 2
+2024-03-21 12:35:35 - INFO - Response:  ## n\_estimators: 49, learning\_rate: 1.1564 ##
+2024-03-21 12:35:35 - INFO - Response:  ## n\_estimators: 51, learning\_rate: 0.0161 ##
+2024-03-21 12:35:35 - INFO - Fixed response, remove \:  ## n_estimators: 49, learning_rate: 1.1564 ##
+2024-03-21 12:35:35 - INFO - Fixed response, remove \:  ## n_estimators: 51, learning_rate: 0.0161 ##
+2024-03-21 12:35:35 - INFO - Attempt: 1, number of proposed candidate points: 2, 
+ number of accepted candidate points: 4
+2024-03-21 12:35:38 - INFO - Adjusted alpha: 0.1 | [original alpha: 0.1], desired fval: 0.885795
+2024-03-21 12:35:38 - INFO - ====================================================================================================
+2024-03-21 12:35:38 - INFO - EXAMPLE ACQUISITION PROMPT
+2024-03-21 12:35:38 - INFO - Length of prompt templates: 2
+2024-03-21 12:35:38 - INFO - Length of query templates: 2
+2024-03-21 12:35:38 - INFO - The following are examples of performance of a AdaBoost measured in mean squared error and the corresponding model hyperparameter configurations. The model is evaluated on a tabular regression task. The tabular dataset contains 411 samples and 14 features (0 categorical, 14 numerical). The allowable ranges for the hyperparameters are:
+- n_estimators: [10, 100] (int)
+- learning_rate: [0.0001, 10.0000] (float, precise to 4 decimals)
+Recommend a configuration that can achieve the target performance of 0.885795. Do not recommend values at the minimum or maximum of allowable range, do not recommend rounded values. Recommend values with highest possible precision, as requested by the allowed ranges. Your response must only contain the predicted configuration, in the format ## configuration ##.
+
+Performance: 1.025622
+Hyperparameter configuration: ## n_estimators: 49, learning_rate: 2.1658 ##
+Performance: 0.910168
+Hyperparameter configuration: ## n_estimators: 66, learning_rate: 0.0084 ##
+Performance: 0.982858
+Hyperparameter configuration: ## n_estimators: 87, learning_rate: 1.7229 ##
+Performance: 0.898506
+Hyperparameter configuration: ## n_estimators: 37, learning_rate: 0.0002 ##
+Performance: 1.006094
+Hyperparameter configuration: ## n_estimators: 63, learning_rate: 1.6647 ##
+Performance: 0.907701
+Hyperparameter configuration: ## n_estimators: 35, learning_rate: 0.0245 ##
+Performance: 0.885795
+Hyperparameter configuration:
+2024-03-21 12:35:38 - INFO - ====================================================================================================
+2024-03-21 12:35:39 - INFO - Response:  ## n\_estimators: 71, learning\_rate: 3.4122 ##
+2024-03-21 12:35:40 - INFO - Response:  ## n\_estimators: 53, learning\_rate: 0.0117 ##
+2024-03-21 12:35:40 - INFO - Fixed response, remove \:  ## n_estimators: 71, learning_rate: 3.4122 ##
+2024-03-21 12:35:40 - INFO - Fixed response, remove \:  ## n_estimators: 53, learning_rate: 0.0117 ##
+2024-03-21 12:35:40 - INFO - Attempt: 0, number of proposed candidate points: 2, 
+ number of accepted candidate points: 2
+2024-03-21 12:35:40 - INFO - Response:  ## n\_estimators: 61, learning\_rate: 3.1261 ##
+2024-03-21 12:35:41 - INFO - Response:  ## n\_estimators: 53, learning\_rate: 0.0118 ##
+2024-03-21 12:35:41 - INFO - Fixed response, remove \:  ## n_estimators: 61, learning_rate: 3.1261 ##
+2024-03-21 12:35:41 - INFO - Fixed response, remove \:  ## n_estimators: 53, learning_rate: 0.0118 ##
+2024-03-21 12:35:41 - INFO - Attempt: 1, number of proposed candidate points: 2, 
+ number of accepted candidate points: 4
+2024-03-21 12:35:44 - INFO - Adjusted alpha: 0.1 | [original alpha: 0.1], desired fval: 0.852547
+2024-03-21 12:35:44 - INFO - ====================================================================================================
+2024-03-21 12:35:44 - INFO - EXAMPLE ACQUISITION PROMPT
+2024-03-21 12:35:44 - INFO - Length of prompt templates: 2
+2024-03-21 12:35:44 - INFO - Length of query templates: 2
+2024-03-21 12:35:44 - INFO - The following are examples of performance of a AdaBoost measured in mean squared error and the corresponding model hyperparameter configurations. The model is evaluated on a tabular regression task. The tabular dataset contains 411 samples and 14 features (0 categorical, 14 numerical). The allowable ranges for the hyperparameters are:
+- n_estimators: [10, 100] (int)
+- learning_rate: [0.0001, 10.0000] (float, precise to 4 decimals)
+Recommend a configuration that can achieve the target performance of 0.852547. Do not recommend values at the minimum or maximum of allowable range, do not recommend rounded values. Recommend values with highest possible precision, as requested by the allowed ranges. Your response must only contain the predicted configuration, in the format ## configuration ##.
+
+Performance: 1.358101
+Hyperparameter configuration: ## n_estimators: 71, learning_rate: 3.4122 ##
+Performance: 0.910168
+Hyperparameter configuration: ## n_estimators: 66, learning_rate: 0.0084 ##
+Performance: 0.982858
+Hyperparameter configuration: ## n_estimators: 87, learning_rate: 1.7229 ##
+Performance: 0.898506
+Hyperparameter configuration: ## n_estimators: 37, learning_rate: 0.0002 ##
+Performance: 1.006094
+Hyperparameter configuration: ## n_estimators: 63, learning_rate: 1.6647 ##
+Performance: 1.025622
+Hyperparameter configuration: ## n_estimators: 49, learning_rate: 2.1658 ##
+Performance: 0.907701
+Hyperparameter configuration: ## n_estimators: 35, learning_rate: 0.0245 ##
+Performance: 0.852547
+Hyperparameter configuration:
+2024-03-21 12:35:44 - INFO - ====================================================================================================
+2024-03-21 12:35:45 - INFO - Response:  ## n\_estimators: 53, learning\_rate: 4.1617 ##
+2024-03-21 12:35:46 - INFO - Response:  Based on the provided data, a configuration that can achieve the target performance of 0.852547 is: ## n\_estimators: 53, learning\_rate: 1.1454 ##
+2024-03-21 12:35:46 - INFO - Fixed response, remove \:  ## n_estimators: 53, learning_rate: 4.1617 ##
+2024-03-21 12:35:46 - INFO - Fixed response, remove \:  Based on the provided data, a configuration that can achieve the target performance of 0.852547 is: ## n_estimators: 53, learning_rate: 1.1454 ##
+2024-03-21 12:35:46 - INFO - Attempt: 0, number of proposed candidate points: 2, 
+ number of accepted candidate points: 2
+2024-03-21 12:35:46 - INFO - Response:  ## n\_estimators: 53, learning\_rate: 1.4623 ##
+2024-03-21 12:35:47 - INFO - Response:  ## n\_estimators: 53, learning\_rate: 2.5239 ##
+2024-03-21 12:35:47 - INFO - Fixed response, remove \:  ## n_estimators: 53, learning_rate: 1.4623 ##
+2024-03-21 12:35:47 - INFO - Fixed response, remove \:  ## n_estimators: 53, learning_rate: 2.5239 ##
+2024-03-21 12:35:47 - INFO - Attempt: 1, number of proposed candidate points: 2, 
+ number of accepted candidate points: 4
+2024-03-21 12:35:50 - INFO - Adjusted alpha: 0.1 | [original alpha: 0.1], desired fval: 0.722517
+2024-03-21 12:35:50 - INFO - ====================================================================================================
+2024-03-21 12:35:50 - INFO - EXAMPLE ACQUISITION PROMPT
+2024-03-21 12:35:50 - INFO - Length of prompt templates: 2
+2024-03-21 12:35:50 - INFO - Length of query templates: 2
+2024-03-21 12:35:50 - INFO - The following are examples of performance of a AdaBoost measured in mean squared error and the corresponding model hyperparameter configurations. The model is evaluated on a tabular regression task. The tabular dataset contains 411 samples and 14 features (0 categorical, 14 numerical). The allowable ranges for the hyperparameters are:
+- n_estimators: [10, 100] (int)
+- learning_rate: [0.0001, 10.0000] (float, precise to 4 decimals)
+Recommend a configuration that can achieve the target performance of 0.722517. Do not recommend values at the minimum or maximum of allowable range, do not recommend rounded values. Recommend values with highest possible precision, as requested by the allowed ranges. Your response must only contain the predicted configuration, in the format ## configuration ##.
+
+Performance: 1.358101
+Hyperparameter configuration: ## n_estimators: 71, learning_rate: 3.4122 ##
+Performance: 0.910168
+Hyperparameter configuration: ## n_estimators: 66, learning_rate: 0.0084 ##
+Performance: 0.982858
+Hyperparameter configuration: ## n_estimators: 87, learning_rate: 1.7229 ##
+Performance: 2.658396
+Hyperparameter configuration: ## n_estimators: 53, learning_rate: 4.1617 ##
+Performance: 0.898506
+Hyperparameter configuration: ## n_estimators: 37, learning_rate: 0.0002 ##
+Performance: 1.006094
+Hyperparameter configuration: ## n_estimators: 63, learning_rate: 1.6647 ##
+Performance: 1.025622
+Hyperparameter configuration: ## n_estimators: 49, learning_rate: 2.1658 ##
+Performance: 0.907701
+Hyperparameter configuration: ## n_estimators: 35, learning_rate: 0.0245 ##
+Performance: 0.722517
+Hyperparameter configuration:
+2024-03-21 12:35:50 - INFO - ====================================================================================================
+2024-03-21 12:35:51 - INFO - Response:  ## n\_estimators: 57, learning\_rate: 1.8576 ##
+2024-03-21 12:35:51 - INFO - Response:  ## n\_estimators: 72, learning\_rate: 1.9364 ##
+2024-03-21 12:35:51 - INFO - Fixed response, remove \:  ## n_estimators: 57, learning_rate: 1.8576 ##
+2024-03-21 12:35:51 - INFO - Fixed response, remove \:  ## n_estimators: 72, learning_rate: 1.9364 ##
+2024-03-21 12:35:51 - INFO - Attempt: 0, number of proposed candidate points: 2, 
+ number of accepted candidate points: 2
+2024-03-21 12:35:52 - INFO - Response:  ## n\_estimators: 83, learning\_rate: 2.7839 ##
+2024-03-21 12:35:52 - INFO - Response:  ## n\_estimators: 60, learning\_rate: 1.4864 ##
+2024-03-21 12:35:52 - INFO - Fixed response, remove \:  ## n_estimators: 60, learning_rate: 1.4864 ##
+2024-03-21 12:35:52 - INFO - Fixed response, remove \:  ## n_estimators: 83, learning_rate: 2.7839 ##
+2024-03-21 12:35:52 - INFO - Attempt: 1, number of proposed candidate points: 2, 
+ number of accepted candidate points: 4
+2024-03-21 12:35:56 - INFO - Adjusted alpha: 0.1 | [original alpha: 0.1], desired fval: 0.722517
+2024-03-21 12:35:56 - INFO - ====================================================================================================
+2024-03-21 12:35:56 - INFO - EXAMPLE ACQUISITION PROMPT
+2024-03-21 12:35:56 - INFO - Length of prompt templates: 2
+2024-03-21 12:35:56 - INFO - Length of query templates: 2
+2024-03-21 12:35:56 - INFO - The following are examples of performance of a AdaBoost measured in mean squared error and the corresponding model hyperparameter configurations. The model is evaluated on a tabular regression task. The tabular dataset contains 411 samples and 14 features (0 categorical, 14 numerical). The allowable ranges for the hyperparameters are:
+- n_estimators: [10, 100] (int)
+- learning_rate: [0.0001, 10.0000] (float, precise to 4 decimals)
+Recommend a configuration that can achieve the target performance of 0.722517. Do not recommend values at the minimum or maximum of allowable range, do not recommend rounded values. Recommend values with highest possible precision, as requested by the allowed ranges. Your response must only contain the predicted configuration, in the format ## configuration ##.
+
+Performance: 2.658396
+Hyperparameter configuration: ## n_estimators: 53, learning_rate: 4.1617 ##
+Performance: 0.910168
+Hyperparameter configuration: ## n_estimators: 66, learning_rate: 0.0084 ##
+Performance: 0.982858
+Hyperparameter configuration: ## n_estimators: 87, learning_rate: 1.7229 ##
+Performance: 0.907701
+Hyperparameter configuration: ## n_estimators: 35, learning_rate: 0.0245 ##
+Performance: 0.996159
+Hyperparameter configuration: ## n_estimators: 57, learning_rate: 1.8576 ##
+Performance: 1.358101
+Hyperparameter configuration: ## n_estimators: 71, learning_rate: 3.4122 ##
+Performance: 0.898506
+Hyperparameter configuration: ## n_estimators: 37, learning_rate: 0.0002 ##
+Performance: 1.006094
+Hyperparameter configuration: ## n_estimators: 63, learning_rate: 1.6647 ##
+Performance: 1.025622
+Hyperparameter configuration: ## n_estimators: 49, learning_rate: 2.1658 ##
+Performance: 0.722517
+Hyperparameter configuration:
+2024-03-21 12:35:56 - INFO - ====================================================================================================
+2024-03-21 12:35:57 - INFO - Response:  Hyperparameter configuration: ## n\_estimators: 76, learning\_rate: 1.3164 ##
+2024-03-21 12:35:58 - INFO - Response:  Based on the provided performance and hyperparameter configurations, a configuration that can achieve the target performance of 0.722517 is:
+## n_estimators: 43, learning_rate: 1.6879 ##
+2024-03-21 12:35:58 - INFO - Fixed response, remove \:  Hyperparameter configuration: ## n_estimators: 76, learning_rate: 1.3164 ##
+2024-03-21 12:35:58 - INFO - Attempt: 0, number of proposed candidate points: 2, 
+ number of accepted candidate points: 2
+2024-03-21 12:35:58 - INFO - Response:  Hyperparameter configuration: ## n\_estimators: 83, learning\_rate: 1.5436 ##
+2024-03-21 12:36:00 - INFO - Response:  Based on the given performance and hyperparameter configurations, a potential configuration that could achieve the target performance of 0.722517 is:
+## n_estimators: 31, learning_rate: 6.4899 ##
+This configuration falls within the allowable ranges for both hyperparameters and is not a rounded or extreme value.
+2024-03-21 12:36:00 - INFO - Fixed response, remove \:  Hyperparameter configuration: ## n_estimators: 83, learning_rate: 1.5436 ##
+2024-03-21 12:36:00 - INFO - Attempt: 1, number of proposed candidate points: 2, 
+ number of accepted candidate points: 4
+2024-03-21 12:36:03 - INFO - Adjusted alpha: 0.1 | [original alpha: 0.1], desired fval: 0.722517
+2024-03-21 12:36:03 - INFO - ====================================================================================================
+2024-03-21 12:36:03 - INFO - EXAMPLE ACQUISITION PROMPT
+2024-03-21 12:36:03 - INFO - Length of prompt templates: 2
+2024-03-21 12:36:03 - INFO - Length of query templates: 2
+2024-03-21 12:36:03 - INFO - The following are examples of performance of a AdaBoost measured in mean squared error and the corresponding model hyperparameter configurations. The model is evaluated on a tabular regression task. The tabular dataset contains 411 samples and 14 features (0 categorical, 14 numerical). The allowable ranges for the hyperparameters are:
+- n_estimators: [10, 100] (int)
+- learning_rate: [0.0001, 10.0000] (float, precise to 4 decimals)
+Recommend a configuration that can achieve the target performance of 0.722517. Do not recommend values at the minimum or maximum of allowable range, do not recommend rounded values. Recommend values with highest possible precision, as requested by the allowed ranges. Your response must only contain the predicted configuration, in the format ## configuration ##.
+
+Performance: 0.910168
+Hyperparameter configuration: ## n_estimators: 66, learning_rate: 0.0084 ##
+Performance: 0.996159
+Hyperparameter configuration: ## n_estimators: 57, learning_rate: 1.8576 ##
+Performance: 0.907701
+Hyperparameter configuration: ## n_estimators: 35, learning_rate: 0.0245 ##
+Performance: 0.967937
+Hyperparameter configuration: ## n_estimators: 76, learning_rate: 1.3164 ##
+Performance: 0.982858
+Hyperparameter configuration: ## n_estimators: 87, learning_rate: 1.7229 ##
+Performance: 1.358101
+Hyperparameter configuration: ## n_estimators: 71, learning_rate: 3.4122 ##
+Performance: 2.658396
+Hyperparameter configuration: ## n_estimators: 53, learning_rate: 4.1617 ##
+Performance: 0.898506
+Hyperparameter configuration: ## n_estimators: 37, learning_rate: 0.0002 ##
+Performance: 1.006094
+Hyperparameter configuration: ## n_estimators: 63, learning_rate: 1.6647 ##
+Performance: 1.025622
+Hyperparameter configuration: ## n_estimators: 49, learning_rate: 2.1658 ##
+Performance: 0.722517
+Hyperparameter configuration:
+2024-03-21 12:36:03 - INFO - ====================================================================================================
+2024-03-21 12:36:04 - INFO - Response:  Based on the given examples, a possible configuration that can achieve the target performance of 0.722517 is:
+## n_estimators: 43, learning_rate: 2.7863 ##
+2024-03-21 12:36:05 - INFO - Response:  ## n\_estimators: 52, learning\_rate: 1.5311 ##
+2024-03-21 12:36:05 - INFO - Fixed response, remove \:  ## n_estimators: 52, learning_rate: 1.5311 ##
+2024-03-21 12:36:05 - INFO - Attempt: 0, number of proposed candidate points: 2, 
+ number of accepted candidate points: 2
+2024-03-21 12:36:06 - INFO - Response:  ## n\_estimators: 53, learning\_rate: 1.6182 ##
+2024-03-21 12:36:06 - INFO - Response:  ## n\_estimators: 50, learning\_rate: 1.1329 ##
+2024-03-21 12:36:06 - INFO - Fixed response, remove \:  ## n_estimators: 53, learning_rate: 1.6182 ##
+2024-03-21 12:36:06 - INFO - Fixed response, remove \:  ## n_estimators: 50, learning_rate: 1.1329 ##
+2024-03-21 12:36:06 - INFO - Attempt: 1, number of proposed candidate points: 2, 
+ number of accepted candidate points: 4
+2024-03-21 12:36:10 - INFO - Adjusted alpha: 0.1 | [original alpha: 0.1], desired fval: 0.722517
+2024-03-21 12:36:10 - INFO - ====================================================================================================
+2024-03-21 12:36:10 - INFO - EXAMPLE ACQUISITION PROMPT
+2024-03-21 12:36:10 - INFO - Length of prompt templates: 2
+2024-03-21 12:36:10 - INFO - Length of query templates: 2
+2024-03-21 12:36:10 - INFO - The following are examples of performance of a AdaBoost measured in mean squared error and the corresponding model hyperparameter configurations. The model is evaluated on a tabular regression task. The tabular dataset contains 411 samples and 14 features (0 categorical, 14 numerical). The allowable ranges for the hyperparameters are:
+- n_estimators: [10, 100] (int)
+- learning_rate: [0.0001, 10.0000] (float, precise to 4 decimals)
+Recommend a configuration that can achieve the target performance of 0.722517. Do not recommend values at the minimum or maximum of allowable range, do not recommend rounded values. Recommend values with highest possible precision, as requested by the allowed ranges. Your response must only contain the predicted configuration, in the format ## configuration ##.
+
+Performance: 0.907701
+Hyperparameter configuration: ## n_estimators: 35, learning_rate: 0.0245 ##
+Performance: 0.967937
+Hyperparameter configuration: ## n_estimators: 76, learning_rate: 1.3164 ##
+Performance: 0.910168
+Hyperparameter configuration: ## n_estimators: 66, learning_rate: 0.0084 ##
+Performance: 1.018574
+Hyperparameter configuration: ## n_estimators: 43, learning_rate: 2.7863 ##
+Performance: 1.358101
+Hyperparameter configuration: ## n_estimators: 71, learning_rate: 3.4122 ##
+Performance: 0.982858
+Hyperparameter configuration: ## n_estimators: 87, learning_rate: 1.7229 ##
+Performance: 2.658396
+Hyperparameter configuration: ## n_estimators: 53, learning_rate: 4.1617 ##
+Performance: 0.996159
+Hyperparameter configuration: ## n_estimators: 57, learning_rate: 1.8576 ##
+Performance: 0.898506
+Hyperparameter configuration: ## n_estimators: 37, learning_rate: 0.0002 ##
+Performance: 1.006094
+Hyperparameter configuration: ## n_estimators: 63, learning_rate: 1.6647 ##
+Performance: 1.025622
+Hyperparameter configuration: ## n_estimators: 49, learning_rate: 2.1658 ##
+Performance: 0.722517
+Hyperparameter configuration:
+2024-03-21 12:36:10 - INFO - ====================================================================================================
+2024-03-21 12:36:11 - INFO - Response:  ## n\_estimators: 61, learning\_rate: 0.0038 ##
+2024-03-21 12:36:11 - INFO - Response:  ## n\_estimators: 53, learning\_rate: 0.002783 ##
+2024-03-21 12:36:11 - INFO - Fixed response, remove \:  ## n_estimators: 61, learning_rate: 0.0038 ##
+2024-03-21 12:36:11 - INFO - Fixed response, remove \:  ## n_estimators: 53, learning_rate: 0.002783 ##
+2024-03-21 12:36:11 - INFO - Attempt: 0, number of proposed candidate points: 2, 
+ number of accepted candidate points: 2
+2024-03-21 12:36:12 - INFO - Response:  ## n\_estimators: 50, learning\_rate: 1.5363 ##
+2024-03-21 12:36:13 - INFO - Response:  ## n\_estimators: 51, learning\_rate: 0.0039 ##
+2024-03-21 12:36:13 - INFO - Fixed response, remove \:  ## n_estimators: 50, learning_rate: 1.5363 ##
+2024-03-21 12:36:13 - INFO - Fixed response, remove \:  ## n_estimators: 51, learning_rate: 0.0039 ##
+2024-03-21 12:36:13 - INFO - Attempt: 1, number of proposed candidate points: 2, 
+ number of accepted candidate points: 4
+2024-03-21 12:36:16 - INFO - Adjusted alpha: 0.1 | [original alpha: 0.1], desired fval: 0.722517
+2024-03-21 12:36:16 - INFO - ====================================================================================================
+2024-03-21 12:36:16 - INFO - EXAMPLE ACQUISITION PROMPT
+2024-03-21 12:36:16 - INFO - Length of prompt templates: 2
+2024-03-21 12:36:16 - INFO - Length of query templates: 2
+2024-03-21 12:36:16 - INFO - The following are examples of performance of a AdaBoost measured in mean squared error and the corresponding model hyperparameter configurations. The model is evaluated on a tabular regression task. The tabular dataset contains 411 samples and 14 features (0 categorical, 14 numerical). The allowable ranges for the hyperparameters are:
+- n_estimators: [10, 100] (int)
+- learning_rate: [0.0001, 10.0000] (float, precise to 4 decimals)
+Recommend a configuration that can achieve the target performance of 0.722517. Do not recommend values at the minimum or maximum of allowable range, do not recommend rounded values. Recommend values with highest possible precision, as requested by the allowed ranges. Your response must only contain the predicted configuration, in the format ## configuration ##.
+
+Performance: 1.358101
+Hyperparameter configuration: ## n_estimators: 71, learning_rate: 3.4122 ##
+Performance: 0.903644
+Hyperparameter configuration: ## n_estimators: 61, learning_rate: 0.0038 ##
+Performance: 0.907701
+Hyperparameter configuration: ## n_estimators: 35, learning_rate: 0.0245 ##
+Performance: 1.018574
+Hyperparameter configuration: ## n_estimators: 43, learning_rate: 2.7863 ##
+Performance: 0.910168
+Hyperparameter configuration: ## n_estimators: 66, learning_rate: 0.0084 ##
+Performance: 0.996159
+Hyperparameter configuration: ## n_estimators: 57, learning_rate: 1.8576 ##
+Performance: 0.982858
+Hyperparameter configuration: ## n_estimators: 87, learning_rate: 1.7229 ##
+Performance: 2.658396
+Hyperparameter configuration: ## n_estimators: 53, learning_rate: 4.1617 ##
+Performance: 0.967937
+Hyperparameter configuration: ## n_estimators: 76, learning_rate: 1.3164 ##
+Performance: 0.898506
+Hyperparameter configuration: ## n_estimators: 37, learning_rate: 0.0002 ##
+Performance: 1.006094
+Hyperparameter configuration: ## n_estimators: 63, learning_rate: 1.6647 ##
+Performance: 1.025622
+Hyperparameter configuration: ## n_estimators: 49, learning_rate: 2.1658 ##
+Performance: 0.722517
+Hyperparameter configuration:
+2024-03-21 12:36:16 - INFO - ====================================================================================================
+2024-03-21 12:36:17 - INFO - Response:  ## n\_estimators: 50, learning\_rate: 1.5317 ##
+2024-03-21 12:36:18 - INFO - Response:  Hyperparameter configuration: ## n\_estimators: 51, learning\_rate: 0.0123 ##
+2024-03-21 12:36:18 - INFO - Fixed response, remove \:  ## n_estimators: 50, learning_rate: 1.5317 ##
+2024-03-21 12:36:18 - INFO - Fixed response, remove \:  Hyperparameter configuration: ## n_estimators: 51, learning_rate: 0.0123 ##
+2024-03-21 12:36:18 - INFO - Attempt: 0, number of proposed candidate points: 2, 
+ number of accepted candidate points: 2
+2024-03-21 12:36:19 - INFO - Response:  ## n\_estimators: 55, learning\_rate: 0.0053 ##
+2024-03-21 12:36:19 - INFO - Response:  ## n\_estimators: 50, learning\_rate: 0.0133 ##
+2024-03-21 12:36:19 - INFO - Fixed response, remove \:  ## n_estimators: 55, learning_rate: 0.0053 ##
+2024-03-21 12:36:19 - INFO - Fixed response, remove \:  ## n_estimators: 50, learning_rate: 0.0133 ##
+2024-03-21 12:36:19 - INFO - Attempt: 1, number of proposed candidate points: 2, 
+ number of accepted candidate points: 4
+2024-03-21 12:36:23 - INFO - Adjusted alpha: 0.1 | [original alpha: 0.1], desired fval: 0.722517
+2024-03-21 12:36:23 - INFO - ====================================================================================================
+2024-03-21 12:36:23 - INFO - EXAMPLE ACQUISITION PROMPT
+2024-03-21 12:36:23 - INFO - Length of prompt templates: 2
+2024-03-21 12:36:23 - INFO - Length of query templates: 2
+2024-03-21 12:36:23 - INFO - The following are examples of performance of a AdaBoost measured in mean squared error and the corresponding model hyperparameter configurations. The model is evaluated on a tabular regression task. The tabular dataset contains 411 samples and 14 features (0 categorical, 14 numerical). The allowable ranges for the hyperparameters are:
+- n_estimators: [10, 100] (int)
+- learning_rate: [0.0001, 10.0000] (float, precise to 4 decimals)
+Recommend a configuration that can achieve the target performance of 0.722517. Do not recommend values at the minimum or maximum of allowable range, do not recommend rounded values. Recommend values with highest possible precision, as requested by the allowed ranges. Your response must only contain the predicted configuration, in the format ## configuration ##.
+
+Performance: 1.358101
+Hyperparameter configuration: ## n_estimators: 71, learning_rate: 3.4122 ##
+Performance: 0.903644
+Hyperparameter configuration: ## n_estimators: 61, learning_rate: 0.0038 ##
+Performance: 0.907701
+Hyperparameter configuration: ## n_estimators: 35, learning_rate: 0.0245 ##
+Performance: 1.018574
+Hyperparameter configuration: ## n_estimators: 43, learning_rate: 2.7863 ##
+Performance: 0.910168
+Hyperparameter configuration: ## n_estimators: 66, learning_rate: 0.0084 ##
+Performance: 0.996159
+Hyperparameter configuration: ## n_estimators: 57, learning_rate: 1.8576 ##
+Performance: 0.982858
+Hyperparameter configuration: ## n_estimators: 87, learning_rate: 1.7229 ##
+Performance: 2.658396
+Hyperparameter configuration: ## n_estimators: 53, learning_rate: 4.1617 ##
+Performance: 0.967937
+Hyperparameter configuration: ## n_estimators: 76, learning_rate: 1.3164 ##
+Performance: 0.898506
+Hyperparameter configuration: ## n_estimators: 37, learning_rate: 0.0002 ##
+Performance: 1.006094
+Hyperparameter configuration: ## n_estimators: 63, learning_rate: 1.6647 ##
+Performance: 1.025622
+Hyperparameter configuration: ## n_estimators: 49, learning_rate: 2.1658 ##
+Performance: 1.007431
+Hyperparameter configuration: ## n_estimators: 50, learning_rate: 1.5317 ##
+Performance: 0.722517
+Hyperparameter configuration:
+2024-03-21 12:36:23 - INFO - ====================================================================================================
+2024-03-21 12:36:24 - INFO - Response:  ## n\_estimators: 56, learning\_rate: 3.1418 ##
+2024-03-21 12:36:25 - INFO - Response:  ## n\_estimators: 51, learning\_rate: 1.3674 ##
+2024-03-21 12:36:25 - INFO - Fixed response, remove \:  ## n_estimators: 56, learning_rate: 3.1418 ##
+2024-03-21 12:36:25 - INFO - Fixed response, remove \:  ## n_estimators: 51, learning_rate: 1.3674 ##
+2024-03-21 12:36:25 - INFO - Attempt: 0, number of proposed candidate points: 2, 
+ number of accepted candidate points: 2
+2024-03-21 12:36:26 - INFO - Response:  ## n\_estimators: 60, learning\_rate: 4.5834 ##
+2024-03-21 12:36:26 - INFO - Response:  ## n\_estimators: 55, learning\_rate: 0.0137 ##
+2024-03-21 12:36:26 - INFO - Fixed response, remove \:  ## n_estimators: 60, learning_rate: 4.5834 ##
+2024-03-21 12:36:26 - INFO - Fixed response, remove \:  ## n_estimators: 55, learning_rate: 0.0137 ##
+2024-03-21 12:36:26 - INFO - Attempt: 1, number of proposed candidate points: 2, 
+ number of accepted candidate points: 4
+2024-03-21 12:36:30 - INFO - Adjusted alpha: 0.1 | [original alpha: 0.1], desired fval: 0.722517
+2024-03-21 12:36:30 - INFO - ====================================================================================================
+2024-03-21 12:36:30 - INFO - EXAMPLE ACQUISITION PROMPT
+2024-03-21 12:36:30 - INFO - Length of prompt templates: 2
+2024-03-21 12:36:30 - INFO - Length of query templates: 2
+2024-03-21 12:36:30 - INFO - The following are examples of performance of a AdaBoost measured in mean squared error and the corresponding model hyperparameter configurations. The model is evaluated on a tabular regression task. The tabular dataset contains 411 samples and 14 features (0 categorical, 14 numerical). The allowable ranges for the hyperparameters are:
+- n_estimators: [10, 100] (int)
+- learning_rate: [0.0001, 10.0000] (float, precise to 4 decimals)
+Recommend a configuration that can achieve the target performance of 0.722517. Do not recommend values at the minimum or maximum of allowable range, do not recommend rounded values. Recommend values with highest possible precision, as requested by the allowed ranges. Your response must only contain the predicted configuration, in the format ## configuration ##.
+
+Performance: 0.996159
+Hyperparameter configuration: ## n_estimators: 57, learning_rate: 1.8576 ##
+Performance: 1.358101
+Hyperparameter configuration: ## n_estimators: 71, learning_rate: 3.4122 ##
+Performance: 0.907701
+Hyperparameter configuration: ## n_estimators: 35, learning_rate: 0.0245 ##
+Performance: 0.903644
+Hyperparameter configuration: ## n_estimators: 61, learning_rate: 0.0038 ##
+Performance: 0.910168
+Hyperparameter configuration: ## n_estimators: 66, learning_rate: 0.0084 ##
+Performance: 1.212057
+Hyperparameter configuration: ## n_estimators: 56, learning_rate: 3.1418 ##
+Performance: 0.967937
+Hyperparameter configuration: ## n_estimators: 76, learning_rate: 1.3164 ##
+Performance: 0.982858
+Hyperparameter configuration: ## n_estimators: 87, learning_rate: 1.7229 ##
+Performance: 2.658396
+Hyperparameter configuration: ## n_estimators: 53, learning_rate: 4.1617 ##
+Performance: 1.018574
+Hyperparameter configuration: ## n_estimators: 43, learning_rate: 2.7863 ##
+Performance: 0.898506
+Hyperparameter configuration: ## n_estimators: 37, learning_rate: 0.0002 ##
+Performance: 1.006094
+Hyperparameter configuration: ## n_estimators: 63, learning_rate: 1.6647 ##
+Performance: 1.025622
+Hyperparameter configuration: ## n_estimators: 49, learning_rate: 2.1658 ##
+Performance: 1.007431
+Hyperparameter configuration: ## n_estimators: 50, learning_rate: 1.5317 ##
+Performance: 0.722517
+Hyperparameter configuration:
+2024-03-21 12:36:30 - INFO - ====================================================================================================
+2024-03-21 12:36:31 - INFO - Response:  ## n\_estimators: 56, learning\_rate: 2.4897 ##
+2024-03-21 12:36:32 - INFO - Response:  Based on the provided performances and hyperparameter configurations, a suitable configuration for achieving a target performance of 0.722517 could be: ## n_estimators: 64, learning_rate: 0.0039 ##
+2024-03-21 12:36:32 - INFO - Fixed response, remove \:  ## n_estimators: 56, learning_rate: 2.4897 ##
+2024-03-21 12:36:32 - INFO - Attempt: 0, number of proposed candidate points: 2, 
+ number of accepted candidate points: 2
+2024-03-21 12:36:33 - INFO - Response:  ## n\_estimators: 68, learning\_rate: 2.3954 ##
+2024-03-21 12:36:34 - INFO - Response:  ## n\_estimators: 65, learning\_rate: 0.0131 ##
+2024-03-21 12:36:34 - INFO - Fixed response, remove \:  ## n_estimators: 68, learning_rate: 2.3954 ##
+2024-03-21 12:36:34 - INFO - Fixed response, remove \:  ## n_estimators: 65, learning_rate: 0.0131 ##
+2024-03-21 12:36:34 - INFO - Attempt: 1, number of proposed candidate points: 2, 
+ number of accepted candidate points: 4
+2024-03-21 12:36:37 - INFO - [LLAMBO] Query cost: 0.0041
+2024-03-21 12:36:37 - INFO - [LLAMBO] Query time: 63.2260
+2024-03-21 12:36:37 - INFO -     n_estimators  learning_rate     score  generalization_score
+0             63       1.664672  1.006094              0.781530
+1             87       1.722895  0.982858              0.873759
+2             66       0.008354  0.910168              0.488712
+3             37       0.000192  0.898506              0.480651
+4             35       0.024453  0.907701              0.495402
+5             49       2.165800  1.025622              0.850107
+6             71       3.412200  1.358101              1.529098
+7             53       4.161700  2.658396              8.385367
+8             57       1.857600  0.996159              0.859489
+9             76       1.316400  0.967937              0.815058
+10            43       2.786300  1.018574              0.748502
+11            61       0.003800  0.903644              0.471120
+12            50       1.531700  1.007431              0.934803
+13            56       3.141800  1.212057              0.681537
+14            56       2.489700  0.941982              0.754374
+2024-03-21 12:36:37 - INFO - [LLAMBO] RUN COMPLETE, saved results to /home/local/eda13/gc29434/phd/analog/LLAMBO/exp_custom/ollama/mistral/results_discriminative/Offset_score/AdaBoost...
+2024-03-21 12:36:37 - INFO - ================================================================================
+2024-03-21 12:36:37 - INFO - [LLAMBO] 1 evaluation runs complete! Total cost: $0.0041

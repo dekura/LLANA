@@ -1,0 +1,184 @@
+2024-03-23 18:48:53 - INFO - ========================================================================================================================================================================================================
+2024-03-23 18:48:53 - INFO - Evaluating Disriminative SM performance on openai Offset_score with MLP_SGD and 10 observed configurations... Running 1 runs.
+2024-03-23 18:48:53 - INFO - ========================================================================================================================================================================================================
+2024-03-23 18:48:53 - INFO - Collecting configurations - this might take a while...
+2024-03-23 18:49:55 - INFO - ========================================================================================================================================================================================================
+2024-03-23 18:49:55 - INFO - Evaluating SM with seed 0...
+2024-03-23 18:49:55 - INFO - [GP] RMSE: 0.3162, R2 score: -0.1111, NLL: 6.6754, Coverage: 0.8000, MACE: 0.3306, Sharpness: 316.2278, Regret: 0.0000
+2024-03-23 18:49:55 - INFO - [SMAC] RMSE: 0.3148, R2 score: -0.1012, NLL: 78.9807, Coverage: 0.4000, MACE: 0.1801, Sharpness: 4588773236766065408597377547239424.0000, Regret: 0.0000
+2024-03-23 18:49:55 - INFO - ****************************************************************************************************
+2024-03-23 18:49:55 - INFO - Number of all_prompt_templates: 5
+2024-03-23 18:49:55 - INFO - Number of query_examples: 10
+2024-03-23 18:49:55 - INFO - The following are hyperparameter configurations for a MLP_SGD and the corresponding performance measured in mean squared error. The model is evaluated on a tabular regression task. The tabular dataset contains 411 samples and 14 features (0 categorical, 14 numerical).  Your response should only contain the predicted mean squared error in the format ## performance ##.
+Hyperparameter configuration: hidden_layer_sizes is 98, alpha is 0.00048, batch_size is 17, learning_rate_init is 0.05044, power_t is 0.2, momentum is 0.692
+Performance: ## 24950182768136961117223405372833792.000000 ##
+Hyperparameter configuration: hidden_layer_sizes is 170, alpha is 0.63372, batch_size is 242, learning_rate_init is 0.00012, power_t is 0.3, momentum is 0.036
+Performance: ## 1.185038 ##
+Hyperparameter configuration: hidden_layer_sizes is 71, alpha is 0.12077, batch_size is 145, learning_rate_init is 0.00001, power_t is 0.2, momentum is 0.031
+Performance: ## 4.060603 ##
+Hyperparameter configuration: hidden_layer_sizes is 115, alpha is 1.05143, batch_size is 38, learning_rate_init is 0.00005, power_t is 0.6, momentum is 0.007
+Performance: ## 2.214599 ##
+Hyperparameter configuration: hidden_layer_sizes is 63, alpha is 0.00096, batch_size is 10, learning_rate_init is 0.04470, power_t is 0.9, momentum is 0.018
+Performance: ## 9119098418946.316406 ##
+Hyperparameter configuration: hidden_layer_sizes is 177, alpha is 0.13604, batch_size is 193, learning_rate_init is 0.09040, power_t is 0.4, momentum is 0.004
+Performance: ## 0.579408 ##
+Hyperparameter configuration: hidden_layer_sizes is 67, alpha is 9.87207, batch_size is 103, learning_rate_init is 0.05856, power_t is 0.1, momentum is 0.001
+Performance: ## 0.629601 ##
+Hyperparameter configuration: hidden_layer_sizes is 63, alpha is 0.12390, batch_size is 225, learning_rate_init is 0.00001, power_t is 0.7, momentum is 0.017
+Performance: ## 1.223383 ##
+Hyperparameter configuration: hidden_layer_sizes is 153, alpha is 4.96843, batch_size is 186, learning_rate_init is 0.00113, power_t is 0.8, momentum is 0.008
+Performance: ## 1.227529 ##
+Hyperparameter configuration: hidden_layer_sizes is 176, alpha is 0.00124, batch_size is 16, learning_rate_init is 0.02614, power_t is 0.6, momentum is 0.086
+Performance: ## 66742.676316 ##
+Hyperparameter configuration: hidden_layer_sizes is 65, alpha is 0.00004, batch_size is 55, learning_rate_init is 0.00014, power_t is 0.3, momentum is 0.056
+Performance: 
+2024-03-23 18:49:57 - INFO - Response from OpenAI: 
+ ## 0.809409 ##
+2024-03-23 18:49:57 - INFO - Response from OpenAI: 
+ ## 0.874491 ##
+2024-03-23 18:49:57 - INFO - Response from OpenAI: 
+ ## 0.625470 ##
+2024-03-23 18:49:57 - INFO - Response from OpenAI: 
+ ## 0.644839 ##
+2024-03-23 18:49:57 - INFO - Response from OpenAI: 
+ ## 0.944981 ##
+2024-03-23 18:49:57 - INFO - Response from OpenAI: 
+ ## 0.285216 ##
+2024-03-23 18:49:57 - INFO - Response from OpenAI: 
+ ## 0.587779 ##
+2024-03-23 18:49:57 - INFO - Response from OpenAI: 
+ ## 1.185038 ##
+2024-03-23 18:49:57 - INFO - Response from OpenAI: 
+ ## 0.186986 ##
+2024-03-23 18:49:57 - INFO - Response from OpenAI: 
+ ## 0.779864 ##
+2024-03-23 18:49:57 - INFO - Response from OpenAI: 
+ ## 0.887827 ##
+2024-03-23 18:49:57 - INFO - Response from OpenAI: 
+ ## 0.345805 ##
+2024-03-23 18:49:57 - INFO - Response from OpenAI: 
+ ## 0.865427 ##
+2024-03-23 18:49:57 - INFO - Response from OpenAI: 
+ ## 0.652691 ##
+2024-03-23 18:49:57 - INFO - Response from OpenAI: 
+ ## 0.540211 ##
+2024-03-23 18:49:57 - INFO - Response from OpenAI: 
+ ## 0.931530 ##
+2024-03-23 18:49:57 - INFO - Response from OpenAI: 
+ ## 0.996398 ##
+2024-03-23 18:49:57 - INFO - Response from OpenAI: 
+ ## 1.721827 ##
+2024-03-23 18:49:57 - INFO - Response from OpenAI: 
+ ## 1.207542 ##
+2024-03-23 18:49:57 - INFO - Response from OpenAI: 
+ ## 0.992457 ##
+2024-03-23 18:49:57 - INFO - Response from OpenAI: 
+ ## 0.462841 ##
+2024-03-23 18:49:57 - INFO - Response from OpenAI: 
+ ## 1.490385 ##
+2024-03-23 18:49:57 - INFO - Response from OpenAI: 
+ The predicted mean squared error for the given
+2024-03-23 18:49:57 - INFO - Response from OpenAI: 
+ ## 2.306994 ##
+2024-03-23 18:49:58 - INFO - Response from OpenAI: 
+ ## 1.839399 ##
+2024-03-23 18:49:59 - INFO - Response from OpenAI: 
+ ## 0.941610 ##
+2024-03-23 18:49:59 - INFO - Response from OpenAI: 
+ ## 0.922318 ##
+2024-03-23 18:49:59 - INFO - Response from OpenAI: 
+ ## 0.000003 ##
+2024-03-23 18:49:59 - INFO - Response from OpenAI: 
+ ## 0.000003 ##
+2024-03-23 18:49:59 - INFO - Response from OpenAI: 
+ ## 0.914998 ##
+2024-03-23 18:49:59 - INFO - Response from OpenAI: 
+ ## 0.009662 ##
+2024-03-23 18:49:59 - INFO - Response from OpenAI: 
+ ## 0.276930 ##
+2024-03-23 18:49:59 - INFO - Response from OpenAI: 
+ ## 1.019601 ##
+2024-03-23 18:49:59 - INFO - Response from OpenAI: 
+ ## 0.899354 ##
+2024-03-23 18:49:59 - INFO - Response from OpenAI: 
+ ## 0.617109 ##
+2024-03-23 18:49:59 - INFO - Response from OpenAI: 
+ ## 0.981236 ##
+2024-03-23 18:49:59 - INFO - Response from OpenAI: 
+ ## 0.887554 ##
+2024-03-23 18:49:59 - INFO - Response from OpenAI: 
+ ## 224185109117.839
+2024-03-23 18:49:59 - INFO - Response from OpenAI: 
+ ## 0.659820 ##
+2024-03-23 18:49:59 - INFO - Response from OpenAI: 
+ ## 2.251173 ##
+2024-03-23 18:49:59 - INFO - Response from OpenAI: 
+ ## 0.951702 ##
+2024-03-23 18:49:59 - INFO - Response from OpenAI: 
+ ## 0.980234 ##
+2024-03-23 18:49:59 - INFO - Response from OpenAI: 
+ ## 0.227473 ##
+2024-03-23 18:49:59 - INFO - Response from OpenAI: 
+ ## 0.811862 ##
+2024-03-23 18:49:59 - INFO - Response from OpenAI: 
+ ## 0.944926 ##
+2024-03-23 18:49:59 - INFO - Response from OpenAI: 
+ ## 0.416933 ##
+2024-03-23 18:49:59 - INFO - Response from OpenAI: 
+ ## 0.368413 ##
+2024-03-23 18:50:00 - INFO - Response from OpenAI: 
+ ## 4.043621 ##
+2024-03-23 18:50:00 - INFO - Response from OpenAI: 
+ ## 1.320539 ##
+2024-03-23 18:50:00 - INFO - Response from OpenAI: 
+ ## 3.288953 ##
+2024-03-23 18:50:00 - INFO - [LLAMBO] RMSE: 0.3162, R2 score: -0.1111, NLL: 2.2691, Coverage: 0.4000, MACE: 0.2231, Sharpness: 1.3320, Regret: 0.0000 | Cost: $0.0634, Time: 4.5069s
+2024-03-23 18:50:00 - INFO - ****************************************************************************************************
+2024-03-23 18:50:00 - INFO - Number of all_prompt_templates: 1
+2024-03-23 18:50:00 - INFO - Number of query_examples: 10
+2024-03-23 18:50:00 - INFO - The following are hyperparameter configurations for a MLP_SGD and the corresponding performance measured in mean squared error. The model is evaluated on a tabular regression task. The tabular dataset contains 411 samples and 14 features (0 categorical, 14 numerical).  Your response should only contain the predicted mean squared error in the format ## performance ##.
+Hyperparameter configuration: hidden_layer_sizes is 98, alpha is 0.00048, batch_size is 17, learning_rate_init is 0.05044, power_t is 0.2, momentum is 0.692
+Performance: ## 24950182768136961117223405372833792.000000 ##
+Hyperparameter configuration: hidden_layer_sizes is 170, alpha is 0.63372, batch_size is 242, learning_rate_init is 0.00012, power_t is 0.3, momentum is 0.036
+Performance: ## 1.185038 ##
+Hyperparameter configuration: hidden_layer_sizes is 71, alpha is 0.12077, batch_size is 145, learning_rate_init is 0.00001, power_t is 0.2, momentum is 0.031
+Performance: ## 4.060603 ##
+Hyperparameter configuration: hidden_layer_sizes is 115, alpha is 1.05143, batch_size is 38, learning_rate_init is 0.00005, power_t is 0.6, momentum is 0.007
+Performance: ## 2.214599 ##
+Hyperparameter configuration: hidden_layer_sizes is 63, alpha is 0.00096, batch_size is 10, learning_rate_init is 0.04470, power_t is 0.9, momentum is 0.018
+Performance: ## 9119098418946.316406 ##
+Hyperparameter configuration: hidden_layer_sizes is 177, alpha is 0.13604, batch_size is 193, learning_rate_init is 0.09040, power_t is 0.4, momentum is 0.004
+Performance: ## 0.579408 ##
+Hyperparameter configuration: hidden_layer_sizes is 67, alpha is 9.87207, batch_size is 103, learning_rate_init is 0.05856, power_t is 0.1, momentum is 0.001
+Performance: ## 0.629601 ##
+Hyperparameter configuration: hidden_layer_sizes is 63, alpha is 0.12390, batch_size is 225, learning_rate_init is 0.00001, power_t is 0.7, momentum is 0.017
+Performance: ## 1.223383 ##
+Hyperparameter configuration: hidden_layer_sizes is 153, alpha is 4.96843, batch_size is 186, learning_rate_init is 0.00113, power_t is 0.8, momentum is 0.008
+Performance: ## 1.227529 ##
+Hyperparameter configuration: hidden_layer_sizes is 176, alpha is 0.00124, batch_size is 16, learning_rate_init is 0.02614, power_t is 0.6, momentum is 0.086
+Performance: ## 66742.676316 ##
+Hyperparameter configuration: hidden_layer_sizes is 65, alpha is 0.00004, batch_size is 55, learning_rate_init is 0.00014, power_t is 0.3, momentum is 0.056
+Performance: 
+2024-03-23 18:50:56 - INFO - Response from OpenAI: 
+ ## 0.005218 ##
+2024-03-23 18:50:56 - INFO - Response from OpenAI: 
+ ## 0.524965 ##
+2024-03-23 18:50:56 - INFO - Response from OpenAI: 
+ ## 0.976768 ##
+2024-03-23 18:50:56 - INFO - Response from OpenAI: 
+ ## 0.158036 ##
+2024-03-23 18:50:57 - INFO - Response from OpenAI: 
+ ## 1.185038 ##
+2024-03-23 18:50:57 - INFO - Response from OpenAI: 
+ ## 0.000001 ##
+2024-03-23 18:50:57 - INFO - Response from OpenAI: 
+ ## 0.496043 ##
+2024-03-23 18:50:57 - INFO - Response from OpenAI: 
+ ## 0.602581 ##
+2024-03-23 18:50:57 - INFO - Response from OpenAI: 
+ ## 1.370188 ##
+2024-03-23 18:50:57 - INFO - Response from OpenAI: 
+ ## 2.640016 ##
+2024-03-23 18:50:58 - INFO - [LLAMBO_VANILLA] RMSE: 0.3162, R2 score: -0.1111, NLL: 4.4948, Coverage: 0.5000, MACE: 0.1391, Sharpness: 1.3435, Regret: 0.0000 | Cost: $0.0127, Time: 57.4546s
+2024-03-23 18:50:58 - INFO - ========================================================================================================================================================================================================
+2024-03-23 18:50:58 - INFO - [LLAMBO] 1 evaluation runs complete! Total cost: $0.0760

@@ -1,0 +1,174 @@
+2024-03-23 18:37:46 - INFO - ========================================================================================================================================================================================================
+2024-03-23 18:37:46 - INFO - Evaluating Disriminative SM performance on ollama Offset_score with DecisionTree and 30 observed configurations... Running 1 runs.
+2024-03-23 18:37:46 - INFO - ========================================================================================================================================================================================================
+2024-03-23 18:37:46 - INFO - Collecting configurations - this might take a while...
+2024-03-23 18:37:55 - INFO - ========================================================================================================================================================================================================
+2024-03-23 18:37:55 - INFO - Evaluating SM with seed 0...
+2024-03-23 18:37:56 - INFO - [GP] RMSE: 1.3395, R2 score: -14.1306, NLL: -1.4021, Coverage: 0.5000, MACE: 0.1461, Sharpness: 0.2446, Regret: 0.1280
+2024-03-23 18:37:56 - INFO - [SMAC] RMSE: 0.3261, R2 score: 0.1031, NLL: -0.7877, Coverage: 0.3000, MACE: 0.2420, Sharpness: 0.0339, Regret: 0.5316
+2024-03-23 18:37:56 - INFO - ****************************************************************************************************
+2024-03-23 18:37:56 - INFO - Number of all_prompt_templates: 5
+2024-03-23 18:37:56 - INFO - Number of query_examples: 10
+2024-03-23 18:37:56 - INFO - The following are hyperparameter configurations for a DecisionTree and the corresponding performance measured in mean squared error. The model is evaluated on a tabular regression task. The tabular dataset contains 411 samples and 14 features (0 categorical, 14 numerical).  Your response should only contain the predicted mean squared error in the format ## performance ##.
+Hyperparameter configuration: max_depth is 12, max_features is 0.34, min_impurity_decrease is 0, min_samples_leaf is 0.01, min_samples_split is 0.05, min_weight_fraction_leaf is 0.07
+Performance: ## 0.685153 ##
+Hyperparameter configuration: max_depth is 9, max_features is 0.02, min_impurity_decrease is 0, min_samples_leaf is 0.01, min_samples_split is 0.11, min_weight_fraction_leaf is 0.01
+Performance: ## 0.629116 ##
+Hyperparameter configuration: max_depth is 1, max_features is 0.45, min_impurity_decrease is 0, min_samples_leaf is 0.03, min_samples_split is 0.03, min_weight_fraction_leaf is 0.02
+Performance: ## 0.599949 ##
+Hyperparameter configuration: max_depth is 9, max_features is 0.02, min_impurity_decrease is 0, min_samples_leaf is 0.01, min_samples_split is 0.10, min_weight_fraction_leaf is 0.02
+Performance: ## 0.647616 ##
+Hyperparameter configuration: max_depth is 9, max_features is 0.55, min_impurity_decrease is 0, min_samples_leaf is 0.27, min_samples_split is 0.16, min_weight_fraction_leaf is 0.23
+Performance: ## 0.596982 ##
+Hyperparameter configuration: max_depth is 10, max_features is 0.13, min_impurity_decrease is 0, min_samples_leaf is 0.02, min_samples_split is 0.04, min_weight_fraction_leaf is 0.08
+Performance: ## 0.575792 ##
+Hyperparameter configuration: max_depth is 14, max_features is 0.11, min_impurity_decrease is 0, min_samples_leaf is 0.01, min_samples_split is 0.08, min_weight_fraction_leaf is 0.01
+Performance: ## 0.675426 ##
+Hyperparameter configuration: max_depth is 12, max_features is 0.03, min_impurity_decrease is 0, min_samples_leaf is 0.02, min_samples_split is 0.07, min_weight_fraction_leaf is 0.01
+Performance: ## 0.744673 ##
+Hyperparameter configuration: max_depth is 12, max_features is 0.01, min_impurity_decrease is 0, min_samples_leaf is 0.04, min_samples_split is 0.24, min_weight_fraction_leaf is 0.01
+Performance: ## 0.612856 ##
+Hyperparameter configuration: max_depth is 12, max_features is 0.27, min_impurity_decrease is 0, min_samples_leaf is 0.01, min_samples_split is 0.05, min_weight_fraction_leaf is 0.05
+Performance: ## 0.645131 ##
+Hyperparameter configuration: max_depth is 11, max_features is 0.01, min_impurity_decrease is 0, min_samples_leaf is 0.03, min_samples_split is 0.07, min_weight_fraction_leaf is 0.01
+Performance: ## 0.639198 ##
+Hyperparameter configuration: max_depth is 12, max_features is 0.24, min_impurity_decrease is 0, min_samples_leaf is 0.01, min_samples_split is 0.05, min_weight_fraction_leaf is 0.08
+Performance: ## 0.656234 ##
+Hyperparameter configuration: max_depth is 11, max_features is 0.31, min_impurity_decrease is 0, min_samples_leaf is 0.01, min_samples_split is 0.05, min_weight_fraction_leaf is 0.06
+Performance: ## 0.766228 ##
+Hyperparameter configuration: max_depth is 5, max_features is 0.90, min_impurity_decrease is 0, min_samples_leaf is 0.08, min_samples_split is 0.11, min_weight_fraction_leaf is 0.25
+Performance: ## 0.607950 ##
+Hyperparameter configuration: max_depth is 2, max_features is 0.11, min_impurity_decrease is 0, min_samples_leaf is 0.22, min_samples_split is 0.02, min_weight_fraction_leaf is 0.02
+Performance: ## 0.603393 ##
+Hyperparameter configuration: max_depth is 13, max_features is 0.28, min_impurity_decrease is 0, min_samples_leaf is 0.01, min_samples_split is 0.05, min_weight_fraction_leaf is 0.07
+Performance: ## 0.655981 ##
+Hyperparameter configuration: max_depth is 4, max_features is 0.23, min_impurity_decrease is 0, min_samples_leaf is 0.18, min_samples_split is 0.17, min_weight_fraction_leaf is 0.05
+Performance: ## 0.575433 ##
+Hyperparameter configuration: max_depth is 3, max_features is 0.54, min_impurity_decrease is 0, min_samples_leaf is 0.01, min_samples_split is 0.14, min_weight_fraction_leaf is 0.29
+Performance: ## 0.588004 ##
+Hyperparameter configuration: max_depth is 7, max_features is 0.11, min_impurity_decrease is 0, min_samples_leaf is 0.29, min_samples_split is 0.33, min_weight_fraction_leaf is 0.35
+Performance: ## 0.603969 ##
+Hyperparameter configuration: max_depth is 12, max_features is 0.08, min_impurity_decrease is 0, min_samples_leaf is 0.01, min_samples_split is 0.08, min_weight_fraction_leaf is 0.01
+Performance: ## 0.731415 ##
+Hyperparameter configuration: max_depth is 13, max_features is 0.02, min_impurity_decrease is 0, min_samples_leaf is 0.02, min_samples_split is 0.09, min_weight_fraction_leaf is 0.02
+Performance: ## 0.729115 ##
+Hyperparameter configuration: max_depth is 3, max_features is 0.44, min_impurity_decrease is 0, min_samples_leaf is 0.02, min_samples_split is 0.07, min_weight_fraction_leaf is 0.27
+Performance: ## 0.645575 ##
+Hyperparameter configuration: max_depth is 3, max_features is 0.45, min_impurity_decrease is 0, min_samples_leaf is 0.02, min_samples_split is 0.15, min_weight_fraction_leaf is 0.35
+Performance: ## 0.655909 ##
+Hyperparameter configuration: max_depth is 12, max_features is 0.23, min_impurity_decrease is 0, min_samples_leaf is 0.01, min_samples_split is 0.04, min_weight_fraction_leaf is 0.04
+Performance: ## 0.662776 ##
+Hyperparameter configuration: max_depth is 14, max_features is 0.25, min_impurity_decrease is 0, min_samples_leaf is 0.02, min_samples_split is 0.04, min_weight_fraction_leaf is 0.06
+Performance: ## 0.605449 ##
+Hyperparameter configuration: max_depth is 4, max_features is 0.83, min_impurity_decrease is 0, min_samples_leaf is 0.05, min_samples_split is 0.07, min_weight_fraction_leaf is 0.33
+Performance: ## 0.607026 ##
+Hyperparameter configuration: max_depth is 7, max_features is 0.24, min_impurity_decrease is 0, min_samples_leaf is 0.05, min_samples_split is 0.28, min_weight_fraction_leaf is 0.14
+Performance: ## 0.606315 ##
+Hyperparameter configuration: max_depth is 9, max_features is 0.25, min_impurity_decrease is 0, min_samples_leaf is 0.06, min_samples_split is 0.10, min_weight_fraction_leaf is 0.39
+Performance: ## 0.648665 ##
+Hyperparameter configuration: max_depth is 12, max_features is 0.30, min_impurity_decrease is 0, min_samples_leaf is 0.01, min_samples_split is 0.04, min_weight_fraction_leaf is 0.04
+Performance: ## 0.725555 ##
+Hyperparameter configuration: max_depth is 7, max_features is 0.51, min_impurity_decrease is 0, min_samples_leaf is 0.04, min_samples_split is 0.06, min_weight_fraction_leaf is 0.22
+Performance: ## 0.535191 ##
+Hyperparameter configuration: max_depth is 7, max_features is 0.02, min_impurity_decrease is 0, min_samples_leaf is 0.42, min_samples_split is 0.76, min_weight_fraction_leaf is 0.31
+Performance: 
+2024-03-23 18:37:58 - INFO - Response from ollama: 
+  Based on the provided code and output,
+2024-03-23 18:37:59 - INFO - Response from ollama: 
+  It looks like you are performing a grid
+2024-03-23 18:37:59 - INFO - Response from ollama: 
+  Based on the provided output, it appears
+2024-03-23 18:37:59 - INFO - Response from ollama: 
+  Based on the provided output, it appears
+2024-03-23 18:38:00 - INFO - Response from ollama: 
+  Based on the provided output, it appears
+2024-03-23 18:38:01 - INFO - Response from ollama: 
+  Based on the provided output, it appears
+2024-03-23 18:38:01 - INFO - Response from ollama: 
+  It looks like you are performing a grid
+2024-03-23 18:38:02 - INFO - Response from ollama: 
+  It appears that you have run a Grid
+2024-03-23 18:38:02 - INFO - Response from ollama: 
+  Based on the given output, it appears
+2024-03-23 18:38:02 - INFO - Response from ollama: 
+  Based on the given output, it appears
+2024-03-23 18:38:04 - INFO - Response from ollama: 
+  Based on the given output, it appears
+2024-03-23 18:38:04 - INFO - Response from ollama: 
+  It looks like you are performing a grid
+2024-03-23 18:38:04 - INFO - Response from ollama: 
+  It looks like you are performing a grid
+2024-03-23 18:38:05 - INFO - Response from ollama: 
+  It looks like you are performing a grid
+2024-03-23 18:38:05 - INFO - Response from ollama: 
+  Based on the given output, it appears
+2024-03-23 18:38:06 - INFO - Response from ollama: 
+  Based on the given output, it appears
+2024-03-23 18:38:06 - INFO - Response from ollama: 
+  It looks like you are performing a grid
+2024-03-23 18:38:07 - INFO - Response from ollama: 
+  It looks like you are performing a grid
+2024-03-23 18:38:07 - INFO - Response from ollama: 
+  Based on the provided output, it looks
+2024-03-23 18:38:07 - INFO - Response from ollama: 
+  Based on the provided output, it looks
+2024-03-23 18:38:09 - INFO - Response from ollama: 
+  Based on the provided output, it looks
+2024-03-23 18:38:09 - INFO - Response from ollama: 
+  It appears that you have provided a script
+2024-03-23 18:38:09 - INFO - Response from ollama: 
+  It seems that the script is performing a
+2024-03-23 18:38:09 - INFO - Response from ollama: 
+  It seems that the script is performing a
+2024-03-23 18:38:10 - INFO - Response from ollama: 
+  It appears that you have provided a script
+2024-03-23 18:38:12 - INFO - Response from ollama: 
+  It looks like you've run a
+2024-03-23 18:38:12 - INFO - Response from ollama: 
+  Based on the provided output, it appears
+2024-03-23 18:38:12 - INFO - Response from ollama: 
+  Based on the provided output, it appears
+2024-03-23 18:38:12 - INFO - Response from ollama: 
+  Based on the provided output, it appears
+2024-03-23 18:38:13 - INFO - Response from ollama: 
+  Based on the provided output, it appears
+2024-03-23 18:38:14 - INFO - Response from ollama: 
+  Based on the given output, it appears
+2024-03-23 18:38:14 - INFO - Response from ollama: 
+  It looks like you have run a grid
+2024-03-23 18:38:15 - INFO - Response from ollama: 
+  It appears that you are running a Grid
+2024-03-23 18:38:16 - INFO - Response from ollama: 
+  Based on the given output, it appears
+2024-03-23 18:38:17 - INFO - Response from ollama: 
+  It looks like you are performing a grid
+2024-03-23 18:38:17 - INFO - Response from ollama: 
+  It looks like you are performing a grid
+2024-03-23 18:38:19 - INFO - Response from ollama: 
+  It looks like you are performing a grid
+2024-03-23 18:38:19 - INFO - Response from ollama: 
+  Here are the best hyperparameter configurations and
+2024-03-23 18:38:19 - INFO - Response from ollama: 
+  Here's a summary of the hyper
+2024-03-23 18:38:20 - INFO - Response from ollama: 
+  Here are the best hyperparameter configurations and
+2024-03-23 18:38:21 - INFO - Response from ollama: 
+  Based on the provided output, it appears
+2024-03-23 18:38:21 - INFO - Response from ollama: 
+  Based on the provided output, it seems
+2024-03-23 18:38:21 - INFO - Response from ollama: 
+  Based on the provided output, it seems
+2024-03-23 18:38:23 - INFO - Response from ollama: 
+  Based on the provided output, it seems
+2024-03-23 18:38:24 - INFO - Response from ollama: 
+  Based on the given output, here are
+2024-03-23 18:38:24 - INFO - Response from ollama: 
+  Based on the provided output, it appears
+2024-03-23 18:38:26 - INFO - Response from ollama: 
+  Based on the provided output, it appears
+2024-03-23 18:38:26 - INFO - Response from ollama: 
+  It appears that the script is performing a
+2024-03-23 18:38:26 - INFO - Response from ollama: 
+  It appears that the script is performing a
+2024-03-23 18:38:26 - INFO - Response from ollama: 
+  It appears that the script is performing a

@@ -1,0 +1,224 @@
+2024-03-23 18:10:32 - INFO - ========================================================================================================================================================================================================
+2024-03-23 18:10:32 - INFO - Evaluating Disriminative SM performance on ollama CMRR_score with RandomForest and 20 observed configurations... Running 1 runs.
+2024-03-23 18:10:32 - INFO - ========================================================================================================================================================================================================
+2024-03-23 18:10:32 - INFO - Collecting configurations - this might take a while...
+2024-03-23 18:10:44 - INFO - ========================================================================================================================================================================================================
+2024-03-23 18:10:44 - INFO - Evaluating SM with seed 0...
+2024-03-23 18:10:45 - INFO - [GP] RMSE: 0.6880, R2 score: -3.7234, NLL: -1.9805, Coverage: 0.5000, MACE: 0.1203, Sharpness: 0.0406, Regret: 0.0217
+2024-03-23 18:10:45 - INFO - [SMAC] RMSE: 0.3034, R2 score: 0.0815, NLL: -2.4199, Coverage: 0.8000, MACE: 0.0662, Sharpness: 0.0260, Regret: 0.2608
+2024-03-23 18:10:45 - INFO - ****************************************************************************************************
+2024-03-23 18:10:45 - INFO - Number of all_prompt_templates: 5
+2024-03-23 18:10:45 - INFO - Number of query_examples: 10
+2024-03-23 18:10:45 - INFO - The following are hyperparameter configurations for a RandomForest and the corresponding performance measured in mean squared error. The model is evaluated on a tabular regression task. The tabular dataset contains 411 samples and 14 features (0 categorical, 14 numerical).  Your response should only contain the predicted mean squared error in the format ## performance ##.
+Hyperparameter configuration: max_depth is 2, max_features is 0.45, min_impurity_decrease is 0, min_samples_leaf is 0.02, min_samples_split is 0.12, min_weight_fraction_leaf is 0.02
+Performance: ## 0.451512 ##
+Hyperparameter configuration: max_depth is 5, max_features is 0.54, min_impurity_decrease is 0, min_samples_leaf is 0.02, min_samples_split is 0.07, min_weight_fraction_leaf is 0.02
+Performance: ## 0.444245 ##
+Hyperparameter configuration: max_depth is 3, max_features is 0.18, min_impurity_decrease is 0, min_samples_leaf is 0.01, min_samples_split is 0.01, min_weight_fraction_leaf is 0.03
+Performance: ## 0.448109 ##
+Hyperparameter configuration: max_depth is 7, max_features is 0.35, min_impurity_decrease is 0, min_samples_leaf is 0.06, min_samples_split is 0.06, min_weight_fraction_leaf is 0.01
+Performance: ## 0.431679 ##
+Hyperparameter configuration: max_depth is 1, max_features is 0.28, min_impurity_decrease is 0, min_samples_leaf is 0.01, min_samples_split is 0.10, min_weight_fraction_leaf is 0.01
+Performance: ## 0.445130 ##
+Hyperparameter configuration: max_depth is 10, max_features is 0.45, min_impurity_decrease is 0, min_samples_leaf is 0.01, min_samples_split is 0.01, min_weight_fraction_leaf is 0.02
+Performance: ## 0.505633 ##
+Hyperparameter configuration: max_depth is 3, max_features is 0.74, min_impurity_decrease is 0, min_samples_leaf is 0.01, min_samples_split is 0.07, min_weight_fraction_leaf is 0.01
+Performance: ## 0.462462 ##
+Hyperparameter configuration: max_depth is 6, max_features is 0.32, min_impurity_decrease is 0, min_samples_leaf is 0.05, min_samples_split is 0.32, min_weight_fraction_leaf is 0.19
+Performance: ## 0.435612 ##
+Hyperparameter configuration: max_depth is 2, max_features is 0.16, min_impurity_decrease is 0, min_samples_leaf is 0.16, min_samples_split is 0.43, min_weight_fraction_leaf is 0.04
+Performance: ## 0.443022 ##
+Hyperparameter configuration: max_depth is 2, max_features is 0.96, min_impurity_decrease is 0, min_samples_leaf is 0.02, min_samples_split is 0.08, min_weight_fraction_leaf is 0.01
+Performance: ## 0.477026 ##
+Hyperparameter configuration: max_depth is 2, max_features is 0.15, min_impurity_decrease is 0, min_samples_leaf is 0.01, min_samples_split is 0.03, min_weight_fraction_leaf is 0.03
+Performance: ## 0.471041 ##
+Hyperparameter configuration: max_depth is 5, max_features is 0.91, min_impurity_decrease is 0, min_samples_leaf is 0.02, min_samples_split is 0.06, min_weight_fraction_leaf is 0.02
+Performance: ## 0.498670 ##
+Hyperparameter configuration: max_depth is 8, max_features is 0.25, min_impurity_decrease is 0, min_samples_leaf is 0.04, min_samples_split is 0.45, min_weight_fraction_leaf is 0.01
+Performance: ## 0.445172 ##
+Hyperparameter configuration: max_depth is 4, max_features is 0.74, min_impurity_decrease is 0, min_samples_leaf is 0.01, min_samples_split is 0.04, min_weight_fraction_leaf is 0.04
+Performance: ## 0.487171 ##
+Hyperparameter configuration: max_depth is 1, max_features is 0.24, min_impurity_decrease is 0, min_samples_leaf is 0.09, min_samples_split is 0.16, min_weight_fraction_leaf is 0.20
+Performance: ## 0.444438 ##
+Hyperparameter configuration: max_depth is 5, max_features is 0.48, min_impurity_decrease is 0, min_samples_leaf is 0.01, min_samples_split is 0.05, min_weight_fraction_leaf is 0.01
+Performance: ## 0.468239 ##
+Hyperparameter configuration: max_depth is 7, max_features is 0.87, min_impurity_decrease is 0, min_samples_leaf is 0.02, min_samples_split is 0.02, min_weight_fraction_leaf is 0.01
+Performance: ## 0.502178 ##
+Hyperparameter configuration: max_depth is 6, max_features is 0.41, min_impurity_decrease is 0, min_samples_leaf is 0.02, min_samples_split is 0.03, min_weight_fraction_leaf is 0.01
+Performance: ## 0.505187 ##
+Hyperparameter configuration: max_depth is 7, max_features is 0.20, min_impurity_decrease is 0, min_samples_leaf is 0.02, min_samples_split is 0.04, min_weight_fraction_leaf is 0.01
+Performance: ## 0.506694 ##
+Hyperparameter configuration: max_depth is 3, max_features is 0.33, min_impurity_decrease is 0, min_samples_leaf is 0.02, min_samples_split is 0.01, min_weight_fraction_leaf is 0.04
+Performance: ## 0.468564 ##
+Hyperparameter configuration: max_depth is 6, max_features is 0.36, min_impurity_decrease is 0, min_samples_leaf is 0.09, min_samples_split is 0.02, min_weight_fraction_leaf is 0.02
+Performance: 
+2024-03-23 18:10:47 - INFO - Response from ollama: 
+  Hyperparameter configuration: max\_depth
+2024-03-23 18:10:48 - INFO - Response from ollama: 
+  Hyperparameter configuration: max\_depth
+2024-03-23 18:10:50 - INFO - Response from ollama: 
+  Hyperparameter configuration: max\_depth
+2024-03-23 18:10:50 - INFO - Response from ollama: 
+  Performance: ## 0.43
+2024-03-23 18:10:51 - INFO - Response from ollama: 
+  Performance: ## 0.46
+2024-03-23 18:10:51 - INFO - Response from ollama: 
+  Here's the predicted mean squared
+2024-03-23 18:10:53 - INFO - Response from ollama: 
+  Here's the predicted mean squared
+2024-03-23 18:10:54 - INFO - Response from ollama: 
+  ## 0.4430
+2024-03-23 18:10:54 - INFO - Response from ollama: 
+  Hyperparameter configuration: max\_depth
+2024-03-23 18:10:56 - INFO - Response from ollama: 
+  Performance: ## 0.52
+2024-03-23 18:10:56 - INFO - Response from ollama: 
+  Hyperparameter configuration: max\_depth
+2024-03-23 18:10:57 - INFO - Response from ollama: 
+  ## 0.4624
+2024-03-23 18:10:58 - INFO - Response from ollama: 
+  ## 0.5066
+2024-03-23 18:11:00 - INFO - Response from ollama: 
+  The performance of the RandomForest model
+2024-03-23 18:11:00 - INFO - Response from ollama: 
+  Performance: ## 0.46
+2024-03-23 18:11:01 - INFO - Response from ollama: 
+  Performance: ## 0.43
+2024-03-23 18:11:03 - INFO - Response from ollama: 
+  Here's the predicted mean squared
+2024-03-23 18:11:04 - INFO - Response from ollama: 
+  ## 0.5021
+2024-03-23 18:11:05 - INFO - Response from ollama: 
+  Hyperparameter configuration: max_depth
+2024-03-23 18:11:07 - INFO - Response from ollama: 
+  Performance: ## 0.45
+2024-03-23 18:11:08 - INFO - Response from ollama: 
+  Performance: ## 0.51
+2024-03-23 18:11:08 - INFO - Response from ollama: 
+  Based on the hyperparameter configurations and performance
+2024-03-23 18:11:08 - INFO - Response from ollama: 
+  Performance: ## 0.43
+2024-03-23 18:11:09 - INFO - Response from ollama: 
+  Based on the hyperparameter configurations and performance
+2024-03-23 18:11:10 - INFO - Response from ollama: 
+  ## 0.4515
+2024-03-23 18:11:12 - INFO - Response from ollama: 
+  The performance of the RandomForest model
+2024-03-23 18:11:12 - INFO - Response from ollama: 
+  Based on the given hyperparameter configurations and
+2024-03-23 18:11:12 - INFO - Response from ollama: 
+  Hyperparameter configuration: max\_depth
+2024-03-23 18:11:14 - INFO - Response from ollama: 
+  Performance: ## 0.45
+2024-03-23 18:11:15 - INFO - Response from ollama: 
+  Hyperparameter configuration: max_depth
+2024-03-23 18:11:16 - INFO - Response from ollama: 
+  Performance: ## 0.47
+2024-03-23 18:11:17 - INFO - Response from ollama: 
+  Hyperparameter configuration: max\_depth
+2024-03-23 18:11:17 - INFO - Response from ollama: 
+  ## 0.4710
+2024-03-23 18:11:18 - INFO - Response from ollama: 
+  Hyperparameter configuration: max\_depth
+2024-03-23 18:11:19 - INFO - Response from ollama: 
+  Here's the predicted mean squared
+2024-03-23 18:11:20 - INFO - Response from ollama: 
+  I cannot directly execute the code or make
+2024-03-23 18:11:20 - INFO - Response from ollama: 
+  Hyperparameter configuration: max\_depth
+2024-03-23 18:11:21 - INFO - Response from ollama: 
+  Performance: ## 0.45
+2024-03-23 18:11:23 - INFO - Response from ollama: 
+  I'm an AI language model and
+2024-03-23 18:11:24 - INFO - Response from ollama: 
+  Performance: ## 0.46
+2024-03-23 18:11:24 - INFO - Response from ollama: 
+  Based on the given hyperparameter configurations and
+2024-03-23 18:11:26 - INFO - Response from ollama: 
+  Here's the predicted mean squared
+2024-03-23 18:11:27 - INFO - Response from ollama: 
+  ## Performance: ## 0.4
+2024-03-23 18:11:28 - INFO - Response from ollama: 
+  Hyperparameter configuration: max\_depth
+2024-03-23 18:11:28 - INFO - Response from ollama: 
+  ## 0.4624
+2024-03-23 18:11:29 - INFO - Response from ollama: 
+  ## 0.4624
+2024-03-23 18:11:30 - INFO - Response from ollama: 
+  Performance: ## 0.43
+2024-03-23 18:11:31 - INFO - Response from ollama: 
+  Hyperparameter configuration: max\_depth
+2024-03-23 18:11:33 - INFO - Response from ollama: 
+  Hyperparameter configuration: max\_depth
+2024-03-23 18:11:34 - INFO - Response from ollama: 
+  ## 0.4986
+2024-03-23 18:11:34 - INFO - [LLAMBO] RMSE: 0.3235, R2 score: -0.0447, NLL: 5.5661, Coverage: 0.3000, MACE: 0.2370, Sharpness: 0.0149, Regret: 0.0217 | Cost: $0.0014, Time: 48.8754s
+2024-03-23 18:11:34 - INFO - ****************************************************************************************************
+2024-03-23 18:11:34 - INFO - Number of all_prompt_templates: 1
+2024-03-23 18:11:34 - INFO - Number of query_examples: 10
+2024-03-23 18:11:34 - INFO - The following are hyperparameter configurations for a RandomForest and the corresponding performance measured in mean squared error. The model is evaluated on a tabular regression task. The tabular dataset contains 411 samples and 14 features (0 categorical, 14 numerical).  Your response should only contain the predicted mean squared error in the format ## performance ##.
+Hyperparameter configuration: max_depth is 2, max_features is 0.45, min_impurity_decrease is 0, min_samples_leaf is 0.02, min_samples_split is 0.12, min_weight_fraction_leaf is 0.02
+Performance: ## 0.451512 ##
+Hyperparameter configuration: max_depth is 5, max_features is 0.54, min_impurity_decrease is 0, min_samples_leaf is 0.02, min_samples_split is 0.07, min_weight_fraction_leaf is 0.02
+Performance: ## 0.444245 ##
+Hyperparameter configuration: max_depth is 3, max_features is 0.18, min_impurity_decrease is 0, min_samples_leaf is 0.01, min_samples_split is 0.01, min_weight_fraction_leaf is 0.03
+Performance: ## 0.448109 ##
+Hyperparameter configuration: max_depth is 7, max_features is 0.35, min_impurity_decrease is 0, min_samples_leaf is 0.06, min_samples_split is 0.06, min_weight_fraction_leaf is 0.01
+Performance: ## 0.431679 ##
+Hyperparameter configuration: max_depth is 1, max_features is 0.28, min_impurity_decrease is 0, min_samples_leaf is 0.01, min_samples_split is 0.10, min_weight_fraction_leaf is 0.01
+Performance: ## 0.445130 ##
+Hyperparameter configuration: max_depth is 10, max_features is 0.45, min_impurity_decrease is 0, min_samples_leaf is 0.01, min_samples_split is 0.01, min_weight_fraction_leaf is 0.02
+Performance: ## 0.505633 ##
+Hyperparameter configuration: max_depth is 3, max_features is 0.74, min_impurity_decrease is 0, min_samples_leaf is 0.01, min_samples_split is 0.07, min_weight_fraction_leaf is 0.01
+Performance: ## 0.462462 ##
+Hyperparameter configuration: max_depth is 6, max_features is 0.32, min_impurity_decrease is 0, min_samples_leaf is 0.05, min_samples_split is 0.32, min_weight_fraction_leaf is 0.19
+Performance: ## 0.435612 ##
+Hyperparameter configuration: max_depth is 2, max_features is 0.16, min_impurity_decrease is 0, min_samples_leaf is 0.16, min_samples_split is 0.43, min_weight_fraction_leaf is 0.04
+Performance: ## 0.443022 ##
+Hyperparameter configuration: max_depth is 2, max_features is 0.96, min_impurity_decrease is 0, min_samples_leaf is 0.02, min_samples_split is 0.08, min_weight_fraction_leaf is 0.01
+Performance: ## 0.477026 ##
+Hyperparameter configuration: max_depth is 2, max_features is 0.15, min_impurity_decrease is 0, min_samples_leaf is 0.01, min_samples_split is 0.03, min_weight_fraction_leaf is 0.03
+Performance: ## 0.471041 ##
+Hyperparameter configuration: max_depth is 5, max_features is 0.91, min_impurity_decrease is 0, min_samples_leaf is 0.02, min_samples_split is 0.06, min_weight_fraction_leaf is 0.02
+Performance: ## 0.498670 ##
+Hyperparameter configuration: max_depth is 8, max_features is 0.25, min_impurity_decrease is 0, min_samples_leaf is 0.04, min_samples_split is 0.45, min_weight_fraction_leaf is 0.01
+Performance: ## 0.445172 ##
+Hyperparameter configuration: max_depth is 4, max_features is 0.74, min_impurity_decrease is 0, min_samples_leaf is 0.01, min_samples_split is 0.04, min_weight_fraction_leaf is 0.04
+Performance: ## 0.487171 ##
+Hyperparameter configuration: max_depth is 1, max_features is 0.24, min_impurity_decrease is 0, min_samples_leaf is 0.09, min_samples_split is 0.16, min_weight_fraction_leaf is 0.20
+Performance: ## 0.444438 ##
+Hyperparameter configuration: max_depth is 5, max_features is 0.48, min_impurity_decrease is 0, min_samples_leaf is 0.01, min_samples_split is 0.05, min_weight_fraction_leaf is 0.01
+Performance: ## 0.468239 ##
+Hyperparameter configuration: max_depth is 7, max_features is 0.87, min_impurity_decrease is 0, min_samples_leaf is 0.02, min_samples_split is 0.02, min_weight_fraction_leaf is 0.01
+Performance: ## 0.502178 ##
+Hyperparameter configuration: max_depth is 6, max_features is 0.41, min_impurity_decrease is 0, min_samples_leaf is 0.02, min_samples_split is 0.03, min_weight_fraction_leaf is 0.01
+Performance: ## 0.505187 ##
+Hyperparameter configuration: max_depth is 7, max_features is 0.20, min_impurity_decrease is 0, min_samples_leaf is 0.02, min_samples_split is 0.04, min_weight_fraction_leaf is 0.01
+Performance: ## 0.506694 ##
+Hyperparameter configuration: max_depth is 3, max_features is 0.33, min_impurity_decrease is 0, min_samples_leaf is 0.02, min_samples_split is 0.01, min_weight_fraction_leaf is 0.04
+Performance: ## 0.468564 ##
+Hyperparameter configuration: max_depth is 6, max_features is 0.36, min_impurity_decrease is 0, min_samples_leaf is 0.09, min_samples_split is 0.02, min_weight_fraction_leaf is 0.02
+Performance: 
+2024-03-23 18:12:09 - INFO - Response from ollama: 
+  Here's the predicted mean squared
+2024-03-23 18:12:09 - INFO - Response from ollama: 
+  Here are the predicted mean squared errors
+2024-03-23 18:12:10 - INFO - Response from ollama: 
+  ## 0.4986
+2024-03-23 18:12:10 - INFO - Response from ollama: 
+  ## 0.4356
+2024-03-23 18:12:10 - INFO - Response from ollama: 
+  I cannot directly compute the mean squared
+2024-03-23 18:12:10 - INFO - Response from ollama: 
+  Hyperparameter configuration: max\_depth
+2024-03-23 18:12:11 - INFO - Response from ollama: 
+  Performance: ## 0.43
+2024-03-23 18:12:11 - INFO - Response from ollama: 
+  Performance: ## 0.43
+2024-03-23 18:12:11 - INFO - Response from ollama: 
+  Hyperparameter configuration: max\_depth
+2024-03-23 18:12:12 - INFO - Response from ollama: 
+  Hyperparameter configuration: max\_depth
+2024-03-23 18:12:12 - INFO - [LLAMBO_VANILLA] RMSE: 0.5286, R2 score: -1.7880, NLL: nan, Coverage: 0.0000, MACE: 0.4900, Sharpness: 0.0000, Regret: 0.7511 | Cost: $0.0003, Time: 4.1590s
+2024-03-23 18:12:12 - INFO - ========================================================================================================================================================================================================
+2024-03-23 18:12:12 - INFO - [LLAMBO] 1 evaluation runs complete! Total cost: $0.0017

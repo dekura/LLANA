@@ -1,0 +1,224 @@
+2024-03-23 18:11:55 - INFO - ========================================================================================================================================================================================================
+2024-03-23 18:11:55 - INFO - Evaluating Disriminative SM performance on openai Offset_score with AdaBoost and 20 observed configurations... Running 1 runs.
+2024-03-23 18:11:55 - INFO - ========================================================================================================================================================================================================
+2024-03-23 18:11:55 - INFO - Collecting configurations - this might take a while...
+2024-03-23 18:12:32 - INFO - ========================================================================================================================================================================================================
+2024-03-23 18:12:32 - INFO - Evaluating SM with seed 0...
+2024-03-23 18:12:33 - INFO - [GP] RMSE: 1.7183, R2 score: -30.8314, NLL: 2.4522, Coverage: 1.0000, MACE: 0.3990, Sharpness: 5.9243, Regret: 0.0010
+2024-03-23 18:12:33 - INFO - [SMAC] RMSE: 3.4724, R2 score: -128.9982, NLL: 1.8433, Coverage: 0.9000, MACE: 0.1692, Sharpness: 4.2995, Regret: 0.0122
+2024-03-23 18:12:33 - INFO - ****************************************************************************************************
+2024-03-23 18:12:33 - INFO - Number of all_prompt_templates: 5
+2024-03-23 18:12:33 - INFO - Number of query_examples: 10
+2024-03-23 18:12:33 - INFO - The following are hyperparameter configurations for a AdaBoost and the corresponding performance measured in mean squared error. The model is evaluated on a tabular regression task. The tabular dataset contains 411 samples and 14 features (0 categorical, 14 numerical).  Your response should only contain the predicted mean squared error in the format ## performance ##.
+Hyperparameter configuration: n_estimators is 53, learning_rate is 4.2807
+Performance: ## 0.858761 ##
+Hyperparameter configuration: n_estimators is 50, learning_rate is 0.0231
+Performance: ## 0.522575 ##
+Hyperparameter configuration: n_estimators is 19, learning_rate is 1.0246
+Performance: ## 0.672961 ##
+Hyperparameter configuration: n_estimators is 49, learning_rate is 0.0157
+Performance: ## 0.509981 ##
+Hyperparameter configuration: n_estimators is 56, learning_rate is 0.3294
+Performance: ## 0.709779 ##
+Hyperparameter configuration: n_estimators is 29, learning_rate is 1.0527
+Performance: ## 0.775636 ##
+Hyperparameter configuration: n_estimators is 82, learning_rate is 1.4046
+Performance: ## 0.830446 ##
+Hyperparameter configuration: n_estimators is 69, learning_rate is 5.0468
+Performance: ## 12.558169 ##
+Hyperparameter configuration: n_estimators is 75, learning_rate is 0.0001
+Performance: ## 0.484010 ##
+Hyperparameter configuration: n_estimators is 52, learning_rate is 5.6104
+Performance: ## 16.900034 ##
+Hyperparameter configuration: n_estimators is 66, learning_rate is 3.5830
+Performance: ## 0.639707 ##
+Hyperparameter configuration: n_estimators is 75, learning_rate is 5.1226
+Performance: ## 26.266331 ##
+Hyperparameter configuration: n_estimators is 81, learning_rate is 1.0225
+Performance: ## 0.788123 ##
+Hyperparameter configuration: n_estimators is 47, learning_rate is 2.4160
+Performance: ## 0.807440 ##
+Hyperparameter configuration: n_estimators is 85, learning_rate is 4.6887
+Performance: ## 4.375997 ##
+Hyperparameter configuration: n_estimators is 78, learning_rate is 0.0095
+Performance: ## 0.510720 ##
+Hyperparameter configuration: n_estimators is 28, learning_rate is 4.9816
+Performance: ## 8.483442 ##
+Hyperparameter configuration: n_estimators is 85, learning_rate is 0.0012
+Performance: ## 0.496704 ##
+Hyperparameter configuration: n_estimators is 18, learning_rate is 4.3925
+Performance: ## 0.655587 ##
+Hyperparameter configuration: n_estimators is 24, learning_rate is 1.2473
+Performance: ## 0.758921 ##
+Hyperparameter configuration: n_estimators is 14, learning_rate is 0.0007
+Performance: 
+2024-03-23 18:12:34 - INFO - Response from OpenAI: 
+ ## 0.477953 ##
+2024-03-23 18:12:34 - INFO - Response from OpenAI: 
+ ## 23.065242 ##
+2024-03-23 18:12:34 - INFO - Response from OpenAI: 
+ ## 0.513383 ##
+2024-03-23 18:12:34 - INFO - Response from OpenAI: 
+ ## 0.640892 ##
+2024-03-23 18:12:34 - INFO - Response from OpenAI: 
+ ## 0.838919 ##
+2024-03-23 18:12:34 - INFO - Response from OpenAI: 
+ ## 9.679791 ##
+2024-03-23 18:12:34 - INFO - Response from OpenAI: 
+ ## 0.821678 ##
+2024-03-23 18:12:34 - INFO - Response from OpenAI: 
+ ## 4.028906 ##
+2024-03-23 18:12:34 - INFO - Response from OpenAI: 
+ ## 2.729993 ##
+2024-03-23 18:12:34 - INFO - Response from OpenAI: 
+ ## 0.788033 ##
+2024-03-23 18:12:34 - INFO - Response from OpenAI: 
+ ## 0.676548 ##
+2024-03-23 18:12:34 - INFO - Response from OpenAI: 
+ ## 0.640553 ##
+2024-03-23 18:12:34 - INFO - Response from OpenAI: 
+ ## 1.122215 ##
+2024-03-23 18:12:34 - INFO - Response from OpenAI: 
+ ## 0.727738 ##
+2024-03-23 18:12:34 - INFO - Response from OpenAI: 
+ ## 0.478638 ##
+2024-03-23 18:12:34 - INFO - Response from OpenAI: 
+ ## 19.951422 ##
+2024-03-23 18:12:34 - INFO - Response from OpenAI: 
+ ## 0.715363 ##
+2024-03-23 18:12:34 - INFO - Response from OpenAI: 
+ ## 0.837326 ##
+2024-03-23 18:12:35 - INFO - Response from OpenAI: 
+ ## 1.684157 ##
+2024-03-23 18:12:35 - INFO - Response from OpenAI: 
+ ## 14.926607 ##
+2024-03-23 18:12:36 - INFO - Response from OpenAI: 
+ ## 0.501303 ##
+2024-03-23 18:12:36 - INFO - Response from OpenAI: 
+ ## 0.460334 ##
+2024-03-23 18:12:36 - INFO - Response from OpenAI: 
+ ## 0.834436 ##
+2024-03-23 18:12:36 - INFO - Response from OpenAI: 
+ ## 1.041684 ##
+2024-03-23 18:12:36 - INFO - Response from OpenAI: 
+ ## 0.838709 ##
+2024-03-23 18:12:37 - INFO - Response from OpenAI: 
+ ## 0.542076 ##
+2024-03-23 18:12:37 - INFO - Response from OpenAI: 
+ ## 0.614446 ##
+2024-03-23 18:12:37 - INFO - Response from OpenAI: 
+ ## 0.687454 ##
+2024-03-23 18:12:37 - INFO - Response from OpenAI: 
+ ## 0.570495 ##
+2024-03-23 18:12:37 - INFO - Response from OpenAI: 
+ ## 0.484010 ##
+2024-03-23 18:12:37 - INFO - Response from OpenAI: 
+ ## 0.796334 ##
+2024-03-23 18:12:37 - INFO - Response from OpenAI: 
+ ## 0.776574 ##
+2024-03-23 18:12:37 - INFO - Response from OpenAI: 
+ ## 0.650849 ##
+2024-03-23 18:12:37 - INFO - Response from OpenAI: 
+ ## 0.581446 ##
+2024-03-23 18:12:37 - INFO - Response from OpenAI: 
+ ## 0.851687 ##
+2024-03-23 18:12:37 - INFO - Response from OpenAI: 
+ ## 0.652287 ##
+2024-03-23 18:12:37 - INFO - Response from OpenAI: 
+ ## 0.697261 ##
+2024-03-23 18:12:37 - INFO - Response from OpenAI: 
+ ## 0.486481 ##
+2024-03-23 18:12:37 - INFO - Response from OpenAI: 
+ ## 1.214215 ##
+2024-03-23 18:12:37 - INFO - Response from OpenAI: 
+ ## 0.761156 ##
+2024-03-23 18:12:37 - INFO - Response from OpenAI: 
+ ## 0.669184 ##
+2024-03-23 18:12:37 - INFO - Response from OpenAI: 
+ ## 0.742707 ##
+2024-03-23 18:12:37 - INFO - Response from OpenAI: 
+ ## 2.758935 ##
+2024-03-23 18:12:37 - INFO - Response from OpenAI: 
+ ## 0.648665 ##
+2024-03-23 18:12:37 - INFO - Response from OpenAI: 
+ ## 0.484010 ##
+2024-03-23 18:12:37 - INFO - Response from OpenAI: 
+ ## 0.484010 ##
+2024-03-23 18:12:38 - INFO - Response from OpenAI: 
+ ## 0.633297 ##
+2024-03-23 18:12:38 - INFO - Response from OpenAI: 
+ ## 0.486828 ##
+2024-03-23 18:12:38 - INFO - Response from OpenAI: 
+ ## 0.577155 ##
+2024-03-23 18:12:38 - INFO - Response from OpenAI: 
+ ## 5.332276 ##
+2024-03-23 18:12:38 - INFO - [LLAMBO] RMSE: 4.7601, R2 score: -243.2880, NLL: 0.0524, Coverage: 0.5000, MACE: 0.0877, Sharpness: 3.1963, Regret: 0.0099 | Cost: $0.0575, Time: 5.0896s
+2024-03-23 18:12:38 - INFO - ****************************************************************************************************
+2024-03-23 18:12:38 - INFO - Number of all_prompt_templates: 1
+2024-03-23 18:12:38 - INFO - Number of query_examples: 10
+2024-03-23 18:12:38 - INFO - The following are hyperparameter configurations for a AdaBoost and the corresponding performance measured in mean squared error. The model is evaluated on a tabular regression task. The tabular dataset contains 411 samples and 14 features (0 categorical, 14 numerical).  Your response should only contain the predicted mean squared error in the format ## performance ##.
+Hyperparameter configuration: n_estimators is 53, learning_rate is 4.2807
+Performance: ## 0.858761 ##
+Hyperparameter configuration: n_estimators is 50, learning_rate is 0.0231
+Performance: ## 0.522575 ##
+Hyperparameter configuration: n_estimators is 19, learning_rate is 1.0246
+Performance: ## 0.672961 ##
+Hyperparameter configuration: n_estimators is 49, learning_rate is 0.0157
+Performance: ## 0.509981 ##
+Hyperparameter configuration: n_estimators is 56, learning_rate is 0.3294
+Performance: ## 0.709779 ##
+Hyperparameter configuration: n_estimators is 29, learning_rate is 1.0527
+Performance: ## 0.775636 ##
+Hyperparameter configuration: n_estimators is 82, learning_rate is 1.4046
+Performance: ## 0.830446 ##
+Hyperparameter configuration: n_estimators is 69, learning_rate is 5.0468
+Performance: ## 12.558169 ##
+Hyperparameter configuration: n_estimators is 75, learning_rate is 0.0001
+Performance: ## 0.484010 ##
+Hyperparameter configuration: n_estimators is 52, learning_rate is 5.6104
+Performance: ## 16.900034 ##
+Hyperparameter configuration: n_estimators is 66, learning_rate is 3.5830
+Performance: ## 0.639707 ##
+Hyperparameter configuration: n_estimators is 75, learning_rate is 5.1226
+Performance: ## 26.266331 ##
+Hyperparameter configuration: n_estimators is 81, learning_rate is 1.0225
+Performance: ## 0.788123 ##
+Hyperparameter configuration: n_estimators is 47, learning_rate is 2.4160
+Performance: ## 0.807440 ##
+Hyperparameter configuration: n_estimators is 85, learning_rate is 4.6887
+Performance: ## 4.375997 ##
+Hyperparameter configuration: n_estimators is 78, learning_rate is 0.0095
+Performance: ## 0.510720 ##
+Hyperparameter configuration: n_estimators is 28, learning_rate is 4.9816
+Performance: ## 8.483442 ##
+Hyperparameter configuration: n_estimators is 85, learning_rate is 0.0012
+Performance: ## 0.496704 ##
+Hyperparameter configuration: n_estimators is 18, learning_rate is 4.3925
+Performance: ## 0.655587 ##
+Hyperparameter configuration: n_estimators is 24, learning_rate is 1.2473
+Performance: ## 0.758921 ##
+Hyperparameter configuration: n_estimators is 14, learning_rate is 0.0007
+Performance: 
+2024-03-23 18:12:39 - INFO - Response from OpenAI: 
+ ## 13.609352 ##
+2024-03-23 18:12:39 - INFO - Response from OpenAI: 
+ ## 1.076393 ##
+2024-03-23 18:12:39 - INFO - Response from OpenAI: 
+ ## 0.675494 ##
+2024-03-23 18:12:39 - INFO - Response from OpenAI: 
+ ## 0.472139 ##
+2024-03-23 18:12:39 - INFO - Response from OpenAI: 
+ ## 0.855421 ##
+2024-03-23 18:13:33 - INFO - Response from OpenAI: 
+ ## 0.641315 ##
+2024-03-23 18:13:33 - INFO - Response from OpenAI: 
+ ## 0.484010 ##
+2024-03-23 18:13:33 - INFO - Response from OpenAI: 
+ ## 0.604569 ##
+2024-03-23 18:13:33 - INFO - Response from OpenAI: 
+ ## 0.810386 ##
+2024-03-23 18:13:33 - INFO - Response from OpenAI: 
+ ## 0.527895 ##
+2024-03-23 18:13:33 - INFO - [LLAMBO_VANILLA] RMSE: 5.2293, R2 score: -293.8175, NLL: 2.8363, Coverage: 0.4000, MACE: 0.1870, Sharpness: 1.7538, Regret: 0.0286 | Cost: $0.0115, Time: 54.8038s
+2024-03-23 18:13:33 - INFO - ========================================================================================================================================================================================================
+2024-03-23 18:13:33 - INFO - [LLAMBO] 1 evaluation runs complete! Total cost: $0.0690
