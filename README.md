@@ -1,5 +1,8 @@
 ## LLM-Enhanced Bayesian Optimization for Efficient Analog Constraint Generation
 
+Code for arxiv paper: [https://arxiv.org/abs/2406.05250](https://arxiv.org/abs/2406.05250)
+
+[LLM-Enhanced Bayesian Optimization for Efficient Analog Layout Constraint Generation](https://arxiv.org/abs/2406.05250)
 
 ---
 
